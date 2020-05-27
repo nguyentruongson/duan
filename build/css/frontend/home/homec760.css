@@ -1,0 +1,1140 @@
+body {
+    font-size: 18px !important;
+}
+
+.masthead {
+    background-image: url("../../../images/home/cover-img.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logoHome {
+    width: 150px;
+    border-radius: 20px;
+}
+
+
+
+/* .popover {
+    border: 2px dotted red;
+}
+.popover-title {
+    background-color: #73AD21; 
+    color: #FFFFFF; 
+    font-size: 28px;
+    text-align:center;
+}
+
+.popover-content {
+    background-color: coral;
+    color: #FFFFFF;
+    padding: 25px;
+}
+.arrow {
+    border-right-color: red !important;
+} */
+
+.content-image {
+    background-color: #ffffff;
+    box-shadow: 5px 5px 15px 1px rgba(26, 34, 35, 0);
+}
+
+@media (min-width: 320px) and (max-width: 720px) {
+    .logoHome {
+        display: none;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 576px) {
+    .time_picker{
+        margin-left: 30px;
+    }
+    .dropdown_home{
+        margin-left: 15px;
+    }
+}
+
+/* .img {
+    position: relative;
+    overflow: hidden;
+} */
+ 
+/* .txt {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.52);
+    position: absolute;
+    bottom:50px;
+    text-align: center;
+    color: white;
+    padding:10px;
+    box-sizing: border-box;
+    opacity: 0;
+    font-size: 12px;
+}
+
+.img:hover div.txt {
+    opacity: 1;
+    transform: translateY(50px);
+    transition:ease-in-out 0.5s;
+} */
+ 
+/* .img:hover img {
+    transform: scale(1.5);
+    transition: all ease-in-out 0.5s;
+} */
+
+.mx-auto {
+    width: 98%;
+    
+}
+
+.container-home {
+    max-width: 100% !important;
+}
+
+.homtitle {
+    font-size: 42px;
+    color: #fff;
+    text-align: center;
+    font-family: SFPro-Medium;
+    padding-top: 12%;
+    padding-bottom: 14%;
+    text-shadow: 0px 0px 15px rgba(63, 63, 63, 1);
+}
+
+.home .introduce-text {
+    font-weight: bold;
+    font-size: 23px;
+    color: #333333;
+    margin-top: 41px;
+    margin-bottom: 10px;
+}
+.home .text-link:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.introduce-text-pay {
+    font-weight: bold;
+    font-size: 23px;
+    color: #333333;
+    margin-top: 41px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+}
+
+.introduce-text-try {
+    font-weight: bold;
+    font-size: 23px;
+    color: #333333;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.Skip-rental {
+    padding: 15px;
+    padding-left: 32px;
+}
+
+.introduce-text {
+    padding: 15px 15px 15px 0;
+}
+
+.col-md-5 .girl {
+    width: 250px;
+    padding-top: 5%;
+}
+
+.mx-auto .container .bar-console {
+    margin-bottom: 20px;
+    border: 1px solid #dddddd;
+    background: #fff;
+    width: 100%;
+    height: 80px;
+    border-radius: 4px;
+}
+
+.mx-auto .container .bar-col {
+    display: flex;
+    padding: 10px;
+}
+
+.mx-auto .container .bar-col .component {
+    display: block;
+    height: 60px;
+}
+
+.mx-auto .container .bar-col img {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.mx-auto .container .bar-col .component p {
+    margin: 0;
+    padding: 0;
+}
+
+.mx-auto .container .bar-col .component input {
+    border: none;
+    outline: none;
+    padding: 0;
+    width: 100%;
+}
+
+.mx-auto .container .bar-col .component .dropdown .dropdown-toggle {
+    background-color: #ffffff;
+    color: #7d7d7d9c;
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 0;
+}
+
+.home
+.mx-auto
+.container
+.bar-col
+.component
+.dropdown
+.dropdown-toggle::after {
+    margin-left: 100px;
+    color: #ff5a00;
+    font-size: 25px;
+}
+
+.mx-auto .container .border-right {
+    border-right: 1px solid #dddddd;
+    padding-left: 4%;
+}
+
+.mx-auto .container .bar-search-btn {
+}
+
+.home .container .bar-console .row .col-md-5 {
+    padding-left: 0px;
+}
+
+
+.container .bar-console i{
+    font-size: 1.5rem;
+    color: #b3b3b3;
+    padding: 17px 10px 17px 5px;
+}
+
+.home .container  .block-car {
+    margin-top: 15px;
+}
+
+.home .form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border: none;
+    outline: 0;
+    box-shadow: none;
+}
+.home .form-control {
+    color: #495057;
+    background-color: #fff;
+    border: none;
+    outline: 0;
+    box-shadow: none;
+}
+
+.home .mx-auto .container .bar-search-btn .btn-text {
+    position: absolute;
+    margin-top: -1px;
+    background: #ff5a00;
+    color: #ffffff;
+    width: 93%;
+    height: 100%;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.mx-auto .container .bar-date-picker {
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.mx-auto .container .bar-console .row {
+    width: 100%;
+    margin: 0;
+}
+
+.introduce-description {
+    font-weight: bold;
+    font-size: 15px;
+    color: #333333;
+    margin-bottom: 2%;
+}
+
+.customer-reviews .introduce-description-customer {
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.try-our {
+    margin-top: 41px;
+}
+.try-our i{
+    color:#ff5a00;
+    padding:10px;
+    font-size: 1.4rem;
+}
+.try-our .supcriptions-item span{
+    line-height: 2.4rem;
+}
+
+.try-our .introduce-description-monthly {
+    font-size: 19px;
+    color: #333333;
+    margin-bottom: 1%;
+}
+
+.try-our .supcriptions-item {
+    border-bottom: 1px solid #f0eceb;
+    padding-bottom: 8px;
+    margin-top: 10px;
+    width: 70%;
+}
+
+
+.checked {
+    color: #ff5a00;
+}
+
+.hr-theme-slash-2 {
+    display: flex;
+    margin-top: 50px;
+}
+
+.hr-line {
+    width: 100%;
+    position: relative;
+    margin: 15px;
+    border-bottom: 1px solid #d7dce3;
+}
+
+.hr-icon {
+    position: relative;
+    top: 3px;
+}
+
+.list-top-city .top-city-item .text-center-image {
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+}
+
+.list-top-city .top-city-item {
+    text-align: center;
+    cursor: pointer;
+    /*padding:15px;*/
+}
+
+.customer-reviews {
+    position: relative;
+    margin-top: 56px;
+    background-image: url("../../../images/home/customer-review.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.customer-reviews .introduce-text-customer {
+    padding-top: 27px;
+    color: white;
+    font-weight: bold;
+    font-size: 23px;
+    z-index: 9000;
+}
+
+.customer-reviews .introduce-text-customer > div {
+    margin-bottom: 25px;
+}
+
+.customer-reviews .box-review {
+    position: relative;
+    max-width: 280px;
+    height: auto;
+    border: 0 solid #ffffff;
+    padding: 30px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.38);
+    border-radius: 10px;
+}
+
+.customer-reviews .box-triangle {
+    position: absolute;
+    top: 100%;
+    left: 14%;
+    display: inline-block;
+    vertical-align: middle;
+    width: 5px;
+    height: 30px;
+    border-top: solid 7px rgba(255, 255, 255, 0.38);
+    border-left: solid 7px transparent;
+    border-right: solid 7px transparent;
+}
+
+.customer-reviews .row {
+    padding-left: 0px;
+}
+
+.customer-reviews .review-message {
+    color: white;
+}
+
+.customer-reviews .review-detail-message {
+    color: white;
+    font-size: 12px;
+}
+
+.customer-reviews .review-detail-message {
+    color: white;
+    font-size: 12px;
+}
+
+.customer-reviews .account-review {
+    margin-top: 20px;
+    margin-left: 26px;
+}
+
+.skip-the-rental .title-rental {
+    color: #484848;
+    margin-top: 8px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.driving-at-finest {
+    padding: 5%;
+    margin-top: 56px;
+    min-height: 29.86vw;
+    background-image: url(../../../images/home/finest.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    z-index: 3;
+}
+
+.driving-at-finest .title {
+    font-size: 28px;
+    color: white;
+    font-weight: bold;
+}
+
+.driving-at-finest .description {
+    color: white;
+    margin-top: 40px;
+}
+
+.driving-at-finest .button {
+    background-color: #ff5a00;
+    border: none;
+    color: white;
+    padding: 16px 30px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+.explore .introduce-text, .explore .introduce-description{
+    text-align: center;
+}
+.pay-for-itself .button {
+    background-color: #ff5a00;
+    border: none;
+    color: white;
+    padding: 16px 30px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+
+.avatar {
+    vertical-align: middle;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    margin-right: 40px;
+}
+
+.slick-dots li button:before {
+    color: #d8d8d8;
+    font-size: 11px;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #ff5a00;
+    font-size: 11px;
+}
+
+.slick-dots {
+    bottom: -45px;
+}
+
+.col-2dot4,
+.col-sm-2dot4,
+.col-md-2dot4,
+.col-lg-2dot4,
+.col-xl-2dot4 {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col-2dot4 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+@media (min-width: 540px) {
+    .col-sm-2dot4 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 25%;
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+}
+
+@media (min-width: 720px) {
+    .col-md-2dot4 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 25%;
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+}
+
+@media (min-width: 960px) {
+    .col-lg-2dot4 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 25%;
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+}
+
+@media (min-width: 1140px) {
+    .col-xl-2dot4 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 25%;
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .list-top-city img {
+        margin: 15px 15px 15px 0;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .list-top-city img {
+        width: 100%;
+    }
+}
+
+.mx-content {
+    background: #00000063;
+    padding-bottom: 39px;
+}
+
+
+@media only screen and (min-width: 992px) and (max-width: 1199.98px) {
+    .list-top-city img {
+        margin: 15px 15px 15px 0;
+        width: 100%;
+    }
+
+    .mx-auto {
+        width: 100%;
+        margin: 0;
+    }
+
+    .list-top-city .row {
+        width: 100%;
+        margin: 0;
+    }
+
+    .try-our .row {
+        width: 100%;
+        margin: 0;
+    }
+
+    .your-class {
+        width: 100%;
+        margin: 0;
+    }
+
+    .block-car,
+    .Skip-rental {
+        width: 100%;
+        margin: 0;
+    }
+
+    .introduce-text {
+        padding-left: 0;
+        font-size: 20px;
+    }
+
+    .home .mx-auto .container .bar-search-btn .btn-text {
+        padding-top: 15%;
+    }
+
+    .home .container  .block-car {
+        margin: 0;
+    }
+
+    .destinations,
+    .counter {
+        padding-left: 15px !important;
+    }
+
+    .customer-reviews {
+        margin-top: 50px;
+    }
+
+    .skip-the-rental {
+        font-size: 16px;
+    }
+
+    .driving-at-finest .title {
+        font-size: 24px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+
+    .driving-at-finest .button {
+        font-size: 14px;
+    }
+
+    .introduce-text-pay {
+        margin-top: 0;
+    }
+
+    .pay-for-itself .mx-auto {
+        padding-right: 15px;
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .list-top-city img {
+        margin: 15px 15px 15px 0;
+        width: 100%;
+    }
+
+    .mx-auto {
+        width: 100%;
+        margin: 0;
+    }
+
+    .list-top-city .row {
+        width: 100%;
+        margin: 0;
+    }
+
+    .mx-auto .container .bar-console {
+        font-size: 14px;
+    }
+
+    .mx-auto .container .bar-col img {
+        width: 20px;
+    }
+
+    .mx-auto .container .bar-col .component {
+        width: 100%;
+    }
+
+    .home
+    .mx-auto
+    .container
+    .bar-col
+    .component
+    .dropdown
+    .dropdown-toggle::after {
+        margin-left: 60px;
+    }
+
+    .mx-auto .container .bar-date-picker {
+        font-size: 14px;
+    }
+
+    .try-our .row {
+        width: 100%;
+        margin: 0;
+    }
+
+    .your-class {
+        width: 100%;
+        margin: 0;
+    }
+
+    .block-car,
+    .Skip-rental {
+        width: 100%;
+        margin: 0;
+    }
+
+    .introduce-text {
+        padding-left: 0;
+        font-size: 16px;
+        margin-top: 0;
+    }
+
+    .introduce-text-try {
+        margin-top: 0px;
+        font-size: 20px;
+    }
+
+    .try-our .introduce-description-monthly {
+        font-size: 14px;
+    }
+
+    .try-our .supcriptions-item {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .supcriptions-item .row .col-sm-1 img {
+        width: 15px;
+    }
+
+    .col-md-5 .girl {
+        width: 75%;
+    }
+
+    .girl-img {
+        text-align: center;
+    }
+
+    .home .mx-auto .container .bar-search-btn .btn-text {
+        padding-top: 15%;
+    }
+
+    .home .container  .block-car {
+        margin: 0;
+    }
+
+    .destinations,
+    .counter {
+        padding-left: 15px !important;
+    }
+
+    .customer-reviews {
+        margin-top: 50px;
+    }
+
+    .skip-the-rental {
+        font-size: 16px;
+    }
+
+    .driving-at-finest .title {
+        font-size: 24px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+
+    .driving-at-finest .button {
+        font-size: 14px;
+    }
+
+    .introduce-text-pay {
+        margin-top: 0;
+    }
+
+    .pay-for-itself .mx-auto {
+        padding-right: 15px;
+        font-size: 16px;
+    }
+
+    .homtitle {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .list-top-city img {
+        margin: 15px 15px 15px 0;
+        width: 100%;
+    }
+
+    .mx-auto {
+        width: 100%;
+        margin: 0;
+    }
+
+    .list-top-city .row {
+        width: 100%;
+        margin: 0;
+    }
+
+    .mx-auto .container .bar-console {
+        font-size: 14px;
+    }
+
+    .mx-auto .container .bar-col img {
+        width: 20px;
+        margin-left: 0;
+    }
+
+    .mx-auto .container .bar-col .component {
+        width: 50%;
+    }
+
+    #bar-date-picker {
+        padding-left: 2%;
+    }
+
+    .home .mx-auto .container .bar-search-btn .btn-text {
+        position: unset;
+        width: 100%;
+        height: auto;
+    }
+
+    .mx-auto .container .bar-col .component .dropdown {
+        float: left;
+    }
+
+    .home
+    .mx-auto
+    .container
+    .bar-col
+    .component
+    .dropdown
+    .dropdown-toggle::after {
+        margin-left: 60px;
+    }
+
+    .mx-auto .container .bar-date-picker {
+        font-size: 14px;
+    }
+
+    .try-our .row {
+        width: 100%;
+        margin: 0;
+    }
+
+    .your-class {
+        width: 100%;
+        margin: 0;
+    }
+
+    .block-car,
+    .Skip-rental {
+        width: 100%;
+        margin: 0;
+    }
+
+    .introduce-text {
+        padding-left: 0;
+        font-size: 16px;
+        margin-top: 0;
+    }
+
+    .introduce-text-try {
+        margin-top: 0px;
+        font-size: 20px;
+    }
+
+    .try-our .introduce-description-monthly {
+        font-size: 14px;
+    }
+
+    .try-our .supcriptions-item {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .supcriptions-item .row .col-sm-1 img {
+        width: 15px;
+    }
+
+    .col-md-5 .girl {
+        width: 75%;
+    }
+
+    .girl-img {
+        text-align: center;
+    }
+
+    .home .mx-auto .container .bar-search-btn .btn-text {
+        padding-top: 4%;
+        padding-bottom: 4%;
+    }
+
+    .mx-auto .container .bar-search-btn {
+        padding: 0;
+    }
+
+    .home .container  .block-car {
+        margin: 0;
+    }
+
+    .destinations,
+    .counter {
+        padding-left: 15px !important;
+    }
+
+    .customer-reviews {
+        margin-top: 50px;
+    }
+
+    .skip-the-rental {
+        font-size: 16px;
+    }
+
+    .driving-at-finest .title {
+        font-size: 24px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+
+    .driving-at-finest .button {
+        font-size: 14px;
+    }
+
+    .introduce-text-pay {
+        margin-top: 0;
+    }
+
+    .pay-for-itself .mx-auto {
+        padding-right: 15px;
+        font-size: 16px;
+    }
+
+    .homtitle {
+        font-size: 24px;
+    }
+
+    .mx-auto .container .bar-console {
+        height: auto;
+    }
+
+    .mx-auto .container .border-right {
+        border-right: 0px solid #dee2e6 !important;
+        padding-left: 2%;
+        border-bottom: 1px solid #dee2e6;
+    }
+
+    .home .container  .bar-console .row .col-md-5 {
+        padding-right: 0;
+    }
+
+    .Skip-rental .col-md-3 {
+        padding-bottom: 4%;
+    }
+}
+@media (min-width: 1700px){
+    .home .container-fluid{
+        max-width: 1500px;
+    }
+}
+@media (min-width: 320px) and (max-width: 575.98px) {
+
+    .list-top-city img {
+        margin: 15px 15px 15px 0;
+        width: 100%;
+    }
+
+    .mx-auto {
+        width: 100%;
+        margin: 0;
+    }
+
+    .list-top-city .row {
+        width: 100%;
+        margin: 0;
+    }
+
+    .mx-auto .container .bar-console {
+        font-size: 14px;
+    }
+
+    .mx-auto .container .bar-col img {
+        width: 20px;
+        margin-left: 0;
+    }
+
+    .mx-auto .container .bar-col .component {
+        width: 50%;
+    }
+
+    #bar-date-picker {
+        padding-left: 2%;
+    }
+
+    .home .mx-auto .container .bar-search-btn .btn-text {
+        position: unset;
+        width: 100%;
+        height: auto;
+    }
+
+    .mx-auto .container .bar-col .component .dropdown {
+        float: left;
+    }
+
+    .home
+    .mx-auto
+    .container
+    .bar-col
+    .component
+    .dropdown
+    .dropdown-toggle::after {
+        margin-left: 60px;
+    }
+
+    .mx-auto .container .bar-date-picker {
+        font-size: 14px;
+    }
+
+    .try-our .row {
+        width: 100%;
+        margin: 0;
+    }
+
+    .your-class {
+        width: 100%;
+        margin: 0;
+    }
+
+    .block-car,
+    .Skip-rental {
+        width: 100%;
+        margin: 0;
+    }
+
+    .introduce-text {
+        padding-left: 0;
+        font-size: 18px;
+        margin-top: 0;
+    }
+
+    .introduce-text-try {
+        margin-top: 0px;
+        font-size: 16px;
+    }
+
+    .try-our .introduce-description-monthly {
+        font-size: 14px;
+    }
+
+    .try-our .supcriptions-item {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .supcriptions-item .row .col-sm-1 img {
+        width: 15px;
+    }
+
+    .col-md-5 .girl {
+        width: 75%;
+    }
+
+    .girl-img {
+        text-align: center;
+    }
+
+    .home .mx-auto .container .bar-search-btn .btn-text {
+        padding-top: 4%;
+        padding-bottom: 4%;
+    }
+
+    .mx-auto .container .bar-search-btn {
+        padding: 0;
+    }
+
+    .home .container  .block-car {
+        margin: 0;
+    }
+
+    .destinations,
+    .counter {
+        padding-left: 15px !important;
+    }
+
+    .customer-reviews {
+        margin-top: 50px;
+    }
+
+    .skip-the-rental {
+        font-size: 14px;
+    }
+
+    .driving-at-finest .title {
+        font-size: 16px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+
+    .driving-at-finest .button {
+        font-size: 14px;
+    }
+
+    .introduce-text-pay {
+        margin-top: 0;
+    }
+
+    .pay-for-itself .mx-auto {
+        padding-right: 15px;
+        font-size: 14px;
+    }
+
+    .homtitle {
+        font-size: 14px;
+    }
+
+    .mx-auto .container .bar-console {
+        height: auto;
+    }
+
+    .mx-auto .container .border-right {
+        border-right: 0px solid #dee2e6 !important;
+        padding-left: 2%;
+        border-bottom: 1px solid #dee2e6;
+    }
+
+    .home .container  .bar-console .row .col-md-5 {
+        padding-right: 0;
+    }
+
+    .Skip-rental .col-md-3 {
+        padding-bottom: 4%;
+    }
+}

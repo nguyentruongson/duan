@@ -1,0 +1,218 @@
+.payment-method {
+  max-width: 1180px;
+  margin: auto;
+  margin-top: 5%; }
+  .payment-method .payment-method-title {
+    font-size: 30px;
+    font-family: SFPro-Medium;
+    color: #484848; }
+  .payment-method .pam-content {
+    width: 100%;
+    margin: 0;
+    margin-top: 2%; }
+    .payment-method .pam-content .col-md-3 {
+      margin-bottom: 2%; }
+      .payment-method .pam-content .col-md-3 .pam-box {
+        background: #f7f7f7;
+        border-radius: 5px;
+        max-width: 100%;
+        margin: auto;
+        padding: 15px;
+        min-height: 197px; }
+        .payment-method .pam-content .col-md-3 .pam-box .pam-title {
+          font-size: 18px;
+          font-family: SFPro-Medium;
+          color: #484848; }
+        .payment-method .pam-content .col-md-3 .pam-box p {
+          font-family: SFPro-regular;
+          font-size: 18px;
+          color: #484848; }
+        .payment-method .pam-content .col-md-3 .pam-box .set-df {
+          margin-top: 25%;
+          font-family: SFPro-Medium;
+          font-size: 18px;
+          color: #293d85; }
+        .payment-method .pam-content .col-md-3 .pam-box .row .remove {
+          font-family: SFPro-Medium;
+          font-size: 18px;
+          color: #ff5a00; }
+        .payment-method .pam-content .col-md-3 .pam-box .row .remove-right {
+          text-align: right; }
+          .payment-method .pam-content .col-md-3 .pam-box .row .remove-right img {
+            margin-top: -15px; }
+        .payment-method .pam-content .col-md-3 .pam-box .add-txt {
+          font-family: SFPro-Medium;
+          font-size: 18px;
+          color: #484848;
+          text-align: center; }
+        .payment-method .pam-content .col-md-3 .pam-box .btn-modal {
+          width: 100%;
+          height: auto;
+          background: transparent;
+          border: 0;
+          padding-bottom: 10px;
+          margin-top: 15%; }
+        .payment-method .pam-content .col-md-3 .pam-box .modal .modal-dialog .modal-content .modal-header .close:hover {
+          /*background-color: rgba(50, 118, 177, 0); */
+        }
+        .payment-method .pam-content .col-md-3 .pam-box .modal .modal-dialog .modal-content .modal-body {
+          padding-left: 0;
+          padding-right: 0; }
+          .payment-method .pam-content .col-md-3 .pam-box .modal .modal-dialog .modal-content .modal-body .md-name {
+            width: 92%;
+            margin: auto; }
+            .payment-method .pam-content .col-md-3 .pam-box .modal .modal-dialog .modal-content .modal-body .md-name .md-logo {
+              padding-bottom: 3%; }
+              .payment-method .pam-content .col-md-3 .pam-box .modal .modal-dialog .modal-content .modal-body .md-name .md-logo img {
+                width: 8%;
+                margin-right: 5px; }
+            .payment-method .pam-content .col-md-3 .pam-box .modal .modal-dialog .modal-content .modal-body .md-name .md-name-content {
+              padding-bottom: 5%; }
+              .payment-method .pam-content .col-md-3 .pam-box .modal .modal-dialog .modal-content .modal-body .md-name .md-name-content .col-md-6 input {
+                height: 52px; }
+          .payment-method .pam-content .col-md-3 .pam-box .modal .modal-dialog .modal-content .modal-body .card-infor {
+            background: #f9f9f9; }
+            .payment-method .pam-content .col-md-3 .pam-box .modal .modal-dialog .modal-content .modal-body .card-infor .card-inf-content {
+              padding: 20px; }
+              .payment-method .pam-content .col-md-3 .pam-box .modal .modal-dialog .modal-content .modal-body .card-infor .card-inf-content .carin-title {
+                font-family: SFPro-Medium;
+                font-size: 18px;
+                color: #484848; }
+              .payment-method .pam-content .col-md-3 .pam-box .modal .modal-dialog .modal-content .modal-body .card-infor .card-inf-content .input-card-num {
+                margin-top: 3%;
+                margin-bottom: 3%; }
+                .payment-method .pam-content .col-md-3 .pam-box .modal .modal-dialog .modal-content .modal-body .card-infor .card-inf-content .input-card-num input {
+                  height: 52px;
+                  background: #fff; }
+              .payment-method .pam-content .col-md-3 .pam-box .modal .modal-dialog .modal-content .modal-body .card-infor .card-inf-content .md-name-content .col-md-6 input {
+                height: 52px; }
+          .payment-method .pam-content .col-md-3 .pam-box .modal .modal-dialog .modal-content .modal-body .card-bliding {
+            width: 92%;
+            margin: auto;
+            margin-top: 5%;
+            margin-bottom: 5%; }
+            .payment-method .pam-content .col-md-3 .pam-box .modal .modal-dialog .modal-content .modal-body .card-bliding .row .col-md-6 .bliding-title {
+              font-family: SFPro-Medium;
+              font-size: 18px;
+              color: #484848; }
+            .payment-method .pam-content .col-md-3 .pam-box .modal .modal-dialog .modal-content .modal-body .card-bliding .row .col-md-6 input,
+            .payment-method .pam-content .col-md-3 .pam-box .modal .modal-dialog .modal-content .modal-body .card-bliding .row .col-md-6 select {
+              height: 52px;
+              margin-top: 3%; }
+        .payment-method .pam-content .col-md-3 .pam-box .modal .modal-dialog .modal-content .modal-footer .card-done {
+          background: #ff5a00;
+          height: 52px;
+          width: 100px;
+          border: none; }
+        .payment-method .pam-content .col-md-3 .pam-box .modal .modal-dialog .modal-content .modal-footer .card-cancel {
+          height: 52px;
+          width: 100px;
+          border: none; }
+  .payment-method .pam-ft {
+    font-family: SFPro-Medium;
+    font-size: 18px;
+    color: #484848;
+    margin-top: 5%; }
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .payment-method .payment-method-title {
+    font-size: 24px; }
+  .payment-method .pam-content .col-md-3 .pam-box {
+    min-height: 170px; }
+    .payment-method .pam-content .col-md-3 .pam-box .pam-title,
+    .payment-method .pam-content .col-md-3 .pam-box .set-df,
+    .payment-method .pam-content .col-md-3 .pam-box .add-txt {
+      font-size: 16px; }
+    .payment-method .pam-content .col-md-3 .pam-box p {
+      font-size: 16px; }
+    .payment-method .pam-content .col-md-3 .pam-box .row .remove {
+      font-size: 16px; }
+    .payment-method .pam-content .col-md-3 .pam-box .btn-modal img {
+      width: 40px; } }
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .payment-method {
+    max-width: 95%; }
+    .payment-method .payment-method-title {
+      font-size: 24px; }
+    .payment-method .pam-content .col-md-3 {
+      max-width: 33%;
+      flex: 33%; }
+      .payment-method .pam-content .col-md-3 .pam-box {
+        min-height: 170px; }
+        .payment-method .pam-content .col-md-3 .pam-box .pam-title,
+        .payment-method .pam-content .col-md-3 .pam-box .set-df,
+        .payment-method .pam-content .col-md-3 .pam-box .add-txt {
+          font-size: 16px; }
+        .payment-method .pam-content .col-md-3 .pam-box p {
+          font-size: 16px; }
+        .payment-method .pam-content .col-md-3 .pam-box .row .remove {
+          font-size: 16px; }
+        .payment-method .pam-content .col-md-3 .pam-box .btn-modal img {
+          width: 40px; } }
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .payment-method {
+    max-width: 95%; }
+    .payment-method .payment-method-title {
+      font-size: 24px; }
+    .payment-method .pam-content .col-md-3 {
+      max-width: 45%;
+      flex: 45%; }
+      .payment-method .pam-content .col-md-3 .pam-box {
+        min-height: 195px; }
+        .payment-method .pam-content .col-md-3 .pam-box .pam-title,
+        .payment-method .pam-content .col-md-3 .pam-box .set-df,
+        .payment-method .pam-content .col-md-3 .pam-box .add-txt {
+          font-size: 16px; }
+        .payment-method .pam-content .col-md-3 .pam-box p {
+          font-size: 16px; }
+        .payment-method .pam-content .col-md-3 .pam-box .row .remove {
+          font-size: 16px; }
+        .payment-method .pam-content .col-md-3 .pam-box .btn-modal img {
+          width: 40px; }
+        .payment-method .pam-content .col-md-3 .pam-box .modal .modal-dialog .modal-content .modal-body .md-name .md-name-content .col-md-6 input {
+          margin-bottom: 10px; }
+        .payment-method .pam-content .col-md-3 .pam-box .modal .modal-dialog .modal-content .modal-body .card-infor .card-inf-content .md-name-content .col-md-6 input {
+          margin-bottom: 10px; } }
+@media (min-width: 320px) and (max-width: 575.98px) {
+  .payment-method {
+    max-width: 95%; }
+    .payment-method .payment-method-title {
+      font-size: 18px; }
+    .payment-method .pam-content .col-md-3 {
+      max-width: 100%;
+      flex: 100%;
+      margin-bottom: 5%; }
+      .payment-method .pam-content .col-md-3 .pam-box {
+        min-height: 195px; }
+        .payment-method .pam-content .col-md-3 .pam-box .pam-title,
+        .payment-method .pam-content .col-md-3 .pam-box .set-df,
+        .payment-method .pam-content .col-md-3 .pam-box .add-txt {
+          font-size: 16px; }
+        .payment-method .pam-content .col-md-3 .pam-box p {
+          font-size: 16px; }
+        .payment-method .pam-content .col-md-3 .pam-box .row .remove {
+          font-size: 16px;
+          width: 50%; }
+        .payment-method .pam-content .col-md-3 .pam-box .row .remove-right {
+          width: 50%; }
+        .payment-method .pam-content .col-md-3 .pam-box .btn-modal img {
+          width: 40px; }
+        .payment-method .pam-content .col-md-3 .pam-box .modal .modal-dialog .modal-content .modal-body .md-name .md-name-content .col-md-6 input {
+          margin-bottom: 10px; }
+        .payment-method .pam-content .col-md-3 .pam-box .modal .modal-dialog .modal-content .modal-body .card-infor .card-inf-content .md-name-content .col-md-6 input {
+          margin-bottom: 10px; }
+    .payment-method .pam-ft {
+      font-size: 14px; } }
+.dell {
+  position: absolute;
+  top: 0px;
+  right: 15px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  cursor: pointer;
+  background: transparent;
+  margin-top: 5px; }
+
+/*# sourceMappingURL=payment-method.css.map */

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="345px" viewBox="0 0 14 345" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 56.2 (81672) - https://sketch.com -->
+    <title>Group 24</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="How-Juzdrive-works" transform="translate(-1498.000000, -1183.000000)">
+            <g id="Group-24" transform="translate(1498.000000, 1183.000000)">
+                <path d="M6.5,0 L7,83.5" id="Line-12" stroke="#FFFFFF" stroke-linecap="square" stroke-dasharray="3"></path>
+                <path d="M6.5,117 L7,250.5" id="Line-12" stroke="#FFFFFF" stroke-linecap="square" stroke-dasharray="3"></path>
+                <path d="M6.5,288 L6.5,345" id="Line-12" stroke="#FFFFFF" stroke-linecap="square" stroke-dasharray="3"></path>
+                <circle id="Oval" fill="#FFFFFF" cx="7" cy="100" r="7"></circle>
+                <circle id="Oval" fill="#FFFFFF" cx="7" cy="270" r="7"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

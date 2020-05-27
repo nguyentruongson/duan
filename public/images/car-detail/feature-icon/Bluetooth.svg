@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="31px" viewBox="0 0 15 31" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>bluetooth</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Care-Detail" transform="translate(-689.000000, -1601.000000)" fill="#868686" fill-rule="nonzero">
+            <g id="bluetooth" transform="translate(689.000000, 1601.000000)">
+                <path d="M15,8.26348848 L7.03495239,0 L7.03495239,13.7849255 L0.782830147,7.29854369 L0,8.11070555 L7.03495239,15.4092492 L7.03495239,15.5080412 L0,22.8065849 L0.782830147,23.6187468 L7.03495239,17.1323649 L7.03495239,17.2150745 L7.03495239,31 L15,22.048414 L8.62220418,15.4316497 L15,8.26348848 Z M8.14220861,2.77306752 L13.4642356,8.29450456 L8.14220861,14.2765879 L8.14220861,2.77306752 Z M8.14220861,28.0615134 L8.14220861,16.557993 L13.4642356,22.0794301 L8.14220861,28.0615134 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

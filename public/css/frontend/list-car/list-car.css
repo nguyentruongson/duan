@@ -1,0 +1,2385 @@
+@font-face {
+    font-family: SFPro-regular;
+    src: url("../../../font/SFProText-Regular.ttf");
+}
+
+@font-face {
+    font-family: SFPro-Medium;
+    src: url("../../../font/SFProText-Medium.ttf");
+}
+
+.btn-cam {
+    background: #ff5a00 !important;
+    color: #fff !important;
+    width: 100px;
+    height: 46px;
+    margin-top: 15px;
+}
+.btn-cam:hover {
+    background: #ff5a00 !important;
+    color: #fff !important;
+    width: 100px;
+    height: 46px;
+    margin-top: 15px;
+}
+.btn-cam:active {
+    background: #ff5a00 !important;
+    color: #fff !important;
+    width: 100px;
+    height: 46px;
+    margin-top: 15px;
+}
+.btn-cam:focus {
+    background: #ff5a00 !important;
+    color: #fff !important;
+    width: 100px;
+    height: 46px;
+    margin-top: 15px;
+}
+
+body {
+    font-size: 18px;
+    font-family: SFPro-regular !important;
+}
+
+body header {
+    font-family: SFPro-Medium !important;
+}
+
+body header .menu {
+    padding: 10px 30px;
+}
+
+body header .menu .navbar-nav {
+    margin-left: auto;
+}
+
+body header .menu #navbarSupportedContent .nav-link {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+body section .tophead {
+    background: url("../../../img/home-bg.png");
+    background-size: 100%;
+    min-height: 568px;
+    background-repeat: no-repeat;
+    text-transform: uppercase;
+    font-size: 38px;
+    color: #fff;
+    text-align: center;
+    padding-top: 12%;
+    font-family: SFPro-Medium !important;
+}
+
+body section .body-head {
+    max-width: 1180px;
+    margin: auto;
+}
+
+body section .body-head .text-book {
+    margin-top: 30px;
+    color: #484848;
+    font-size: 26px;
+    font-family: SFPro-Medium !important;
+}
+
+body section .body-head .search-form {
+    margin-top: 20px;
+}
+
+body .list-your-car .list-bg {
+    background: url("../../../img/bg_kistca.png");
+    background-size: 100%;
+    min-height: 348px;
+    background-repeat: no-repeat;
+    text-transform: uppercase;
+    text-align: left;
+    font-family: SFPro-Medium !important;
+}
+
+body .list-your-car .list-bg .bg-text {
+    max-width: 1180px;
+    margin: auto;
+    padding-top: 8%;
+    font-size: 38px;
+    color: #222;
+}
+
+body .list-your-car .body-list {
+    max-width: 1180px;
+    margin: auto;
+}
+
+body .list-your-car .body-list .list-content {
+    width: 70%;
+    margin-top: 3%;
+}
+
+body
+.list-your-car
+.body-list
+.list-content
+#accordion
+.mobile-num
+.card-body
+.number {
+    width: 50%;
+    border: 1px solid #d7dce3;
+    border-radius: 2px;
+    margin-left: 0px;
+    height: 44px;
+}
+
+body
+.list-your-car
+.body-list
+.list-content
+#accordion
+.mobile-num
+.card-body
+.number
+.col-md-3 {
+    border-right: 1px solid #d7dce3;
+}
+
+body
+.list-your-car
+.body-list
+.list-content
+#accordion
+.mobile-num
+.card-body
+.number
+.col-md-3
+img {
+    padding-top: 5px;
+}
+
+body
+.list-your-car
+.body-list
+.list-content
+#accordion
+.mobile-num
+.card-body
+.number
+.col-md-8 {
+    padding-top: 4px;
+}
+
+body
+.list-your-car
+.body-list
+.list-content
+#accordion
+.mobile-num
+.card-body
+.number
+.col-md-8
+input {
+    border: none;
+}
+
+body
+.list-your-car
+.body-list
+.list-content
+#accordion
+.mobile-num
+.card-body
+.check-label {
+    margin-top: 15px;
+}
+
+body .list-your-car .body-list .list-content #accordion .license .choose-car {
+    margin-top: 15px;
+    border: 1px solid #d7dce3;
+    border-radius: 2px;
+    width: 100%;
+    margin: auto;
+}
+
+.choose-car-1 {
+    margin-top: 15px;
+    border: 1px solid #d7dce3;
+    border-radius: 2px;
+    width: 70% !important;
+}
+
+
+
+body
+.list-your-car
+.body-list
+.list-content
+#accordion
+.license
+.choose-car
+.col-md-3,
+body
+.list-your-car
+.body-list
+.list-content
+#accordion
+.license
+.choose-car
+.col-md-5 {
+    border-right: 1px solid #d7dce3;
+}
+
+body
+.list-your-car
+.body-list
+.list-content
+#accordion
+.license
+.choose-car
+.col-md-3
+.form-group,
+body
+.list-your-car
+.body-list
+.list-content
+#accordion
+.license
+.choose-car
+.col-md-5
+.form-group {
+    padding-top: 15px;
+    margin-bottom: 10px;
+}
+
+body
+.list-your-car
+.body-list
+.list-content
+#accordion
+.license
+.choose-car
+.col-md-3
+.form-group
+#country,
+body
+.list-your-car
+.body-list
+.list-content
+#accordion
+.license
+.choose-car
+.col-md-5
+.form-group
+#country {
+    width: 100%;
+}
+
+body
+.list-your-car
+.body-list
+.list-content
+#accordion
+.license
+.choose-car
+.col-md-3
+.form-group
+.form-control,
+body
+.list-your-car
+.body-list
+.list-content
+#accordion
+.license
+.choose-car
+.col-md-5
+.form-group
+.form-control {
+    border: 0px;
+}
+
+body
+.list-your-car
+.body-list
+.list-content
+#accordion
+.license
+.choose-car
+.col-md-3
+.form-group
+.form-control:focus,
+body
+.list-your-car
+.body-list
+.list-content
+#accordion
+.license
+.choose-car
+.col-md-5
+.form-group
+.form-control:focus {
+    box-shadow: 0 0 0 0 rgba(0, 123, 255, 0);
+}
+
+
+body
+.list-your-car
+.body-list
+.list-content
+#accordion
+.license
+.choose-car
+.col-md-4
+.form-group {
+    padding-top: 15px;
+    margin-bottom: 10px;
+}
+
+body
+.list-your-car
+.body-list
+.list-content
+#accordion
+.license
+.choose-car
+.col-md-4
+.form-group
+input {
+    border: 0;
+}
+
+body
+.list-your-car
+.body-list
+.list-content
+#accordion
+.license
+.choose-car
+.col-md-4
+.form-group
+input:focus {
+    box-shadow: 0 0 0 0 rgba(0, 123, 255, 0);
+}
+
+body .list-your-car .body-list .list-content #accordion .license .box-issuance {
+    width: 50%;
+    margin-top: 15px;
+    border: 1px solid #d7dce3;
+    border-radius: 2px;
+    margin-left: 0;
+}
+
+body
+.list-your-car
+.body-list
+.list-content
+#accordion
+.license
+.box-issuance
+.col-md-12 {
+    padding-top: 10px;
+}
+
+body
+.list-your-car
+.body-list
+.list-content
+#accordion
+.license
+.box-issuance
+.col-md-12
+.row {
+    padding-bottom: 15px;
+    margin-top: 10px;
+}
+
+body
+.list-your-car
+.body-list
+.list-content
+#accordion
+.license
+.box-issuance
+.col-md-12
+.row
+.col-md-6
+input {
+    border: 0;
+    width: 100%;
+}
+
+body
+.list-your-car
+.body-list
+.list-content
+#accordion
+.license
+.box-issuance
+.col-md-12
+.row
+.col-md-6
+input:focus {
+    box-shadow: 0 0 0 0 rgba(0, 123, 255, 0);
+}
+
+body .list-your-car .body-list .list-content #accordion .license .edit-name {
+    margin-top: 15px;
+    border: 1px solid #d7dce3;
+    border-radius: 2px;
+    width: 100%;
+    margin-left: 0;
+    padding-bottom: 10px !important;
+    padding-top: 10px !important;
+}
+
+body
+.list-your-car
+.body-list
+.list-content
+#accordion
+.license
+.edit-name
+.edit-nameboder {
+    border-right: 1px solid #d7dce3;
+}
+
+body
+.list-your-car
+.body-list
+.list-content
+#accordion
+.license
+.edit-name
+.col-md-4
+input {
+    border: 0px;
+}
+
+body
+.list-your-car
+.body-list
+.list-content
+#accordion
+.license
+.box-dateofbirth {
+    width: 70%;
+    margin-top: 15px;
+    border: 1px solid #d7dce3;
+    border-radius: 2px;
+    margin-left: 0;
+}
+
+body
+.list-your-car
+.body-list
+.list-content
+#accordion
+.license
+.box-dateofbirth
+.col-md-12 {
+    padding-top: 10px;
+}
+
+body
+.list-your-car
+.body-list
+.list-content
+#accordion
+.license
+.box-dateofbirth
+.col-md-12
+.row {
+    padding-bottom: 15px;
+    margin-top: 10px;
+}
+
+body
+.list-your-car
+.body-list
+.list-content
+#accordion
+.license
+.box-dateofbirth
+.col-md-12
+.row
+.col-md-4
+input {
+    border: 0;
+    width: 100%;
+}
+
+body
+.list-your-car
+.body-list
+.list-content
+#accordion
+.license
+.box-dateofbirth
+.col-md-12
+.row
+.col-md-4
+input:focus {
+    box-shadow: 0 0 0 0 rgba(0, 123, 255, 0);
+}
+
+body
+.list-your-car
+.body-list
+.list-content
+#accordion
+.Car-availability
+.card-body
+.text-small {
+    font-size: 16px;
+    color: #767676;
+    margin-top: -15px;
+}
+
+body
+.list-your-car
+.body-list
+.list-content
+#accordion
+.Car-availability
+.card-body
+.selectnotice {
+    width: 40%;
+    margin-top: 15px;
+}
+
+body
+.list-your-car
+.body-list
+.list-content
+#accordion
+.Car-availability
+.card-body
+.selectnotice
+.custom-select {
+    height: 55px;
+}
+
+body
+.list-your-car
+.body-list
+.list-content
+#accordion
+.Car-detail
+.card-body
+.form-textt {
+    width: 35%;
+}
+
+body
+.list-your-car
+.body-list
+.list-content
+#accordion
+.Car-detail
+.card-body
+.text-small {
+    color: #767676;
+}
+
+
+body
+.list-your-car
+.body-list
+.list-content
+#accordion
+.Car-detail
+.card-body
+.features {
+    widows: 80%;
+}
+
+body .Cardetail {
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 3%;
+}
+
+body .Cardetail .Cardetail-left .input-group .custom-select {
+    border: 1px solid #ced4da00;
+    border-bottom: 1px solid #ced4da;
+    font-size: 24px;
+    border-radius: 0;
+}
+
+body .Cardetail .Cardetail-left .boxselect-car {
+    width: 100%;
+    border-bottom: 1px solid #ced4da;
+    font-size: 24px;
+}
+
+body .Cardetail .Cardetail-left .infor-car {
+    background: #f6f6f6;
+    text-align: center;
+    padding: 15px 0;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+body .Cardetail .Cardetail-left .img-car {
+    text-align: center;
+    padding: 15px 0;
+}
+
+body
+.Cardetail
+.Cardetail-right
+#accordion
+.card
+.card-header
+span
+.button-cong {
+    float: right;
+}
+
+body
+.Cardetail
+.Cardetail-right
+#accordion
+.card
+.collapse
+.card-body
+.date-css {
+    margin-top: 15px;
+    width: 51%;
+    padding: 10px;
+    border-radius: 2px;
+    border: 1px solid #ff5a00;
+    display: none;
+    color: #60666d;
+}
+
+body .Cardetail .Cardetail-right #accordion .license .choose-car {
+    margin-top: 15px;
+    border: 1px solid #d7dce3;
+    border-radius: 2px;
+    width: 100%;
+    margin: auto;
+}
+
+body .Cardetail .Cardetail-right #accordion .license .choose-car .col-md-3,
+body .Cardetail .Cardetail-right #accordion .license .choose-car .col-md-5,
+body .Cardetail .Cardetail-right #accordion .license .choose-car .col-md-4 {
+    border-right: 1px solid #d7dce3;
+}
+
+body
+.Cardetail
+.Cardetail-right
+#accordion
+.license
+.choose-car
+.col-md-3
+.form-group,
+body
+.Cardetail
+.Cardetail-right
+#accordion
+.license
+.choose-car
+.col-md-5
+.form-group,
+body
+.Cardetail
+.Cardetail-right
+#accordion
+.license
+.choose-car
+.col-md-4
+.form-group {
+    padding-top: 15px;
+    margin-bottom: 10px;
+}
+
+body
+.Cardetail
+.Cardetail-right
+#accordion
+.license
+.choose-car
+.col-md-3
+.form-group
+.txt-title,
+body
+.Cardetail
+.Cardetail-right
+#accordion
+.license
+.choose-car
+.col-md-5
+.form-group
+.txt-title,
+body
+.Cardetail
+.Cardetail-right
+#accordion
+.license
+.choose-car
+.col-md-4
+.form-group
+.txt-title {
+    font-size: 16px;
+}
+
+body
+.Cardetail
+.Cardetail-right
+#accordion
+.license
+.choose-car
+.col-md-3
+.form-group
+#country,
+body
+.Cardetail
+.Cardetail-right
+#accordion
+.license
+.choose-car
+.col-md-5
+.form-group
+#country,
+body
+.Cardetail
+.Cardetail-right
+#accordion
+.license
+.choose-car
+.col-md-4
+.form-group
+#country {
+    width: 100%;
+}
+
+body
+.Cardetail
+.Cardetail-right
+#accordion
+.license
+.choose-car
+.col-md-3
+.form-group
+.form-control,
+body
+.Cardetail
+.Cardetail-right
+#accordion
+.license
+.choose-car
+.col-md-5
+.form-group
+.form-control,
+body
+.Cardetail
+.Cardetail-right
+#accordion
+.license
+.choose-car
+.col-md-4
+.form-group
+.form-control {
+    border: 0px;
+}
+
+body
+.Cardetail
+.Cardetail-right
+#accordion
+.license
+.choose-car
+.col-md-3
+.form-group
+.form-control:focus,
+body
+.Cardetail
+.Cardetail-right
+#accordion
+.license
+.choose-car
+.col-md-5
+.form-group
+.form-control:focus,
+body
+.Cardetail
+.Cardetail-right
+#accordion
+.license
+.choose-car
+.col-md-4
+.form-group
+.form-control:focus {
+    box-shadow: 0 0 0 0 rgba(0, 123, 255, 0);
+}
+
+body .Cardetail .Cardetail-right #accordion .license .choose-car .col-md-4 {
+    border-right: 0;
+}
+
+body
+.Cardetail
+.Cardetail-right
+#accordion
+.license
+.choose-car
+.col-md-4
+.form-group {
+    padding-top: 15px;
+    margin-bottom: 10px;
+}
+
+body
+.Cardetail
+.Cardetail-right
+#accordion
+.license
+.choose-car
+.col-md-4
+.form-group
+input {
+    border: 0;
+}
+
+body
+.Cardetail
+.Cardetail-right
+#accordion
+.license
+.choose-car
+.col-md-4
+.form-group
+input:focus {
+    box-shadow: 0 0 0 0 rgba(0, 123, 255, 0);
+}
+
+body .Cardetail .Cardetail-right #accordion .license .box-issuance {
+    width: 40%;
+    margin-top: 15px;
+    border: 1px solid #d7dce3;
+    border-radius: 2px;
+    margin-left: 0;
+}
+
+body .Cardetail .Cardetail-right #accordion .license .box-issuance .col-md-12 {
+    padding-top: 10px;
+}
+
+body
+.Cardetail
+.Cardetail-right
+#accordion
+.license
+.box-issuance
+.col-md-12
+.row {
+    padding-bottom: 15px;
+    margin-top: 10px;
+}
+
+body
+.Cardetail
+.Cardetail-right
+#accordion
+.license
+.box-issuance
+.col-md-12
+.row
+.col-md-6
+input {
+    border: 0;
+    width: 100%;
+}
+
+body
+.Cardetail
+.Cardetail-right
+#accordion
+.license
+.box-issuance
+.col-md-12
+.row
+.col-md-6
+input:focus {
+    box-shadow: 0 0 0 0 rgba(0, 123, 255, 0);
+}
+
+body .Cardetail .Cardetail-right #accordion .license .edit-name {
+    margin-top: 15px;
+    border: 1px solid #d7dce3;
+    border-radius: 2px;
+    width: 100%;
+    margin-left: 0;
+}
+
+body
+.Cardetail
+.Cardetail-right
+#accordion
+.license
+.edit-name
+.edit-nameboder {
+    border-right: 1px solid #d7dce3;
+}
+
+body
+.Cardetail
+.Cardetail-right
+#accordion
+.license
+.edit-name
+.edit-nameboder
+.form-group
+input {
+    width: 100%;
+}
+
+body
+.Cardetail
+.Cardetail-right
+#accordion
+.license
+.edit-name
+.col-md-4
+input {
+    border: 0px;
+    width: 100%;
+}
+
+body .Cardetail .Cardetail-right #accordion .license .box-dateofbirth {
+    width: 60%;
+    margin-top: 15px;
+    border: 1px solid #d7dce3;
+    border-radius: 2px;
+    margin-left: 0;
+}
+
+body
+.Cardetail
+.Cardetail-right
+#accordion
+.license
+.box-dateofbirth
+.col-md-12 {
+    padding-top: 10px;
+}
+
+body
+.Cardetail
+.Cardetail-right
+#accordion
+.license
+.box-dateofbirth
+.col-md-12
+.row {
+    padding-bottom: 15px;
+    margin-top: 10px;
+}
+
+body
+.Cardetail
+.Cardetail-right
+#accordion
+.license
+.box-dateofbirth
+.col-md-12
+.row
+.col-md-4
+input {
+    border: 0;
+    width: 100%;
+}
+
+body
+.Cardetail
+.Cardetail-right
+#accordion
+.license
+.box-dateofbirth
+.col-md-12
+.row
+.col-md-4
+input:focus {
+    box-shadow: 0 0 0 0 rgba(0, 123, 255, 0);
+}
+
+body
+.Cardetail
+.Cardetail-right
+#accordion
+.car-detail
+.collapse
+.card-body
+div {
+    margin-bottom: 10px;
+}
+
+body
+.Cardetail
+.Cardetail-right
+#accordion
+.car-detail
+.collapse
+.card-body
+div
+span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+body
+.Cardetail
+.Cardetail-right
+#accordion
+.car-detail
+.collapse
+.card-body
+div
+span
+ul
+li {
+    list-style: none;
+}
+
+body
+.Cardetail
+.Cardetail-right
+#accordion
+.car-detail
+.collapse
+.card-body
+div
+span
+ul
+li::before {
+    content: "\2022";
+    color: #ff5a00;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.lightpick__day.is-start-date,
+.lightpick__day.is-end-date,
+.lightpick__day.is-start-date:hover,
+.lightpick__day.is-end-date:hover {
+    background-size: auto;
+    background-position: center;
+    color: #ff5a00 !important;
+    font-weight: bold;
+}
+
+.lightpick__day.is-start-date.is-in-range,
+.lightpick__day.is-end-date.is-in-range.is-flipped {
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0 !important;
+    background-image: none;
+}
+
+.lightpick__day.is-end-date.is-in-range,
+.lightpick__day.is-start-date.is-in-range.is-flipped {
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+
+.lightpick__day.is-in-range {
+    background-color: #ff59000e !important;
+}
+
+@media (max-width: 767.98px) {
+    .card-item-a {
+        margin-left: 8px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    body .list-your-car .list-bg .bg-text {
+        max-width: 592px;
+        font-size: 27px;
+        min-height: 198px;
+    }
+
+    .list-bg {
+        min-height: 198px !important;
+    }
+
+    body .list-your-car .body-list .list-content {
+        margin: auto;
+    }
+
+    .body-list{
+        margin-top: 20px !important;
+    }
+
+    body .Cardetail .row {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .Cardetail .row .Cardetail-left .img-big img {
+        width: 100%;
+    }
+
+    body .Cardetail .row .Cardetail-left .infor-car {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    body .Cardetail .row .Cardetail-left .infor-car .col-md-4 img {
+        width: 100%;
+    }
+
+    body .Cardetail .row .Cardetail-left .img-car .col-md-4 img {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    body .list-your-car .list-bg {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        min-height: 200px;
+    }
+
+    body .list-your-car .list-bg .bg-text {
+        max-width: 592px;
+        font-size: 27px;
+    }
+
+    body .list-your-car .body-list .list-content {
+        margin: auto;
+        width: 80%;
+    }
+
+    body
+    .list-your-car
+    .body-list
+    .list-content
+    #accordion
+    .card
+    .card-header
+    h4 {
+        font-size: 20px;
+    }
+
+    body
+    .list-your-car
+    .body-list
+    .list-content
+    #accordion
+    .card
+    .card-header
+    h4
+    .add-button
+    img {
+        width: 22px;
+    }
+
+    body
+    .list-your-car
+    .body-list
+    .list-content
+    #accordion
+    .card
+    .collapse
+    .card-body
+    .col-md-2
+    img {
+        width: 100%;
+    }
+
+    body
+    .list-your-car
+    .body-list
+    .list-content
+    #accordion
+    .card
+    .collapse
+    .profile-photo
+    .col-md-3
+    .btn-fb {
+        margin-top: 15px;
+        font-size: 12px;
+    }
+
+    body
+    .list-your-car
+    .body-list
+    .list-content
+    #accordion
+    .card
+    .collapse
+    .profile-photo
+    .col-md-3
+    .btn-upload {
+        margin-top: 15px;
+        font-size: 12px;
+    }
+
+    body
+    .list-your-car
+    .body-list
+    .list-content
+    #accordion
+    .card
+    .collapse
+    .profile-photo
+    .col-md-1 {
+        margin-top: 25px !important;
+    }
+
+    body
+    .list-your-car
+    .body-list
+    .list-content
+    #accordion
+    .mobile-num
+    .card-body
+    .number
+    .col-md-3
+    img {
+        width: 100%;
+        padding-top: 10px;
+    }
+
+    body .Cardetail .row {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    body .Cardetail .row .Cardetail-left .img-big img {
+        width: 100%;
+    }
+
+    body .Cardetail .row .Cardetail-left .infor-car {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    body .Cardetail .row .Cardetail-left .infor-car .col-md-4 img {
+        width: 100%;
+    }
+
+    body .Cardetail .row .Cardetail-left .img-car .col-md-4 img {
+        width: 100%;
+    }
+
+    body .Cardetail .Cardetail-right #accordion .license .box-issuance,
+    body .Cardetail .Cardetail-right #accordion .license .box-dateofbirth {
+        width: 100%;
+    }
+
+    body
+    .Cardetail
+    .Cardetail-right
+    #accordion
+    .card
+    .collapse
+    .card-body
+    .row
+    .col-md-4
+    img {
+        width: 100%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    body .list-your-car .list-bg {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        min-height: 200px;
+    }
+
+    body .list-your-car .list-bg .bg-text {
+        max-width: 592px;
+        font-size: 27px;
+        padding-left: 5%;
+    }
+
+    body .list-your-car .body-list .list-content {
+        margin: auto;
+        width: 80%;
+    }
+
+    body
+    .list-your-car
+    .body-list
+    .list-content
+    #accordion
+    .card
+    .card-header
+    h4 {
+        font-size: 20px;
+    }
+
+    body
+    .list-your-car
+    .body-list
+    .list-content
+    #accordion
+    .card
+    .card-header
+    h4
+    .add-button
+    img {
+        width: 22px;
+    }
+
+    body
+    .list-your-car
+    .body-list
+    .list-content
+    #accordion
+    .card
+    .collapse
+    .card-body
+    .col-md-2
+    img {
+        width: 40%;
+    }
+
+    body
+    .list-your-car
+    .body-list
+    .list-content
+    #accordion
+    .card
+    .collapse
+    .profile-photo
+    .col-md-3
+    .btn-fb {
+        margin-top: 15px;
+        font-size: 12px;
+    }
+
+    body
+    .list-your-car
+    .body-list
+    .list-content
+    #accordion
+    .card
+    .collapse
+    .profile-photo
+    .col-md-3
+    .btn-upload {
+        margin-top: 15px;
+        font-size: 12px;
+    }
+
+    body
+    .list-your-car
+    .body-list
+    .list-content
+    #accordion
+    .card
+    .collapse
+    .profile-photo
+    .col-md-1 {
+        text-align: left !important;
+        margin-top: 25px !important;
+    }
+
+    body
+    .list-your-car
+    .body-list
+    .list-content
+    #accordion
+    .mobile-num
+    .card-body
+    .number {
+        width: 100%;
+        height: auto;
+    }
+
+    body
+    .list-your-car
+    .body-list
+    .list-content
+    #accordion
+    .mobile-num
+    .card-body
+    .number
+    .col-md-3
+    img {
+        width: auto;
+        padding-top: 10px;
+    }
+
+    body .Cardetail .row {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    body .Cardetail .row .Cardetail-left .img-big img {
+        width: 100%;
+    }
+
+    body .Cardetail .row .Cardetail-left .infor-car {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    body .Cardetail .row .Cardetail-left .infor-car .col-md-4 img {
+        width: 100%;
+    }
+
+    body .Cardetail .row .Cardetail-left .img-car .col-md-4 img {
+        width: 100%;
+    }
+
+    body .Cardetail .Cardetail-right #accordion .license .box-issuance,
+    body .Cardetail .Cardetail-right #accordion .license .box-dateofbirth {
+        width: 100%;
+    }
+
+    body
+    .Cardetail
+    .Cardetail-right
+    #accordion
+    .card
+    .collapse
+    .card-body
+    .row
+    .col-md-4
+    img {
+        width: 100%;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 575.98px) {
+    body .list-your-car .list-bg {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        min-height: 200px;
+    }
+
+    body .list-your-car .list-bg .bg-text {
+        max-width: 592px;
+        font-size: 27px;
+        padding-left: 5%;
+    }
+
+    body .list-your-car .body-list .list-content {
+        margin: auto;
+        width: 90%;
+    }
+
+    body
+    .list-your-car
+    .body-list
+    .list-content
+    #accordion
+    .card
+    .card-header
+    h4 {
+        font-size: 20px;
+    }
+
+    body
+    .list-your-car
+    .body-list
+    .list-content
+    #accordion
+    .card
+    .card-header
+    h4
+    .add-button
+    img {
+        width: 22px;
+    }
+
+    body
+    .list-your-car
+    .body-list
+    .list-content
+    #accordion
+    .card
+    .collapse
+    .card-body
+    .col-md-2
+    img {
+        width: 40%;
+    }
+
+    body
+    .list-your-car
+    .body-list
+    .list-content
+    #accordion
+    .card
+    .collapse
+    .profile-photo
+    .col-md-3
+    .btn-fb {
+        margin-top: 15px;
+        font-size: 12px;
+    }
+
+    body
+    .list-your-car
+    .body-list
+    .list-content
+    #accordion
+    .card
+    .collapse
+    .profile-photo
+    .col-md-3
+    .btn-upload {
+        margin-top: 15px;
+        font-size: 12px;
+    }
+
+    body
+    .list-your-car
+    .body-list
+    .list-content
+    #accordion
+    .card
+    .collapse
+    .profile-photo
+    .col-md-1 {
+        text-align: left !important;
+        margin-top: 25px !important;
+    }
+
+    body
+    .list-your-car
+    .body-list
+    .list-content
+    #accordion
+    .card
+    .collapse
+    .boddy-inputaddess
+    .form-address {
+        width: 100%;
+    }
+
+    body
+    .list-your-car
+    .body-list
+    .list-content
+    #accordion
+    .card
+    .collapse
+    .boddy-inputaddess
+    .form-address
+    .vin
+    .choose-car
+    .col-md-3 {
+        border-right: 0px solid #d7dce3;
+        border-bottom: 1px solid #d7dce3;
+    }
+
+    body
+    .list-your-car
+    .body-list
+    .list-content
+    #accordion
+    .mobile-num
+    .card-body
+    .number {
+        width: 100%;
+        height: auto;
+    }
+
+    body
+    .list-your-car
+    .body-list
+    .list-content
+    #accordion
+    .mobile-num
+    .card-body
+    .number
+    .col-md-3
+    img {
+        width: auto;
+        padding-top: 10px;
+    }
+
+    body
+    .list-your-car
+    .body-list
+    .list-content
+    #accordion
+    .license
+    .box-issuance {
+        width: 100%;
+    }
+
+    body
+    .list-your-car
+    .body-list
+    .list-content
+    #accordion
+    .license
+    .choose-car
+    .col-md-5,
+    body
+    .list-your-car
+    .body-list
+    .list-content
+    #accordion
+    .license
+    .choose-car
+    .col-md-3 {
+        border-right: 0px solid #d7dce3;
+        border-bottom: 1px solid #d7dce3;
+    }
+
+    body
+    .list-your-car
+    .body-list
+    .list-content
+    #accordion
+    .license
+    .edit-name
+    .edit-nameboder {
+        border-right: 0px solid #d7dce3;
+        border-bottom: 1px solid #d7dce3;
+    }
+
+    body
+    .list-your-car
+    .body-list
+    .list-content
+    #accordion
+    .license
+    .box-dateofbirth {
+        border: 0px solid #d7dce3;
+    }
+
+    body
+    .list-your-car
+    .body-list
+    .list-content
+    #accordion
+    .Car-availability
+    .card-body
+    .selectnotice {
+        width: 100%;
+    }
+
+    body
+    .list-your-car
+    .body-list
+    .list-content
+    #accordion
+    .Car-detail
+    .card-body
+    .form-textt {
+        width: 100%;
+    }
+
+    body
+    .list-your-car
+    .body-list
+    .list-content
+    #accordion
+    .Car-detail
+    .card-body
+    .input-group-area {
+        width: 100%;
+    }
+
+    body .Cardetail .row {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    body .Cardetail .row .Cardetail-left .img-big img {
+        width: 100%;
+    }
+
+    body .Cardetail .row .Cardetail-left .infor-car {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    body .Cardetail .row .Cardetail-left .infor-car .col-md-4 img {
+        width: 100%;
+    }
+
+    body .Cardetail .row .Cardetail-left .img-car .col-md-4 img {
+        width: 100%;
+    }
+
+    body .Cardetail .Cardetail-right #accordion .license .box-issuance,
+    body .Cardetail .Cardetail-right #accordion .license .box-dateofbirth {
+        width: 100%;
+    }
+
+    body
+    .Cardetail
+    .Cardetail-right
+    #accordion
+    .card
+    .collapse
+    .card-body
+    .row
+    .col-md-4
+    img {
+        width: 100%;
+    }
+}
+
+.select-box {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    color: #60666d;
+}
+
+.select-box__current {
+    position: relative;
+    cursor: pointer;
+    outline: none;
+}
+
+.select-box__current:focus + .select-box__list {
+    opacity: 1;
+    animation-name: none;
+}
+
+.select-box__current:focus + .select-box__list .select-box__option {
+    cursor: pointer;
+}
+
+.select-box__current:focus .select-box__icon {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+.select-box__icon {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 20px;
+    opacity: 1;
+    transition: 0.2s ease;
+}
+
+.select-box__value {
+    display: flex;
+}
+
+.select-box__input {
+    display: none;
+}
+
+.select-box__input:checked + .select-box__input-text {
+    display: block;
+}
+
+.select-box__input-text {
+    display: none;
+    width: 100%;
+    margin: 0;
+    padding: 15px;
+    background-color: #fff;
+}
+
+.select-box__list {
+    position: absolute;
+    width: 100%;
+    padding: 0;
+    list-style: none;
+    opacity: 0;
+    animation-name: HideList;
+    animation-duration: 0.5s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: step-start;
+    background: #fff;
+}
+
+.select-box__option {
+    display: block;
+    padding: 15px;
+    background-color: #fff;
+}
+
+.select-box__option:hover,
+.select-box__option:focus {
+    color: #546c84;
+    background-color: #fbfbfb;
+}
+
+@keyframes HideList {
+    from {
+        transform: scaleY(1);
+    }
+    to {
+        transform: scaleY(0);
+    }
+}
+
+/* On mouse-over, add a grey background color */
+/* The container */
+.container-label {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 18px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container-label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    border: 1px solid #ff5a00;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container-label:hover input ~ .checkmark {
+    background-color: #fff;
+}
+
+/* When the radio button is checked, add a blue background */
+.container-label input:checked ~ .checkmark {
+    background-color: transparent;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container-label input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container-label .checkmark:after {
+    top: 1px;
+    left: 1px;
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    background: #ff5a00;
+}
+
+/* The container */
+.container-check {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 18px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container-check input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark-check {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container-check:hover input ~ .checkmark-check {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container-check input:checked ~ .checkmark-check {
+    background-color: #ff5a00;
+    border-radius: 2px;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark-check:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.container-check input:checked ~ .checkmark-check:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.container-check .checkmark-check:after {
+    left: 10px;
+    top: 4px;
+    width: 5px;
+    height: 15px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.container-upload {
+    max-width: 960px;
+    margin-top: 15px;
+}
+
+h1 {
+    font-size: 20px;
+    text-align: center;
+    margin: 20px 0 20px;
+}
+
+h1 small {
+    display: block;
+    font-size: 15px;
+    padding-top: 8px;
+    color: gray;
+}
+
+.avatar-upload {
+    position: relative;
+    max-width: 300px;
+}
+.imgUp{
+    text-align: center;
+}
+
+.avatar-upload .avatar-edit {
+    position: absolute;
+    right: 10px;
+    z-index: 1;
+    top: 6px;
+}
+
+.avatar-upload .avatar-edit input {
+    display: none;
+}
+
+.avatar-upload .avatar-edit input + label {
+    display: inline-block;
+    cursor: pointer;
+    font-weight: normal;
+    transition: all 0.2s ease-in-out;
+}
+
+.avatar-upload .avatar-edit input + label:hover {
+    background: #f1f1f1;
+    border-color: #d6d6d6;
+}
+
+.avatar-upload .avatar-edit input + label:after {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: auto;
+}
+
+.avatar-upload .avatar-preview {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    border: 2px dashed #ff5a00;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
+.avatar-upload .avatar-preview > div {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.body-list .list-content #accordion .card1 .form-control, .body-list .list-content #accordion .card4 .form-control {
+    padding: 0;
+}
+
+.body-list .list-content #accordion .card1 .card-header {
+    padding: 15px 0;
+    background: transparent;
+    border-bottom: 0px solid rgba(0, 0, 0, 0.125);
+    border-top: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0;
+}
+
+.body-list .list-content #accordion .card1 .card-header h4 .add-button {
+    float: right;
+    cursor: pointer;
+    padding: 0;
+}
+
+.body-list .list-content #accordion .card1 #collapseOne .boddy-inputaddess .form-address .form-address {
+    width: 50%;
+}
+
+.body-list .list-content #accordion .card1 #collapseOne .boddy-inputaddess .form-address .form-address label {
+    font-size: 18px;
+    color: #484848;
+    font-family: SFPro-Medium !important;
+}
+
+.body-list .list-content #accordion .card1 #collapseOne .boddy-inputaddess .form-address .form-address input {
+    height: 50px;
+}
+
+.body-list .list-content #accordion .card1 #collapseOne .boddy-inputaddess .form-address .vin .vin-tit {
+    font-size: 18px;
+    color: #484848;
+    font-family: SFPro-Medium !important;
+}
+
+.body-list .list-content #accordion .card1 #collapseOne .boddy-inputaddess .form-address .vin .btn-save {
+    background-color: #ea2557;
+    color: #fff;
+    height: 44px;
+    margin-bottom: 1%;
+}
+
+.body-list .list-content #accordion .card1 #collapseOne .boddy-inputaddess .form-address .vin .vin-text {
+    color: #ea2557;
+}
+
+.body-list .list-content #accordion .card1 #collapseOne .boddy-inputaddess .form-address .vin .choose-car {
+    margin: auto;
+    border: 1px solid #ced4da;
+    border-radius: 2px;
+}
+
+.list-your-car .body-list .list-content #accordion .license .box-issuance .col-md-12 {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+}
+
+body .list-your-car .body-list .list-content #accordion .license .box-dateofbirth .col-md-12 {
+    padding-bottom: 10px;
+}
+
+.body-list .list-content #accordion .card1 #collapseOne .boddy-inputaddess .form-address .vin .choose-car .choose-car-col {
+    border-right: 1px solid #ced4da;
+}
+
+.body-list .list-content #accordion .card1 #collapseOne .boddy-inputaddess .form-address .vin .choose-car .col-md-3 .form-group .form-control {
+    border: 0;
+}
+
+.list-your-car .body-list .list-content #accordion .license .choose-car .col-md-5 .form-group {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    margin-bottom: 0 !important;
+}
+
+.body-list .list-content #accordion .card1 #collapseOne .boddy-inputaddess .form-address .vin .tranmission p {
+    font-size: 18px;
+    color: #484848;
+    font-family: SFPro-Medium !important;
+}
+
+.body-list .list-content #accordion .card1 #collapseOne .boddy-inputaddess .form-address .vin .tranmission .choose-trim-style {
+    border: 1px solid #ced4da;
+    border-radius: 2px;
+    width: 80%;
+    margin-left: 0;
+    margin-bottom: 5%;
+}
+
+.body-list .list-content #accordion .card1 #collapseOne .boddy-inputaddess .form-address .vin .tranmission .choose-trim-style .choose-trim-style-left {
+    border-right: 1px solid #ced4da;
+}
+
+.body-list .list-content #accordion .card1 #collapseOne .boddy-inputaddess .form-address .vin .tranmission .choose-trim-style .col-md-6 .form-group .form-control {
+    border: 0;
+}
+
+.body-list .list-content #accordion .card2 .card-header {
+    border-radius: 0;
+    padding: 15px 0;
+    background: transparent;
+    border-bottom: 0px solid rgba(0, 0, 0, 0.125);
+    border-top: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.body-list .list-content #accordion .card2 .card-header h4 .add-button {
+    float: right;
+    cursor: pointer;
+    padding: 0;
+}
+
+.body-list .list-content #accordion .card2 #collapseTwo .card-body .profile-photo .col-md-3 {
+    margin-top: 3%;
+}
+
+.body-list .list-content #accordion .card2 #collapseTwo .card-body .profile-photo .col-md-3 .btn-fb {
+    background: #385899;
+    height: auto;
+    color: #fff;
+}
+
+.body-list .list-content #accordion .card2 #collapseTwo .card-body .profile-photo .col-md-3 .btn-upload {
+    background: #ff590079;
+    height: auto;
+    color: #484848;
+    margin-top: 5%;
+}
+
+.body-list .list-content #accordion .card2 #collapseTwo .card-body .profile-photo .col-md-3 .btn-upload:hover {
+    background: #ff5a00;
+    color: #fff;
+}
+
+.body-list .list-content #accordion .card3 .card-header {
+    border-radius: 0;
+    padding: 15px 0;
+    background: transparent;
+    border-bottom: 0px solid rgba(0, 0, 0, 0.125);
+    border-top: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.body-list .list-content #accordion .card3 .card-header h4 .add-button {
+    float: right;
+    cursor: pointer;
+    padding: 0;
+}
+
+.body-list .list-content #accordion .card3 #collapseThree .card-body .form-control {
+    width: 50%;
+}
+
+.body-list .list-content #accordion .card4 .card-header {
+    border-radius: 0;
+    padding: 15px 0;
+    background: transparent;
+    border-bottom: 0px solid rgba(0, 0, 0, 0.125);
+    border-top: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.body-list .list-content #accordion .card4 .card-header {
+    border-radius: 0;
+    padding: 15px 0;
+    background: transparent;
+    border-bottom: 0px solid rgba(0, 0, 0, 0.125);
+    border-top: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.body-list .list-content #accordion .card4 .card-header h4 .add-button {
+    float: right;
+    cursor: pointer;
+    padding: 0;
+}
+
+.body-list .list-content #accordion .card4 #collapseFor .card-body input {
+    width: 100%;
+    padding: 0;
+}
+
+.body-list .list-content #accordion .card5 .card-header {
+    border-radius: 0;
+    padding: 15px 0;
+    background: transparent;
+    border-bottom: 0px solid rgba(0, 0, 0, 0.125);
+    border-top: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.body-list .list-content #accordion .card5 .card-header h4 .add-button {
+    float: right;
+    cursor: pointer;
+    padding: 0;
+}
+
+.body-list .list-content #accordion .card5 #collapseFive .card-body input {
+    width: 100%;
+}
+
+.body-list .list-content #accordion .card6 .card-header {
+    border-radius: 0;
+    padding: 15px 0;
+    background: transparent;
+    border-bottom: 0px solid rgba(0, 0, 0, 0.125);
+    border-top: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.body-list .list-content #accordion .card6 .card-header h4 .add-button {
+    float: right;
+    cursor: pointer;
+    padding: 0;
+}
+
+.body-list .list-content #accordion .card6 #collapseSix .card-body .form-textt {
+    width: 50%;
+}
+
+.body-list .list-content #accordion .card7 .card-header {
+    border-radius: 0;
+    padding: 15px 0;
+    background: transparent;
+    border-bottom: 0px solid rgba(0, 0, 0, 0.125);
+    border-top: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.body-list .list-content #accordion .card7 .card-header h4 .add-button {
+    float: right;
+    cursor: pointer;
+    padding: 0;
+}
+
+.body-list .list-content #accordion .card7 #collapseSeven .card-body .form-textt {
+    width: 50%;
+}
+
+.body-list .list-content #accordion .card8 {
+    border-radius: 0;
+}
+
+.imagePreview {
+    width: 100%;
+    height: 180px;
+    background-position: center center;
+    /* background: url(../../../../cliquecities.com/assets/no-image-e3699ae23f866f6cbdf8ba2443ee5c4e.jpg); */
+    background: url('../../../img/no-image-e3699ae23f866f6cbdf8ba2443ee5c4e.jpg');
+    background-color: #fff;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: inline-block;
+    box-shadow: 0px 0 6px 2px rgba(0, 0, 0, 0.2);
+}
+
+.btn-upload-car {
+    display: inline-block;
+    border-radius: 0.25rem;
+    box-shadow: 0px 4px 6px 2px rgba(0, 0, 0, 0.2);
+    margin-top: 5px !important;
+    background: #ff5a00 !important;
+    color: #fff !important;
+}
+
+.btn-upload-car:hover {
+    cursor: pointer;
+}
+
+.btn-upload-car input {
+    display: none;
+}
+
+.imgUp {
+    margin-bottom: 15px;
+}
+
+.imgUp i {
+    padding-top: 6px;
+}
+
+.del {
+    position: absolute;
+    top: 0px;
+    right: 15px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    background-color: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+}
+
+.delPhoto {
+    position: absolute;
+    top: 0px;
+    right: 15px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    background-color: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+}
+
+#confirm {
+    background-color: #f8f9fa;
+    border: 1px solid #aaa;
+    position: fixed;
+    width: 250px;
+    left: 50%;
+    margin-left: -100px;
+    padding: 6px 8px 8px;
+    box-sizing: border-box;
+    text-align: center;
+ }
+ #confirm button {
+    background-color: #fd7e14;
+    display: inline-block;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 5px;
+    text-align: center;
+    width: 80px;
+    cursor: pointer;
+ }
+ #confirm .message {
+    text-align: left;
+ }
+
+.imgAdd {
+    padding-top: 6px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ea2557;
+    color: #fff;
+    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    line-height: 30px;
+    margin-top: 0px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.img-big img {
+    width: 100%;
+}
+
+.mt-10 {
+    margin-top: 34px;
+    margin-bottom: 0px;
+}
+
+.page-wrapper-box-content {
+    width: 100%;
+}
+
+/*# sourceMappingURL=list-car.css.map */

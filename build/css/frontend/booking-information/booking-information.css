@@ -1,0 +1,656 @@
+.booking-information {
+    background-color: white;
+
+
+}
+/* 
+.booking-information .bread-crumb {
+    border-bottom: 1px solid #d7dce3 !important;
+} */
+
+.booking-information .title {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.booking-information .mx-auto .col-md-9 {
+    padding-left: 0;
+}
+
+.booking-information .mx-auto .col-md-9 .col-md-12 {
+    padding-left: 0;
+}
+
+.booking-information .mx-auto .col-md-9 .col-md-5 {
+    padding-left: 0;
+}
+
+.booking-information .mx-auto .col-md-9 .col-md-5 .input_group .m-input {
+    width: 67%;
+}
+
+.booking-information .mx-auto .col-md-9 .col-md-5 #zipcode {
+    width: 100px;
+}
+
+.booking-information .mx-auto .avatar {
+    vertical-align: middle;
+    width: 63px;
+    height: 63px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.booking-information .mx-auto .name-user {
+    font-size: 20px;
+    font-weight: bold;
+    color: #484848;
+}
+
+.booking-information .mx-auto .title-detail {
+    font-size: 23px;
+    margin-bottom: 14px;
+    font-weight: bold;
+}
+
+.booking-information .mx-auto .box-drive-license {
+    border: 1px solid #d7dce3;
+    height: 42px;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.booking-information .mx-auto .box-current-address {
+    border: 1px solid #d7dce3;
+    height: 42px;
+    padding: 8px;
+    border-radius: 5px;
+    width: 29%;
+    margin-bottom: 15px;
+}
+
+.booking-information .mx-auto .box-current-address-zipcode {
+    border: 1px solid #d7dce3;
+    height: 42px;
+    width: 10%;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.booking-information .button-confirm {
+    text-align: center;
+    border: none;
+    height: 37px;
+    line-height: 37px;
+    width: 120px;
+    padding: 13px 10px;
+    border-radius: 5px;
+    background-color: #ff5a00;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.booking-information .button-reject {
+    text-align: center;
+    cursor: pointer;
+    padding: 13px 10px;
+    height: 37px;
+    line-height: 37px;
+    border: 1px solid #d7dce3;
+    width: 120px;
+    background-color: #a1aab3b8;
+    border-radius: 5px;
+}
+
+.booking-information .booking {
+    -ms-flex: 0 0 21.666667%;
+    flex: 0 0 21.666667%;
+    max-width: 21.666667%;
+}
+
+.booking-information .booking .car {
+    border-bottom: 1px solid rgba(156, 156, 156, 0.52);
+    padding: 10px;
+}
+
+.booking-information .booking .range-date {
+    border-bottom: 1px solid rgba(156, 156, 156, 0.52);
+    padding: 10px;
+}
+
+.booking-information .booking .meeting-location {
+    padding: 10px;
+}
+
+.booking-information .booking .meeting-location .price {
+    margin-bottom: 10px;
+}
+
+.booking-information .booking .meeting-location .discount {
+    margin-bottom: 10px;
+    font-size: 11px;
+    color: #9c9c9c;
+}
+
+.booking-information .booking .meeting-location .discount .text-right {
+    text-decoration: line-through;
+}
+
+.booking-information .booking .meeting-location .fee-box {
+    background-color: #ff5a00;
+    color: #ffffff;
+    border-radius: 3px;
+    padding: 10px;
+}
+
+.booking-information .booking .car .name-car {
+    font-size: 17px;
+}
+
+.booking-information hr {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.title-input {
+    font-size: 16px;
+    color: #484848;
+}
+
+.fee-box .price {
+    font-size: 16px;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.fee-box .price .col-md-6 {
+    padding: 0;
+}
+
+.booking-information .mx-auto .row {
+    width: 100%;
+    /* margin: 0; */
+}
+
+.booking-information .mx-auto .row .col-md-9 .row .col-md-4 {
+    padding-left: 0;
+}
+
+.booking-information .mx-auto .row .col-md-9 .row .col-md-4 .box-drive-license span {
+    font-size: 14px;
+}
+
+.booking-information .mx-auto .row .col-md-9 .row .col-md-4 .box-drive-license span img {
+    width: 10px;
+}
+
+.booking-information .mx-auto .row .col-md-9 .row .col-md-3 {
+    margin-left: 5px;
+    max-width: 30%;
+    flex: auto;
+}
+
+.booking-information .mx-auto .row .col-md-9 .row .col-md-3 .box-drive-license span {
+    font-size: 14px;
+}
+
+.booking-information .mx-auto .row .booking .range-date div .date-trip {
+    font-size: 15px;
+}
+
+.booking-information .mx-auto .row .booking .meeting-location div .row .col-md-7,
+.booking-information .mx-auto .row .booking .meeting-location div .row .col-md-5 {
+    font-size: 15px;
+    padding: 0;
+}
+
+.booking-information .mx-auto .box-current-address {
+    width: 60%;
+}
+
+.booking-information .mx-auto .box-current-address span {
+    font-size: 14px;
+}
+
+.booking-information .mx-auto .box-current-address span img {
+    width: 10px;
+}
+
+.booking-information .button-confirm,
+.booking-information .button-reject {
+    font-size: 15px;
+}
+
+/*============================= Icon inside input ==========================*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .title-input {
+        font-size: 16px;
+        color: #484848;
+    }
+
+    .fee-box .price {
+        font-size: 16px;
+        width: 100%;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+    .fee-box .price .col-md-6 {
+        padding: 0;
+    }
+
+    .booking-information .mx-auto .row {
+        width: 100%;
+        margin: 0;
+    }
+
+    .booking-information .mx-auto .row .col-md-9 .row .col-md-4 .box-drive-license span {
+        font-size: 14px;
+    }
+
+    .booking-information .mx-auto .row .col-md-9 .row .col-md-4 .box-drive-license span img {
+        width: 10px;
+    }
+
+    .booking-information .mx-auto .row .col-md-9 .row .col-md-3 {
+        margin-left: 5px;
+        max-width: 30%;
+        flex: auto;
+    }
+
+    .booking-information .mx-auto .row .col-md-9 .row .col-md-3 .box-drive-license span {
+        font-size: 14px;
+    }
+
+    .booking-information .mx-auto .row .booking .range-date div .date-trip {
+        font-size: 15px;
+    }
+
+    .booking-information .mx-auto .row .booking .meeting-location div .row .col-md-7,
+    .booking-information .mx-auto .row .booking .meeting-location div .row .col-md-5 {
+        font-size: 15px;
+        padding: 0;
+    }
+
+    .booking-information .mx-auto .box-current-address {
+        width: 60%;
+    }
+
+    .booking-information .mx-auto .box-current-address span {
+        font-size: 14px;
+    }
+
+    .booking-information .mx-auto .box-current-address span img {
+        width: 10px;
+    }
+
+    .booking-information .button-confirm,
+    .booking-information .button-reject {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .title-input {
+        font-size: 16px;
+        color: #484848;
+    }
+
+    .fee-box .price {
+        font-size: 16px;
+        width: 100%;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+    .fee-box .price .col-md-6 {
+        padding: 0;
+    }
+
+    .booking-information .mx-auto .row {
+        width: 100%;
+        margin: 0;
+    }
+
+    .booking-information .mx-auto .row .col-md-9 .title-detail {
+        font-size: 16px;
+    }
+
+    .booking-information .mx-auto .row .col-md-9 .title {
+        font-size: 16px;
+    }
+
+    .booking-information .mx-auto .row .col-md-9 .row .col-md-4 {
+        max-width: 50%;
+        flex: auto;
+    }
+
+    .booking-information .mx-auto .row .col-md-9 .row .col-md-4 .box-drive-license span {
+        font-size: 14px;
+    }
+
+    .booking-information .mx-auto .row .col-md-9 .row .col-md-4 .box-drive-license span img {
+        width: 10px;
+    }
+
+    .booking-information .mx-auto .row .col-md-9 .row .col-md-3 {
+        margin-left: 5px;
+        max-width: 40%;
+        flex: auto;
+    }
+
+    .booking-information .mx-auto .row .col-md-9 .row .col-md-3 .box-drive-license span {
+        font-size: 14px;
+    }
+
+    .booking-information .mx-auto .row .booking .range-date div .date-trip {
+        font-size: 15px;
+    }
+
+    .booking-information .mx-auto .row .booking .meeting-location div .meet-cl {
+        font-size: 13px;
+    }
+
+    .booking-information .mx-auto .row .booking .meeting-location div .row .col-md-7,
+    .booking-information .mx-auto .row .booking .meeting-location div .row .col-md-5 {
+        font-size: 10px;
+        padding: 0;
+    }
+
+    .booking-information .mx-auto .row .booking .meeting-location .fee-box .price .col-md-6 {
+        font-size: 10px;
+    }
+
+    .booking-information .mx-auto .box-current-address {
+        width: 60%;
+    }
+
+    .booking-information .mx-auto .box-current-address span {
+        font-size: 14px;
+    }
+
+    .booking-information .mx-auto .box-current-address span img {
+        width: 10px;
+    }
+
+    .booking-information .button-confirm,
+    .booking-information .button-reject {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .title-input {
+        font-size: 16px;
+        color: #484848;
+    }
+
+    .fee-box .price {
+        font-size: 16px;
+        width: 100%;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+    .fee-box .price .col-md-6 {
+        padding: 0;
+    }
+
+    .booking-information .mx-auto .row {
+        width: 100%;
+        margin: 0;
+    }
+
+    .booking-information .mx-auto .row .col-md-9 .title-detail {
+        font-size: 16px;
+    }
+
+    .booking-information .mx-auto .row .col-md-9 .title {
+        font-size: 16px;
+    }
+
+    .booking-information .mx-auto .row .col-md-9 .row .col-md-4 {
+        max-width: 50%;
+        flex: auto;
+        padding-left: 0;
+    }
+
+    .booking-information .mx-auto .row .col-md-9 .row .col-md-4 .box-drive-license span {
+        font-size: 14px;
+    }
+
+    .booking-information .mx-auto .row .col-md-9 .row .col-md-4 .box-drive-license span img {
+        width: 10px;
+    }
+
+    .booking-information .mx-auto .row .col-md-9 .row .col-md-3 {
+        margin-left: 5px;
+        max-width: 40%;
+        flex: auto;
+        padding-left: 0;
+    }
+
+    .booking-information .mx-auto .row .col-md-9 .row .col-md-3 .box-drive-license span {
+        font-size: 14px;
+    }
+
+    .booking-information .mx-auto .row .booking {
+        max-width: 95%;
+        margin: auto;
+        flex: auto;
+        margin-top: 4%;
+    }
+
+    .booking-information .mx-auto .row .booking .range-date div .date-trip {
+        font-size: 15px;
+    }
+
+    .booking-information .mx-auto .row .booking .meeting-location div .meet-cl {
+        font-size: 13px;
+    }
+
+    .booking-information .mx-auto .row .booking .meeting-location div .row .col-md-7,
+    .booking-information .mx-auto .row .booking .meeting-location div .row .col-md-5 {
+        font-size: 10px;
+        padding: 0;
+    }
+
+    .booking-information .mx-auto .row .booking .meeting-location .fee-box .price .col-md-6 {
+        font-size: 10px;
+    }
+
+    .booking-information .mx-auto .box-current-address {
+        width: 60%;
+    }
+
+    .booking-information .mx-auto .box-current-address span {
+        font-size: 14px;
+    }
+
+    .booking-information .mx-auto .box-current-address span img {
+        width: 10px;
+    }
+
+    .booking-information .button-confirm,
+    .booking-information .button-reject {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .m-input {
+        width: 90% !important;
+    }
+    .imgUp{
+        padding: 0;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1023.98px) {
+    .m-input {
+        width: 85% !important;
+    }
+    .imgUp{
+        padding: 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    .m-input {
+        width: 85% !important;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 575.98px) {
+    .title-input {
+        font-size: 16px;
+        color: #484848;
+    }
+
+    .imagePreview {
+        background-position: center;
+    }
+
+    .fee-box .price {
+        font-size: 16px;
+        width: 100%;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+    .fee-box .price .col-md-6 {
+        padding: 0;
+    }
+
+    .booking-information .mx-auto .row {
+        width: 100%;
+        /* margin: 0; */
+    }
+
+    .booking-information .mx-auto .row .col-md-9 .title-detail {
+        font-size: 16px;
+    }
+
+    .booking-information .mx-auto .row .col-md-9 .title {
+        font-size: 16px;
+    }
+
+    .booking-information .mx-auto .row .col-md-9 .row .col-md-4 {
+        max-width: 100%;
+        flex: auto;
+        padding-left: 0;
+    }
+
+    .booking-information .mx-auto .row .col-md-9 .row .col-md-4 .box-drive-license span {
+        font-size: 14px;
+    }
+
+    .booking-information .mx-auto .row .col-md-9 .row .col-md-4 .box-drive-license span img {
+        width: 10px;
+    }
+
+    .booking-information .mx-auto .row .col-md-9 .row .col-md-3 {
+        margin-left: 5px;
+        max-width: 100%;
+        flex: auto;
+        padding-left: 0;
+    }
+
+    .booking-information .mx-auto .row .col-md-9 .row .col-md-3 .box-drive-license span {
+        font-size: 14px;
+    }
+
+    .booking-information .mx-auto .row .booking {
+        max-width: 95%;
+        margin: auto;
+        flex: auto;
+        margin-top: 4%;
+    }
+
+    .booking-information .mx-auto .row .booking .range-date div .date-trip {
+        font-size: 15px;
+    }
+
+    .booking-information .mx-auto .row .booking .meeting-location div .meet-cl {
+        font-size: 13px;
+    }
+
+    .booking-information .mx-auto .row .booking .meeting-location div .row .col-md-7,
+    .booking-information .mx-auto .row .booking .meeting-location div .row .col-md-5 {
+        font-size: 10px;
+        padding: 0;
+    }
+
+    .booking-information .mx-auto .row .booking .meeting-location .fee-box .price .col-md-6 {
+        font-size: 10px;
+    }
+
+    .booking-information .mx-auto .box-current-address {
+        width: 100%;
+    }
+
+    .booking-information .mx-auto .box-current-address span {
+        font-size: 14px;
+    }
+
+    .booking-information .mx-auto .box-current-address span img {
+        width: 10px;
+    }
+
+    .booking-information .box-current-address-zipcode {
+        width: 100% !important;
+    }
+
+    .booking-information .button-confirm,
+    .booking-information .button-reject {
+        font-size: 15px;
+    }
+}
+
+.booking-col {
+    border: 1px solid #d7dce3;
+    border-top: 7px solid #FF5A00;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 100%;
+}
+
+.booking-col .img-car img {
+    width: 100%;
+}
+
+.booking-col .price {
+    font-size: 14px;
+    display: flex;
+}
+
+.booking-col .label {
+    width: 100%;
+}
+
+.col-label {
+    margin-top: 10px;
+    color: #b6b6b6;
+}
+
+.loaction-m {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.loaction-m img {
+    margin-right: 10px;
+    width: 15px;
+}
+
+.trip-time {
+    border-bottom: 1px solid #e5e5e5;
+    border-top: 1px solid #e5e5e5;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px 0 10px 0;
+}
+
+/*# sourceMappingURL=booking-information.css.map */

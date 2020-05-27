@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="29px" viewBox="0 0 20 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>color</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Care-Detail" transform="translate(-1238.000000, -1722.000000)" fill-rule="nonzero">
+            <g id="color" transform="translate(1238.000000, 1722.000000)">
+                <path d="M20,18.4694444 C20,24.0110929 15.4970943,28.4444444 10,28.4444444 C4.5029057,28.4444444 0,24.0110929 0,18.4694444 C0,12.927796 10,0.444444444 10,0.444444444 C10,0.444444444 20,12.9860929 20,18.4694444 Z" id="Path" fill="#868686"></path>
+                <path d="M10.1489362,24.4444444 C6.23404255,24.4444444 3,21.2671572 3,17.2955083 C3,16.8416253 3.39718085,16.4444444 3.85106383,16.4444444 C4.30494681,16.4444444 4.70212766,16.8416253 4.70212766,17.2955083 C4.70212766,20.3025827 7.1418617,22.7423168 10.1489362,22.7423168 C10.6028191,22.7423168 11,23.1394976 11,23.5933806 C11,24.0472636 10.6028191,24.4444444 10.1489362,24.4444444 Z" id="Path" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>

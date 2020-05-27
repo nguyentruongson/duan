@@ -1,0 +1,214 @@
+.trust-safety .how-header {
+  background: url("../../../img/trust-bg.png");
+  background-size: 100%;
+  background-repeat: no-repeat; }
+  .trust-safety .how-header .how-header-content {
+    max-width: 1180px;
+    margin: auto;
+    padding-bottom: 10%; }
+    .trust-safety .how-header .how-header-content .hwe-title {
+      font-size: 30px;
+      font-family: SFPro-Medium;
+      color: #fff;
+      padding-top: 10%;
+      text-transform: uppercase; }
+    .trust-safety .how-header .how-header-content .hwe-txt {
+      font-family: SFPro-regular;
+      font-size: 18px;
+      color: #fff; }
+ .when-des-title{
+    font-size: 18px;
+    font-weight: bolder;
+  }
+.trust-safety .when-host {
+  margin: auto;
+  margin-top: 3%;
+  max-width: 1180px; }
+  .trust-safety .when-host .when-host-title {
+    font-size: 28px;
+    font-family: SFPro-Medium;
+    color: #484848;
+    text-transform: uppercase; }
+  .trust-safety .when-host .when-des {
+    margin-top: 2%; }
+    .trust-safety .when-host .when-des .col-md-4 .when-des-title {
+      font-size: 20px;
+      font-family: SFPro-Medium;
+      color: #484848; }
+    .trust-safety .when-host .when-des .col-md-4 .when-des-txt {
+      margin-top: 2%;
+      font-family: SFPro-regular;
+      font-size: 16px;
+      color: #868686; }
+  .trust-safety .when-host .learn-more {
+    margin-top: 20px;
+    padding-bottom: 5%; }
+    .trust-safety .when-host .learn-more .btn-learn-more {
+      background: #ff5a00;
+      color: #fff;
+      padding: 10px 18px;
+      height: auto; }
+.trust-safety .tip-trick {
+  background: url("../../../img/trust-trip.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 672px; }
+  .trust-safety .tip-trick .tip-trick-content {
+    max-width: 1180px;
+    margin: auto;
+    padding-top: 2%; }
+    .trust-safety .tip-trick .tip-trick-content .when-host-title {
+      font-size: 30px;
+      font-family: SFPro-Medium;
+      color: #484848;
+      text-transform: uppercase; }
+    .trust-safety .tip-trick .tip-trick-content .tip-des {
+      margin-top: 1%; }
+      .trust-safety .tip-trick .tip-trick-content .tip-des .col-md-6 .tip-des-title {
+        font-size: 20px;
+        font-family: SFPro-Medium;
+        color: #ff5a00; }
+      .trust-safety .tip-trick .tip-trick-content .tip-des .col-md-6 .tip-des-txt {
+        font-family: SFPro-regular;
+        font-size: 16px;
+        color: #868686;
+        padding-bottom: 3%;
+        margin-top: 2%;
+        width: 90%; }
+      .trust-safety .tip-trick .tip-trick-content .tip-des .tip-des-right {
+        padding-left: 5%; }
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .trust-safety .how-header .how-header-content {
+    max-width: 95%;
+    padding-bottom: 7%; }
+    .trust-safety .how-header .how-header-content .hwe-title {
+      padding-top: 7%; }
+  .trust-safety .tip-trick .tip-trick-content .tip-des .col-md-6 img {
+    width: 100%; }
+  .trust-safety .when-host {
+    width: 95%; }
+    .trust-safety .when-host .line-end img {
+      width: 100%; }
+  .trust-safety .tip-trick {
+    height: auto; }
+    .trust-safety .tip-trick .tip-trick-content {
+      width: 95%; }
+      .trust-safety .tip-trick .tip-trick-content .tip-des-car {
+        padding-bottom: 5%; } }
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .trust-safety .how-header .how-header-content {
+    max-width: 95%;
+    padding-bottom: 7%; }
+    .trust-safety .how-header .how-header-content .hwe-title {
+      padding-top: 7%;
+      font-size: 18px; }
+    .trust-safety .how-header .how-header-content .hwe-txt {
+      font-size: 15px; }
+  .trust-safety .tip-trick .tip-trick-content .tip-des .col-md-6 img {
+    width: 100%; }
+  .trust-safety .tip-trick .tip-trick-content .tip-des .col-md-6 .tip-des-title {
+    font-size: 16px; }
+  .trust-safety .tip-trick .tip-trick-content .tip-des .col-md-6 .tip-des-txt {
+    font-size: 14px; }
+  .trust-safety .tip-trick .tip-trick-content .when-host-title {
+    font-size: 18px; }
+  .trust-safety .when-host {
+    width: 95%; }
+    .trust-safety .when-host .when-host-title {
+      font-size: 18px; }
+    .trust-safety .when-host .line-end img {
+      width: 100%; }
+    .trust-safety .when-host .when-des .col-md-4 .when-des-title {
+      font-size: 16px; }
+    .trust-safety .when-host .when-des .col-md-4 .when-des-txt {
+      font-size: 14px; }
+    .trust-safety .when-host .learn-more .btn-learn-more {
+      font-size: 14px;
+      padding: 8px 12px; }
+  .trust-safety .tip-trick {
+    height: auto; }
+    .trust-safety .tip-trick .tip-trick-content {
+      width: 95%; }
+      .trust-safety .tip-trick .tip-trick-content .tip-des-car {
+        padding-bottom: 5%; } }
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .trust-safety .how-header .how-header-content {
+    max-width: 95%;
+    padding-bottom: 7%; }
+    .trust-safety .how-header .how-header-content .hwe-title {
+      padding-top: 7%;
+      font-size: 18px; }
+    .trust-safety .how-header .how-header-content .hwe-txt {
+      font-size: 15px; }
+  .trust-safety .tip-trick .tip-trick-content .tip-des .col-md-6 img {
+    width: 100%; }
+  .trust-safety .tip-trick .tip-trick-content .tip-des .col-md-6 .tip-des-title {
+    font-size: 16px; }
+  .trust-safety .tip-trick .tip-trick-content .tip-des .col-md-6 .tip-des-txt {
+    font-size: 14px; }
+  .trust-safety .tip-trick .tip-trick-content .tip-des .tip-des-right {
+    padding-left: 15px; }
+  .trust-safety .tip-trick .tip-trick-content .when-host-title {
+    font-size: 18px; }
+  .trust-safety .when-host {
+    width: 95%; }
+    .trust-safety .when-host .when-host-title {
+      font-size: 18px; }
+    .trust-safety .when-host .line-end img {
+      width: 100%; }
+    .trust-safety .when-host .when-des .col-md-4 .when-des-title {
+      font-size: 16px; }
+    .trust-safety .when-host .when-des .col-md-4 .when-des-txt {
+      font-size: 14px; }
+    .trust-safety .when-host .learn-more .btn-learn-more {
+      font-size: 14px;
+      padding: 8px 12px; }
+  .trust-safety .tip-trick {
+    height: auto; }
+    .trust-safety .tip-trick .tip-trick-content {
+      width: 95%; }
+      .trust-safety .tip-trick .tip-trick-content .tip-des-car {
+        padding-bottom: 5%; } }
+@media (min-width: 320px) and (max-width: 575.98px) {
+  .trust-safety .how-header {
+    background-size: auto; }
+    .trust-safety .how-header .how-header-content {
+      max-width: 95%;
+      padding-bottom: 7%; }
+      .trust-safety .how-header .how-header-content .hwe-title {
+        padding-top: 7%;
+        font-size: 18px; }
+      .trust-safety .how-header .how-header-content .hwe-txt {
+        font-size: 15px; }
+  .trust-safety .tip-trick .tip-trick-content .tip-des .col-md-6 img {
+    width: 100%; }
+  .trust-safety .tip-trick .tip-trick-content .tip-des .col-md-6 .tip-des-title {
+    font-size: 16px; }
+  .trust-safety .tip-trick .tip-trick-content .tip-des .col-md-6 .tip-des-txt {
+    font-size: 14px; }
+  .trust-safety .tip-trick .tip-trick-content .tip-des .tip-des-right {
+    padding-left: 15px; }
+  .trust-safety .tip-trick .tip-trick-content .when-host-title {
+    font-size: 18px; }
+  .trust-safety .when-host {
+    width: 95%; }
+    .trust-safety .when-host .when-host-title {
+      font-size: 18px; }
+    .trust-safety .when-host .line-end img {
+      width: 100%; }
+    .trust-safety .when-host .when-des .col-md-4 .when-des-title {
+      font-size: 16px; }
+    .trust-safety .when-host .when-des .col-md-4 .when-des-txt {
+      font-size: 14px; }
+    .trust-safety .when-host .learn-more .btn-learn-more {
+      font-size: 14px;
+      padding: 8px 12px; }
+  .trust-safety .tip-trick {
+    height: auto; }
+    .trust-safety .tip-trick .tip-trick-content {
+      width: 95%; }
+      .trust-safety .tip-trick .tip-trick-content .tip-des-car {
+        padding-bottom: 5%; } }
+
+/*# sourceMappingURL=trust-safety.css.map */

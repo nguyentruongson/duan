@@ -1,0 +1,820 @@
+@font-face {
+    font-family: SFPro-regular;
+    src: url("../font/SFProText-Regular.html");
+}
+
+@font-face {
+    font-family: SFPro-Medium;
+    src: url("../font/SFProText-Medium.html");
+}
+
+.btn-cam-car {
+    background: #ff5a00 !important;
+    color: #fff !important;
+    height: 54px;
+    margin-top: 15px;
+    border: none !important;
+}
+
+.list-time {
+    height: 1000px;
+    overflow: scroll;
+}
+
+body {
+    font-size: 18px;
+    font-family: SFPro-regular !important;
+}
+
+body header {
+    font-family: SFPro-Medium !important;
+}
+
+body header .menu {
+    padding: 10px 30px;
+}
+
+body header .menu .navbar-nav {
+    margin-left: auto;
+}
+
+body header .menu #navbarSupportedContent .nav-link {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+body section .tophead-listcar {
+    background: url("../../../img/bg_listcar.png");
+    background-size: 100%;
+    min-height: 471px;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-family: SFPro-Medium !important;
+}
+
+body section .tophead-listcar .slide-top {
+    max-width: 1180px;
+    padding-top: 5%;
+    margin: auto;
+}
+
+body section .tophead-listcar .slide-top .slide-thetitle {
+    font-size: 42px;
+}
+
+body section .tophead-listcar .slide-top .slide-search .navbar {
+    padding: 25px 0;
+}
+
+body section .tophead-listcar .slide-top .slide-search .navbar .form-inline .form-search-icon {
+    padding: 10px 20px;
+    background: #fff;
+    height: 60px;
+}
+
+body section .tophead-listcar .slide-top .slide-search .navbar .form-inline .form-search-icon .form-control {
+    border: none;
+    background: transparent;
+}
+
+body section .tophead-listcar .slide-top .slide-search .navbar .form-inline .form-search-icon .form-control:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0);
+}
+
+body section .tophead-listcar .slide-top .slide-search .navbar .form-inline .search-button {
+    padding: 17px;
+    background: #ff5a00;
+    border: none;
+    border-radius: 0;
+    color: #fff;
+    height: 60px;
+}
+
+body section .body-head {
+    max-width: 1180px;
+    margin: auto;
+}
+
+body section .body-head .how-much {
+    margin-top: 3%;
+}
+
+body section .body-head .how-much .how-much-title {
+    font-size: 24px;
+    color: #484848;
+    font-weight: 900;
+}
+
+body section .body-head .how-much .how-much-title2 {
+    font-size: 20px;
+    font-weight: 900;
+    font-color: #6a6a6a;
+}
+
+body section .body-head .how-much .btn-caculator {
+    background: #ff5a00 !important;
+    color: #fff !important;
+    height: 54px;
+    margin-top: 25px !important;
+    border: none !important;
+}
+
+body section .body-head .how-much .btn-caculator:focus {
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 70, 0);
+}
+
+body section .body-head .enline {
+    margin: 4% 0;
+}
+
+body section .body-head .pricing {
+    padding: 15px;
+    text-align: center;
+}
+
+body section .body-head .pricing .row .pricings,
+body section .body-head .pricing .row .payment {
+    border: 1px solid #d7dce3;
+    border-radius: 5px;
+    padding-top: 3%;
+}
+
+body section .body-head .pricing .row .pricings .pri-title,
+body section .body-head .pricing .row .payment .pri-title {
+    font-size: 24px;
+    color: #6a6a6a;
+}
+
+body section .body-head .pricing .row .pricings .pri-text,
+body section .body-head .pricing .row .payment .pri-text {
+    padding: 20px 50px 100px 50px;
+    font-size: 18px;
+}
+
+body section .body-head .pricing .row .pricings:hover .pri-title,
+body section .body-head .pricing .row .payment:hover .pri-title {
+    color: #fff;
+}
+
+body section .body-head .pricing .row .pricings {
+    max-width: 47%;
+    margin-right: 6%;
+}
+
+body section .body-head .pricing .row .payment {
+    max-width: 47%;
+}
+
+body section .body-head .seasy-hosting {
+    background: url("../../../img/easy-hotting.png");
+    background-size: 100%;
+    min-height: 445px;
+    background-repeat: no-repeat;
+    color: #fff;
+    margin-top: 3%;
+}
+
+body section .body-head .seasy-hosting .eh-content {
+    width: 70%;
+    margin: auto;
+    padding-top: 10%;
+    text-align: center;
+}
+
+body section .body-head .seasy-hosting .eh-content .eh-title {
+    font-size: 42px;
+    padding-bottom: 2%;
+    font-weight: 900;
+}
+
+body section .body-head .seasy-hosting .eh-content .btn-caculator {
+    background: #ff5a00 !important;
+    color: #fff !important;
+    height: 54px;
+    margin-top: 25px !important;
+    border: none !important;
+}
+
+body section .body-head .seasy-hosting .eh-content .btn-caculator:focus {
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 70, 0);
+}
+
+body section .body-head .branch {
+    text-align: center;
+}
+
+body section .body-head .howitwork .hiw-title {
+    font-size: 24px;
+    color: #484848;
+    text-align: center;
+    font-weight: 900;
+    padding-bottom: 5%;
+}
+
+body section .body-head .howitwork .hiw-content .car-img {
+    text-align: center;
+}
+
+body section .body-head .howitwork .hiw-content .car-img img {
+    width: 100%;
+}
+
+body section .body-head .howitwork .hiw-content .hiw-content-left .hiw-slide .owl-carousel .item .hiw-title2 {
+    font-size: 18px;
+    color: #484848;
+}
+
+body section .body-head .howitwork .hiw-content .hiw-content-left .hiw-slide .owl-carousel .item img {
+    width: auto;
+    margin-top: 10px;
+}
+
+body section .body-head .howitwork .hiw-content .hiw-content-left .hiw-slide .owl-carousel .item .hiw-txt {
+    color: #696969;
+    margin-top: 15px;
+    font-size: 18px;
+    padding-right: 15%;
+}
+
+body section .body-head .howitwork .hiw-content .hiw-content-left .hiw-slide .owl-carousel-style .owl-nav {
+    margin-top: 4%;
+}
+
+body section .body-head .howitwork .hiw-content .hiw-content-left .hiw-slide .owl-carousel-style .owl-nav button {
+    width: 35px;
+    background-color: #ffeade;
+    color: #ff5a00;
+}
+
+body section .body-head .howitwork .hiw-content .hiw-content-left .hiw-slide .owl-carousel-style .owl-nav button:focus {
+    box-shadow: #48484800;
+    outline: none;
+}
+
+body section .body-head .howitwork .hiw-content .hiw-content-left .hiw-slide .owl-carousel-style .owl-nav .owl-prev {
+    margin-right: 15px;
+}
+
+body section .body-head .howitwork .hiw-content .hiw-bottom {
+    text-align: center;
+    width: 100%;
+    margin-top: 3%;
+}
+
+body section .body-head .howitwork .hiw-content .hiw-bottom .hiw-botom-txt {
+    padding-bottom: 3%;
+}
+
+body section .body-head .howitwork .hiw-content .hiw-bottom .btn-caculator {
+    background: #ff5a00 !important;
+    color: #fff !important;
+    height: 54px;
+    border: none !important;
+}
+
+body section .body-head .howitwork .hiw-content .hiw-bottom .btn-caculator:focus {
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 70, 0);
+}
+
+body section .body-head .peace .peace-title {
+    font-size: 24px;
+    color: #484848;
+    text-align: center;
+    font-weight: 900;
+    padding-bottom: 56px;
+}
+
+body section .body-head .peace .peace-content {
+    background: #f7f8fa;
+    position: relative;
+    width: 100%;
+    margin: 0;
+}
+
+body section .body-head .peace .peace-content .col-md-7 {
+    padding: 0;
+    padding-top: 5%;
+    padding-left: 6%;
+    position: relative;
+}
+
+body section .body-head .peace .peace-content .col-md-7 .peace-ct-title {
+    font-size-adjust: 20px;
+    color: #484848;
+    font-weight: 900;
+}
+
+body section .body-head .peace .peace-content .col-md-7 .peace-ct-txt p {
+    margin-top: 15px;
+}
+
+body section .body-head .peace .peace-content .col-md-7 .peace-ct-txt p a {
+    color: #ff5a00;
+}
+
+body section .body-head .peace .peace-content .col-md-7 .line-down {
+    position: absolute;
+    left: 0;
+    top: 65px;
+}
+
+body section .body-head .peace .peace-content .col-md-7 .line-down:before {
+    content: "";
+    position: absolute;
+    height: 40px;
+    top: 0;
+    width: pc;
+    width: 5px;
+    background: #d8d8d8;
+}
+
+body section .body-head .peace .peace-content .col-md-7:hover .line-down:before {
+    background: #ff5a00;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px ff5a00(0, 0, 0, 0);
+    overflow: hidden;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-property: color, background-color;
+    transition-property: color, background-color;
+}
+
+body section .body-head .peace .peace-content .col-md-5 {
+    padding: 0;
+}
+
+body section .body-head .peace .peace-content .col-md-5 img {
+    width: 100%;
+}
+
+body section .body-head .peace .notalone-content {
+    background: #f7f8fa;
+    position: relative;
+    width: 100%;
+    margin: 0;
+    margin-top: 5%;
+}
+
+body section .body-head .peace .notalone-content .col-md-7 {
+    padding: 0;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 12%;
+    position: relative;
+}
+
+body section .body-head .peace .notalone-content .col-md-7 .peace-ct-title {
+    font-size-adjust: 20px;
+    color: #484848;
+    font-weight: 900;
+}
+
+body section .body-head .peace .notalone-content .col-md-7 .peace-ct-txt p {
+    margin-top: 15px;
+}
+
+body section .body-head .peace .notalone-content .col-md-7 .peace-ct-txt p a {
+    color: #ff5a00;
+}
+
+body section .body-head .peace .notalone-content .col-md-7 .line-down {
+    position: absolute;
+    right: 20px;
+    top: 65px;
+}
+
+body section .body-head .peace .notalone-content .col-md-7 .line-down:before {
+    content: "";
+    position: absolute;
+    height: 40px;
+    top: 0;
+    width: pc;
+    width: 5px;
+    background: #d8d8d8;
+}
+
+body section .body-head .peace .notalone-content .col-md-7:hover .line-down:before {
+    background: #ff5a00;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px ff5a00(0, 0, 0, 0);
+    overflow: hidden;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-property: color, background-color;
+    transition-property: color, background-color;
+}
+
+body section .body-head .peace .notalone-content .col-md-5 {
+    padding: 0;
+}
+
+body section .body-head .peace .notalone-content .col-md-5 img {
+    width: 100%;
+}
+
+body section .body-head .today {
+    margin-top: 8%;
+}
+
+body section .body-head .today .today-title {
+    font-size: 24px;
+    color: #484848;
+    margin-bottom: 56px;
+    font-weight: 900;
+}
+
+body section .body-head .today .btn-caculator {
+    background: #ff5a00 !important;
+    color: #fff !important;
+    height: 54px;
+    margin-top: 25px !important;
+    border: none !important;
+}
+
+body section .body-head .today .btn-caculator:focus {
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 70, 0);
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    body .list-your-car .tophead-listcar {
+        background-size: 100% 100%;
+        min-height: auto;
+    }
+
+    body .list-your-car .tophead-listcar .slide-top {
+        padding-bottom: 5%;
+        max-width: 80%;
+    }
+
+    body .list-your-car .body-head .how-much {
+        width: 80%;
+        margin: auto;
+        margin-top: 5%;
+    }
+
+    body .list-your-car .body-head .seasy-hosting .eh-content {
+        padding-top: 5%;
+    }
+
+    body .list-your-car .body-head .pricing {
+        width: 90%;
+        margin: auto;
+    }
+
+    body .list-your-car .body-head .enline img {
+        width: 100%;
+    }
+
+    body .list-your-car .body-head .branch .row {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    body .list-your-car .body-head .branch .row .col-md-3 img {
+        width: 100%;
+    }
+
+    body .list-your-car .body-head .howitwork .hiw-content {
+        width: 90%;
+        margin: auto;
+    }
+
+    body .list-your-car .body-head .today {
+        margin-left: 5%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    body {
+        font-size: 16px !important;
+    }
+
+    body .list-your-car .tophead-listcar {
+        background-size: 100% 100%;
+        min-height: auto;
+    }
+
+    body .list-your-car .tophead-listcar .slide-top {
+        padding-bottom: 5%;
+        max-width: 90%;
+    }
+
+    body .list-your-car .tophead-listcar .slide-top .slide-thetitle {
+        font-size: 26px;
+    }
+
+    body .list-your-car .body-head .how-much {
+        width: 90%;
+        margin: auto;
+        margin-top: 5%;
+    }
+
+    body .list-your-car .body-head .how-much .how-much-title {
+        font-size: 20px;
+    }
+
+    body .list-your-car .body-head .how-much .how-much-title2 {
+        font-size: 18px;
+    }
+
+    body .list-your-car .body-head .seasy-hosting {
+        min-height: auto;
+        background-size: 100% 100%;
+    }
+
+    body .list-your-car .body-head .seasy-hosting .eh-content {
+        padding-top: 5%;
+    }
+
+    body .list-your-car .body-head .seasy-hosting .eh-content .eh-title {
+        font-size: 24px;
+    }
+
+    body .list-your-car .body-head .seasy-hosting .eh-content .btn-caculator {
+        height: 44px;
+        margin-bottom: 5% !important;
+    }
+
+    body .list-your-car .body-head .pricing {
+        width: 90%;
+        margin: auto;
+    }
+
+    body .list-your-car .body-head .pricing .row .pricings .pri-text {
+        padding: 20px 21px 50px 10px;
+    }
+
+    body .list-your-car .body-head .pricing .row .payment .pri-text {
+        padding: 20px 21px 50px 10px;
+    }
+
+    body .list-your-car .body-head .enline img {
+        width: 100%;
+    }
+
+    body .list-your-car .body-head .branch .row {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    body .list-your-car .body-head .branch .row .col-md-3 img {
+        width: 100%;
+    }
+
+    body .list-your-car .body-head .howitwork .hiw-content {
+        width: 90%;
+        margin: auto;
+    }
+
+    body .list-your-car .body-head .howitwork .hiw-content .hiw-content-left .hiw-slide .owl-carousel .item .hiw-txt {
+        font-size: 16px;
+    }
+
+    body .list-your-car .body-head .today {
+        margin-left: 5%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    body {
+        font-size: 14px !important;
+    }
+
+    body .list-your-car .tophead-listcar {
+        background-size: 100% 100%;
+        min-height: auto;
+    }
+
+    body .list-your-car .tophead-listcar .slide-top {
+        padding-bottom: 5%;
+        max-width: 90%;
+    }
+
+    body .list-your-car .tophead-listcar .slide-top .slide-thetitle {
+        font-size: 20px;
+    }
+
+    body .list-your-car .tophead-listcar .slide-top .slide-search .navbar .form-inline .form-search-icon {
+        height: 50px;
+    }
+
+    body .list-your-car .tophead-listcar .slide-top .slide-search .navbar .form-inline .form-search-icon input {
+        font-size: 14px;
+    }
+
+    body .list-your-car .tophead-listcar .slide-top .slide-search .navbar .form-inline .search-button {
+        font-size: 14px;
+        height: 50px;
+    }
+
+    body .list-your-car .tophead-listcar .slide-top .btn-cam-car {
+        font-size: 14px;
+        height: 45px;
+    }
+
+    body .list-your-car .body-head .how-much {
+        width: 90%;
+        margin: auto;
+        margin-top: 5%;
+    }
+
+    body .list-your-car .body-head .how-much .how-much-title {
+        font-size: 20px;
+    }
+
+    body .list-your-car .body-head .how-much .how-much-title2 {
+        font-size: 18px;
+    }
+
+    body .list-your-car .body-head .seasy-hosting {
+        min-height: auto;
+        background-size: 100% 100%;
+    }
+
+    body .list-your-car .body-head .seasy-hosting .eh-content {
+        padding-top: 5%;
+    }
+
+    body .list-your-car .body-head .seasy-hosting .eh-content .eh-title {
+        font-size: 24px;
+    }
+
+    body .list-your-car .body-head .seasy-hosting .eh-content .btn-caculator {
+        height: 44px;
+        margin-bottom: 5% !important;
+    }
+
+    body .list-your-car .body-head .pricing {
+        width: 90%;
+        margin: auto;
+    }
+
+    body .list-your-car .body-head .pricing .row .pricings .pri-text {
+        padding: 20px 21px 50px 10px;
+        font-size: 14px;
+    }
+
+    body .list-your-car .body-head .pricing .row .payment .pri-text {
+        padding: 20px 21px 50px 10px;
+        font-size: 14px;
+    }
+
+    body .list-your-car .body-head .enline img {
+        width: 100%;
+    }
+
+    body .list-your-car .body-head .branch .row {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    body .list-your-car .body-head .branch .row .col-md-3 img {
+        width: 50%;
+    }
+
+    body .list-your-car .body-head .howitwork .hiw-content {
+        width: 90%;
+        margin: auto;
+    }
+
+    body .list-your-car .body-head .howitwork .hiw-content .hiw-content-left .hiw-slide .owl-carousel .item .hiw-txt {
+        font-size: 16px;
+    }
+
+    body .list-your-car .body-head .today {
+        margin-left: 5%;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 575.98px) {
+    body {
+        font-size: 14px !important;
+    }
+
+    body .list-your-car .tophead-listcar {
+        background-size: 100% 100%;
+        min-height: auto;
+    }
+
+    body .list-your-car .tophead-listcar .slide-top {
+        padding-bottom: 5%;
+        max-width: 90%;
+    }
+
+    body .list-your-car .tophead-listcar .slide-top .slide-thetitle {
+        font-size: 20px;
+    }
+
+    body .list-your-car .tophead-listcar .slide-top .slide-search .navbar .form-inline .form-search-icon {
+        height: 50px;
+        width: 100%;
+    }
+
+    body .list-your-car .tophead-listcar .slide-top .slide-search .navbar .form-inline .form-search-icon span {
+        float: left;
+    }
+
+    body .list-your-car .tophead-listcar .slide-top .slide-search .navbar .form-inline .form-search-icon input {
+        font-size: 14px;
+        float: left;
+        width: 70%;
+    }
+
+    body .list-your-car .tophead-listcar .slide-top .slide-search .navbar .form-inline .search-button {
+        font-size: 14px;
+        height: 50px;
+    }
+
+    body .list-your-car .tophead-listcar .slide-top .btn-cam-car {
+        font-size: 14px;
+        height: 45px;
+    }
+
+    body .list-your-car .body-head .how-much {
+        width: 90%;
+        margin: auto;
+        margin-top: 5%;
+    }
+
+    body .list-your-car .body-head .how-much .how-much-title {
+        font-size: 20px;
+    }
+
+    body .list-your-car .body-head .how-much .how-much-title2 {
+        font-size: 18px;
+    }
+
+    body .list-your-car .body-head .seasy-hosting {
+        min-height: auto;
+        background-size: 100% 100%;
+    }
+
+    body .list-your-car .body-head .seasy-hosting .eh-content {
+        width: 90%;
+        padding-top: 5%;
+    }
+
+    body .list-your-car .body-head .seasy-hosting .eh-content .eh-title {
+        font-size: 20px;
+    }
+
+    body .list-your-car .body-head .seasy-hosting .eh-content .btn-caculator {
+        height: 44px;
+        margin-bottom: 5% !important;
+    }
+
+    body .list-your-car .body-head .pricing {
+        width: 90%;
+        margin: auto;
+    }
+
+    body .list-your-car .body-head .pricing .row .pricings {
+        max-width: 100%;
+        margin-right: 0;
+    }
+
+    body .list-your-car .body-head .pricing .row .pricings .pri-text {
+        padding: 20px 21px 50px 10px;
+        font-size: 14px;
+    }
+
+    body .list-your-car .body-head .pricing .row .payment {
+        max-width: 100%;
+        margin-right: 0;
+    }
+
+    body .list-your-car .body-head .pricing .row .payment .pri-text {
+        padding: 20px 21px 50px 10px;
+        font-size: 14px;
+    }
+
+    body .list-your-car .body-head .enline img {
+        width: 100%;
+    }
+
+    body .list-your-car .body-head .branch .row {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    body .list-your-car .body-head .branch .row .col-md-3 img {
+        width: 50%;
+    }
+
+    body .list-your-car .body-head .howitwork .hiw-content {
+        width: 90%;
+        margin: auto;
+    }
+
+    body .list-your-car .body-head .howitwork .hiw-content .hiw-content-left .hiw-slide .owl-carousel .item .hiw-txt {
+        font-size: 14px;
+    }
+
+    body .list-your-car .body-head .today {
+        margin-left: 5%;
+    }
+}
+
+/*# sourceMappingURL=listcar-page.css.map */

@@ -1,0 +1,580 @@
+.search-map .header-nav-bar {
+    display: flex;
+}
+
+.search-map .header-fillter {
+    width: 100%;
+    height: 50px;
+}
+
+.search-map .header-nav-bar {
+    width: 100%;
+}
+
+.search-map .header-nav-bar .space {
+    width: 100%;
+}
+
+
+
+@media (max-width: 720px){
+    .map {
+        margin-top: 100px;
+        margin-left: 35px;
+    }
+}
+
+.search-map .avatar-container {
+    margin-right: 50px;
+}
+
+.search-map .avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.dl-b {
+    display: block !important;
+}
+
+.search-map .header-fillter {
+    height: 50px;
+    margin: 0 auto;
+    display: flex;
+}
+
+/*.search-map .header-fillter .search-form {*/
+    /*display: flex;*/
+/*}*/
+
+.search-map .header-fillter .search-form input {
+    border: none;
+    border-bottom: 1px solid #ececec;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.search-map .header-fillter .search-form img {
+    width: 23px;
+    height: 27px;
+}
+
+.search-map .w100 {
+    width: 100%;
+}
+
+.date-picker-container {
+    display: flex;
+}
+
+.search-map .date-picker {
+    margin-left: 10px;
+    border-bottom: 1px solid #dddddd;
+    display: flex;
+    font-size: 14px;
+}
+
+.search-map .date-picker input {
+    border: none;
+    font-size: 14px;
+}
+
+.search-map .head-dropdown {
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    border: none;
+}
+
+.search-map .date-dropdown .dropdown {
+    border-bottom: 1px solid #dddddd
+}
+
+.search-map .date-dropdown .dropdown-toggle::after {
+    color: #FF5A00;
+    margin-top: 8px;
+    float: right;
+    display: inline-block;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    border-left: .3em solid transparent;
+}
+
+.search-map .bar-dropdown .dropdown-toggle::after {
+    display: none;
+}
+
+button:focus, textarea:focus, input:focus {
+    outline: none !important;
+}
+
+.search-map .main-filter {
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 100%;
+    height: 48px;
+    background: #ffffff;
+    border-bottom: 1px solid #ddd;
+    margin-top: 11px;
+}
+
+.search-map .main-filter .dropdown-toggle::after {
+    display: none;
+}
+
+.search-map .main-filter .dropdown-list {
+    display: flex;
+}
+
+.search-map .btn-filter {
+    border: 1px solid #A1AAB3;
+    border-radius: 6px;
+    margin-right: 10px;
+    color: #A1AAB3;
+    font-size: 12px;
+    padding: 8px 15px 8px 15px;
+    background-color: #ffffff;
+}
+
+.search-map .btn-filter:hover {
+    border-color:#FF5A00 !important;
+    border-radius: 6px;
+    margin-right: 10px;
+    color: #ffffff !important;
+    font-size: 12px;
+    padding: 8px 15px 8px 15px;
+    background-color: #ff5a00 !important;
+}
+
+.search-map .btn-filter:focus {
+    border: 1px solid #FF5A00;
+    color: #ffffff;
+    background: #FF5A00;
+}
+
+.search-map .rd-ctn {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 9px;
+    cursor: pointer;
+    font-size: 15px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.search-map .rd-ctn input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.search-map .checkmark {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    border-radius: 5px;
+}
+
+/* On mouse-over, add a grey background color */
+.search-map .rd-ctn:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.search-map .rd-ctn input:checked ~ .checkmark {
+    background-color: #FF5A00;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.search-map .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.search-map .rd-ctn input:checked ~ .checkmark:after {
+    display: block;
+}
+
+
+.search-map .filter-option-container {
+    padding: 10px !important;
+    min-width: 320px !important;
+    top: 11px !important;
+}
+
+.search-map .filter-option-container ul {
+    list-style: none;
+}
+
+.search-map .main-filter button[aria-expanded="true"] {
+    border: 1px solid #FF5A00;
+    color: #ffffff;
+    background: #FF5A00;
+}
+
+.search-map .btn-main {
+    border: 1px solid #FF5A00;
+    color: #ffffff;
+    background: #FF5A00;
+    border-radius: 6px;
+    margin-right: 10px;
+    font-size: 12px;
+    padding: 8px 25px 8px 25px;
+}
+.search-map .btn-remove {
+    border: 1px solid #5d5d5d;
+    color: #7d7d7dfa;
+    background: #ffffff;
+    border-radius: 6px;
+    margin-right: 10px;
+    font-size: 12px;
+    padding: 8px 25px 8px 25px;
+}
+
+
+.search-map .slider-selection {
+    background: #f77500 !important;
+}
+
+.search-map .slider-success .slider-selection {
+    background-color: #5cb85c !important;
+}
+
+.search-map .slider-primary .slider-selection {
+    background-color: #428bca !important;
+}
+
+.search-map .slider-info .slider-selection {
+    background-color: #5bc0de !important;
+}
+
+.search-map .slider-warning .slider-selection {
+    background-color: #f0ad4e !important;
+}
+
+.search-map .slider-danger .slider-selection {
+    background-color: #d9534f !important;
+}
+
+.search-map .slider.slider-horizontal {
+    width: 100% !important;
+    height: 20px;
+}
+
+.search-map .slider-handle {
+    border-bottom-right-radius: 0% !important;
+    transform: rotate(45deg);
+    background: #FF5A00 !important;
+    width: 10px !important;
+    height: 10px !important;
+    margin-left: -6px !important;
+}
+
+.search-map .slider.slider-horizontal .slider-track {
+    height: 2px !important;
+    width: 100%;
+    margin-top: -5px !important;
+    top: 84% !important;
+    left: 0 !important;
+}
+
+
+.search-map .slider-strips .slider-selection {
+    background-image: repeating-linear-gradient(-45deg, transparent, transparent 5px, rgba(255, 252, 252, 0.08) 5px, rgba(252, 252, 252, 0.08) 10px) !important;
+    background-image: -ms-repeating-linear-gradient(-45deg, transparent, transparent 5px, rgba(255, 252, 252, 0.08) 5px, rgba(252, 252, 252, 0.08) 10px) !important;
+    background-image: -o-repeating-linear-gradient(-45deg, transparent, transparent 5px, rgba(255, 252, 252, 0.08) 5px, rgba(252, 252, 252, 0.08) 10px) !important;
+    background-image: -webkit-repeating-linear-gradient(-45deg, transparent, transparent 5px, rgba(255, 252, 252, 0.08) 5px, rgba(252, 252, 252, 0.08) 10px) !important;
+}
+
+.search-map .tooltip-inner {
+    max-width: 200px;
+    padding: 3px 8px;
+    color: #bdbdbd !important;
+    text-align: center;
+    background-color: transparent !important;
+    border-radius: 4px;
+}
+
+.search-map .tooltip.top .tooltip-arrow {
+    display: none !important;
+}
+
+.search-map .slider .tooltip.top {
+    margin-top: -25px !important;
+}
+
+.search-map .well {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    width: 100% !important;
+    padding: 0;
+}
+
+.search-map .slider-ghost .slider-track {
+    height: 5px !important;
+}
+
+.search-map .slider-ghost .slider-handle {
+    top: -2px !important;
+    border: 5px solid #f77500;
+}
+
+.search-map .slider-success.slider-ghost .slider-handle {
+    border-color: #5cb85c;
+}
+
+.search-map .slider-primary.slider-ghost .slider-handle {
+    border-color: #428bca;
+}
+
+.search-map .slider-info.slider-ghost .slider-handle {
+    border-color: #5bc0de;
+}
+
+.search-map .slider-warning.slider-ghost .slider-handle {
+    border-color: #f0ad4e;
+}
+
+.search-map .slider-danger.slider-ghost .slider-handle {
+    border-color: #d9534f;
+}
+
+/*.search-map .map-container {*/
+/*    height: 100vh;*/
+/*}*/
+
+
+.search-map .map-container .map {
+    height: 100vh;
+}
+
+.search-map .popmaker {
+    max-width: 300px;
+    min-height: 288px;
+}
+
+.search-map .popmaker .arrow {
+    background: #ffffff;
+    width: 20px;
+    height: 20px;
+    transform: rotate(45deg);
+    margin: 0 auto;
+    margin-top: -10px;
+}
+
+.search-map .card-car-item {
+    background: #ffffff;
+    padding: 10px;
+    padding-bottom: 20px;
+    width: 86%;
+    border-radius:5px ;
+}
+.search-map .card-car-item button {
+    background: #ffffff;
+}
+.search-map .card-car-item button:hover {
+    background: #FF5A00;
+    color: #ffffff !important;
+    border-color: #FF5A00 !important;
+}
+
+.search-map .popmaker .cover img {
+    width: 100%;
+}
+
+.search-map .popmaker .title {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.search-map .popmaker .price {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.search-map .popmaker .price img {
+    height: 21px;
+}
+
+.search-map .popmaker .rate img {
+    height: 15px;
+    margin-top: 10px;
+}
+
+.search-map .popmaker .option {
+    margin-top: 10px;
+}
+
+.search-map .popmaker .option .btn-marker {
+    border: 1px solid #A1AAB3;
+    color: #A1AAB3;
+    padding: 5px 10px 5px 10px;
+    border-radius: 3px;
+}
+
+
+.search-map .list-result {
+    padding-left: 30px;
+    max-height: 100vh;
+    overflow: auto;
+}
+
+.search-map .item-result {
+    margin-top: 15px;
+    border: 1px solid #dddddd;
+    border-radius: 6px;
+    line-height: 27px;
+    transition: 0.2s;
+}
+
+.search-map .item-result h6 {
+    font-size: 12px;
+    color: #484848;
+}
+
+.search-map .item-result .rate img {
+    height: 13px;
+}
+
+.search-map .item-result .image img {
+    width: 100%;
+}
+
+.search-map .item-result .price img {
+    height: 16px;
+    margin-right: 3px;
+}
+
+.search-map .item-result .price {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #484848;
+}
+
+.search-map .mr-20 {
+    margin-right: 20px;
+}
+
+.search-map .applyBtn {
+    background-color: #FF5A00 !important;
+    border: none !important;
+}
+
+/*=============START-BAR_DATE=============*/
+.search-map .container .bar-console {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #dddddd;
+    background: #fff;
+    width: 100%;
+    height: 80px;
+}
+
+.search-map .container .bar-col {
+    display: flex;
+    padding: 10px;
+}
+
+.search-map .container .bar-col .component {
+    display: block;
+    height: 60px;
+}
+
+.search-map .container .bar-col img {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.search-map .container .bar-col .component p {
+    margin: 0;
+    padding: 0;
+}
+
+.search-map .container .bar-col .component input {
+    border: none;
+    outline: none;
+    padding: 0;
+    width: 100%;
+}
+
+.search-map .container .bar-col .component .dropdown .dropdown-toggle {
+    background-color: #ffffff;
+    color: #7d7d7d9c;
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 0;
+}
+
+.search-map .container .bar-col .component .dropdown .dropdown-toggle::after {
+    margin-left: 100px;
+    color: #FF5A00;
+    font-size: 25px;
+}
+
+.search-map .container .border-right {
+    border-right: 1px solid #dddddd;
+}
+
+.search-map .container .bar-search-btn {
+
+}
+
+.search-map .container .bar-search-btn .btn-text {
+    position: absolute;
+    margin-top: -1px;
+    background: #FF5A00;
+    color: #ffffff;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-top: 16%;
+    cursor: pointer;
+}
+
+.search-map .container .bar-date-picker {
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.search-map .container .bar-console .row {
+    width: 100%;
+}
+
+/*=============END BARDATE===========*/
+
+@media only screen and (min-width: 1000px) {
+    .search-map .header-fillter {
+        width: calc(100% - 300px);
+        margin-top: -50px;
+    }
+
+    .search-map .header-fillter .vertical-line {
+        margin-left: 30px;
+        width: 1px;
+        height: 50px;
+        background: #dddddd;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .search-map .search-map .header-fillter {
+        width: 100%;
+        height: 50px;
+        margin-top: 50px;
+    }
+}

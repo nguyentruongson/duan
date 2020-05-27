@@ -1,0 +1,75 @@
+.ar-mainpanel {
+    margin-left: 0px;
+    margin-top: 20px;
+    transition: all 0.2s ease-in-out;
+}
+.br-pagetitle {
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.br-pagetitle .icon {
+  font-size: 70px;
+  line-height: 0;
+  color: #343a40;
+}
+.br-pagetitle > div {
+  margin-top: 10px;
+}
+.br-pagetitle h4 {
+  margin-bottom: 5px;
+  color: #343a40;
+}
+.br-pagetitle p {
+  margin-bottom: 0;
+}
+@media (min-width: 576px) {
+  .br-pagetitle {
+    display: flex;
+    align-items: center;
+    padding-top: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .br-pagetitle > div {
+    padding-left: 20px;
+    margin-top: 0;
+  }
+}
+
+.icon {
+    font-size: 32px;
+    width: 32px;
+    height: 32px;
+}
+
+.br-pagebody {
+    margin-top: 30px;
+    padding: 0 15px;
+  }
+  @media (min-width: 576px) {
+    .br-pagebody {
+      padding: 0 30px;
+    }
+}
+
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 3px;
+  }
+
+.card-text:last-child {
+    margin-bottom: 0;
+}
+
+.tx-inverse {
+    color: #343a40;
+}

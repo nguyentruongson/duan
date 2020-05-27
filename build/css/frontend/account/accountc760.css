@@ -1,0 +1,654 @@
+.account {
+    max-width: 1180px;
+    margin: auto;
+    margin-top: 3%;
+}
+
+.account .acc-title {
+    font-family: SFPro-Medium;
+    color: #484848;
+    font-size: 52px;
+    text-transform: uppercase;
+}
+
+.account .acc-image-name {
+    margin-top: 2%;
+    margin-left: 10px;
+}
+
+.account .acc-image-name .col-md-6 .acc-name {
+    font-family: SFPro-Medium;
+    color: #484848;
+    font-size: 36px;
+}
+
+.account .acc-image-name .col-md-6 .dis-gg {
+    margin-top: 10px;
+}
+
+.account .acc-image-name .col-md-6 .dis-gg .btn-dissgg {
+    background: #f24a38;
+    color: #fff;
+    padding: 10px 18px;
+    height: auto;
+}
+
+.account .acc-image-name .col-md-6 .link-fb {
+    margin-top: 10px;
+}
+
+.border-image {
+    height: auto;
+    width: 100%;
+    text-align: center;
+}
+
+.drive-image {
+    height: auto!important;
+    width: 100%;
+    object-fit: cover !important;
+}
+
+.account .acc-image-name .col-md-6 .link-fb .btn-linkfb {
+    background: #385899;
+    color: #fff;
+    padding: 10px 18px;
+    height: auto;
+}
+
+.account .contact-pass {
+    margin-top: 5%;
+}
+
+.account .contact-pass .group-phone-number {
+    height: 65px !important
+}
+
+.account .contact-pass .contact .contact-title {
+    font-family: SFPro-Medium;
+    color: #484848;
+    font-size: 22px;
+}
+
+.account .contact-pass .contact .contact-email {
+    margin-top: 9px;
+    height: 50px;
+    width: 80%;
+}
+
+.account .contact-pass .contact .contact-email .form-email {
+    height: 50px;
+    /*border-right: 0;*/
+}
+
+.account .contact-pass .contact .contact-email .form-email:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0);
+    border-color: #ced4da;
+}
+
+.account .contact-pass .contact .contact-email .input-group-append .input-group-text {
+    background: transparent;
+}
+
+.account .contact-pass .contact .contact-email .input-group-append .input-group-text .check-label .container-check {
+    font-size: 15px;
+    margin-bottom: 0px;
+}
+
+.account .contact-pass .contact .contact-email .input-group-append .input-group-text .check-label .container-check .checkmark-check {
+    height: 20px;
+    width: 20px;
+}
+
+.account .contact-pass .contact .contact-email .input-group-append .input-group-text .check-label .container-check .checkmark-check::after {
+    left: 8px;
+    top: 3px;
+    width: 6px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+}
+
+.account .contact-pass .contact .mobiphone-title {
+    font-family: SFPro-Medium;
+    color: #484848;
+    font-size: 22px;
+    margin-top: 5%;
+}
+
+.account .contact-pass .contact .btn-veryfile {
+    margin-top: 10px;
+}
+
+.account .contact-pass .contact .btn-veryfile .btn-dissgg {
+    background: #ea2557;
+    color: #fff;
+    padding: 10px 18px;
+    height: auto;
+}
+
+.account .contact-pass .contact .btn-veryfile .btn-update {
+    background: #ff5a00;
+    color: #fff;
+    padding: 10px 18px;
+    height: auto;
+    margin-left: 15px;
+}
+
+.account .contact-pass .password .pass-title {
+    font-family: SFPro-Medium;
+    color: #484848;
+    font-size: 22px;
+}
+
+.account .contact-pass .password .btn-pass {
+    margin-top: 10px;
+}
+
+.account .contact-pass .password .btn-pass .btn-update {
+    background: #ff5a00;
+    color: #fff;
+    padding: 10px 18px;
+    height: auto;
+}
+
+.account .contact-pass .password .mobi-notice-title {
+    font-family: SFPro-Medium;
+    color: #484848;
+    font-size: 22px;
+    margin-top: 5%;
+}
+
+.account .contact-pass .password .check-label {
+    margin-top: 2%;
+}
+
+.account .contact-pass .password .check-label .container-check {
+    color: #7b7b7b;
+}
+
+.account .savechange {
+    margin-top: 20px;
+}
+
+.account .savechange .btn-save {
+    background: #ff5a00;
+    color: #fff;
+    padding: 10px 18px;
+    height: auto;
+}
+
+.account .line-acc {
+    margin-top: 3%;
+    width: 0%;
+    border: 0.5px solid #d3d7dc;
+}
+
+
+.account .trans-title {
+    font-family: SFPro-Medium;
+    color: #484848;
+    font-size: 20px;
+    margin-top: 2%;
+}
+
+.account .trans-txt {
+    font-family: SFPro-regular;
+    font-size: 18px;
+    color: #7b7b7b;
+}
+
+.account .chooselabel {
+    margin-top: 15px;
+}
+
+.account .getapp {
+    margin-top: 20px;
+}
+
+.account .getapp .btn-getapp {
+    background: #ea2557;
+    color: #fff;
+    padding: 10px 18px;
+    height: auto;
+}
+
+.account .entercode .entercode-input .contact-code {
+    margin-top: 15px;
+    height: 50px;
+    width: 100%;
+}
+
+.account .entercode .entercode-input .contact-code .form-code {
+    height: 50px;
+    border-right: 0;
+}
+
+.account .entercode .entercode-input .contact-code .form-code:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0);
+    border-color: #ced4da;
+}
+
+.account .entercode .entercode-input .contact-code .input-group-append .input-group-text {
+    background: transparent;
+}
+
+.account .entercode .entercode-input .contact-code .input-group-append .input-group-text .check-label .container-check {
+    font-size: 15px;
+    margin-bottom: 0px;
+}
+
+.account .entercode .entercode-input .contact-code .input-group-append .input-group-text .check-label .container-check .checkmark-check {
+    height: 20px;
+    width: 20px;
+}
+
+.account .entercode .entercode-input .contact-code .input-group-append .input-group-text .check-label .container-check .checkmark-check::after {
+    left: 8px;
+    top: 3px;
+    width: 6px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+}
+
+.account .entercode .apply {
+    margin-top: 15px;
+}
+
+.account .entercode .apply .btn-apply {
+    background: #ea2557;
+    color: #fff;
+    padding: 11px 18px;
+    height: auto;
+}
+
+.account .mydata {
+    margin-top: 15px;
+}
+
+.account .mydata .btn-mydata {
+    background: #ff5a00;
+    color: #fff;
+    padding: 11px 18px;
+    height: auto;
+}
+
+
+.account .acc-image-name .col-md-3 .avatar-upload {
+    position: relative;
+    max-width: 205px;
+}
+
+.account .acc-image-name .col-md-3 .avatar-upload .avatar-edit {
+    position: absolute;
+    right: 29px;
+    z-index: 1;
+    top: 10px;
+}
+
+.account .acc-image-name .col-md-3 .avatar-upload .avatar-edit input {
+    display: none;
+}
+
+.account .acc-image-name .col-md-3 .avatar-upload .small-avatar {
+    border-radius: 100%;
+    background-size: cover;;
+    width: 100px;
+    height: 100px;
+}
+.account .acc-image-name .col-md-3 .avatar-upload .small-avatar {
+    transition: 0.2s;
+    border-radius: 100%;
+    background-size: cover;;
+    width: 100px;
+    color:#ffffff;
+    height: 100px;
+    padding-left: 19px;
+    padding-top: 11px;
+}
+.account .acc-image-name .col-md-3 .avatar-upload .small-avatar:hover {
+    box-shadow: 0 0 9px 1px #2c2a2a !important;
+    cursor: pointer;
+}
+.account .acc-image-name .col-md-3 .avatar-upload .small-avatar .spinner {
+    position: absolute;
+    top: 36px;
+    left: 43px;
+}
+
+.account .acc-image-name .col-md-3 .avatar-upload .avatar-edit label {
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    margin-bottom: 0;
+    border-radius: 100%;
+    background: #FFFFFF;
+    border: 1px solid transparent;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    font-weight: normal;
+    transition: all .2s ease-in-out;
+}
+
+.account .acc-image-name .col-md-3 .avatar-upload .avatar-edit label:hover {
+    background: #f1f1f1;
+    border-color: #d6d6d6;
+}
+
+.account .acc-image-name .col-md-3 .avatar-upload .avatar-edit i {
+    color: #757575;
+    position: absolute;
+    top: 8px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: auto;
+}
+
+.account .acc-image-name .col-md-3 .avatar-upload .avatar-preview {
+    width: 192px;
+    height: 192px;
+    position: relative;
+    border-radius: 100%;
+    border: 6px solid #F8F8F8;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
+.account .acc-image-name .col-md-3 .avatar-upload .avatar-preview .overlay-block {
+    opacity: 0;
+    cursor: pointer;
+    background-color: #000000;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.account .acc-image-name .col-md-3 .avatar-upload .avatar-preview .overlay-block:hover {
+    opacity: 0.6;
+    cursor: pointer;
+    background-color: #000000;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.account .acc-image-name .col-md-3 .avatar-upload .avatar-preview .overlay-block:hover i {
+    color: #ffffff;
+    position: relative;
+    font-size: 61px;
+    top: 58px;
+    left: 60px;
+}
+
+.account .acc-image-name .col-md-3 .avatar-upload .avatar-preview .overlay-block:not(:hover) i {
+    color: #ffffff;
+    position: relative;
+    font-size: 61px;
+    top: 58px;
+    left: 60px;
+}
+
+
+.account .acc-image-name .col-md-3 .avatar-upload .avatar-preview > div {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    transition: 0.2s;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .account {
+        max-width: 95%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .account {
+        max-width: 95%;
+    }
+
+    .account .acc-title {
+        font-size: 26px;
+    }
+
+    .account .acc-image-name .col-md-3 img {
+        width: 100%;
+    }
+
+    .account .acc-image-name .col-md-6 .acc-name {
+        font-size: 22px;
+    }
+
+    .account .acc-image-name .col-md-6 .dis-gg .btn-dissgg {
+        padding: 6px 10px;
+        font-size: 14px;
+    }
+
+    .account .acc-image-name .col-md-6 .link-fb .btn-linkfb {
+        padding: 6px 10px;
+        font-size: 14px;
+    }
+
+    .account .contact-pass .contact .contact-title {
+        font-size: 18px;
+    }
+
+    .account .contact-pass .contact .contact-email {
+        width: 100%;
+    }
+
+    .account .contact-pass .contact .mobiphone-title {
+        font-size: 18px;
+    }
+
+    .account .contact-pass .contact .btn-veryfile .btn-dissgg,
+    .account .contact-pass .contact .btn-veryfile .btn-update {
+        /*padding: 6px 10px;*/
+        /*font-size: 14px;*/
+    }
+
+    .account .contact-pass .password .pass-title {
+        font-size: 18px;
+    }
+
+    .account .contact-pass .password .btn-pass .btn-update {
+        /*padding: 6px 10px;*/
+        /*font-size: 14px;*/
+    }
+
+    .account .contact-pass .password .mobi-notice-title {
+        font-size: 18px;
+    }
+
+    .account .savechange .btn-save {
+        /*padding: 6px 10px;*/
+        /*font-size: 14px;*/
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .account {
+        max-width: 95%;
+    }
+
+    .account .acc-title {
+        font-size: 26px;
+    }
+
+    .account .acc-image-name .col-md-3 img {
+        width: 25%;
+    }
+
+    .account .acc-image-name .col-md-6 .acc-name {
+        font-size: 22px;
+    }
+
+    .account .acc-image-name .col-md-6 .dis-gg .btn-dissgg {
+        padding: 6px 10px;
+        font-size: 14px;
+    }
+
+    .account .acc-image-name .col-md-6 .link-fb .btn-linkfb {
+        padding: 6px 10px;
+        font-size: 14px;
+    }
+
+    .account .contact-pass .contact .contact-title {
+        font-size: 18px;
+    }
+
+    .account .contact-pass .contact .contact-email {
+        width: 100%;
+    }
+
+    .account .contact-pass .contact .mobiphone-title {
+        font-size: 18px;
+    }
+
+    .account .contact-pass .contact .btn-veryfile .btn-dissgg,
+    .account .contact-pass .contact .btn-veryfile .btn-update {
+        /*padding: 6px 10px;*/
+        /*font-size: 14px;  */
+    }
+
+    .account .contact-pass .password .pass-title {
+        font-size: 18px;
+    }
+
+    .account .contact-pass .password .btn-pass .btn-update {
+        /*padding: 6px 10px;*/
+        /*font-size: 14px;*/
+    }
+
+    .account .contact-pass .password .mobi-notice-title {
+        font-size: 18px;
+    }
+
+    .account .savechange .btn-save {
+        /*padding: 6px 10px;*/
+        /*font-size: 14px;*/
+    }
+
+    .account .getapp .btn-getapp {
+        padding: 6px 10px;
+        font-size: 14px;
+    }
+
+    .account .entercode .apply .btn-apply {
+        padding: 6px 10px;
+        font-size: 14px;
+    }
+
+    .account .mydata .btn-mydata {
+        padding: 6px 10px;
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 575.98px) {
+/* new css */
+    .avatar-upload{
+        margin: auto;
+    }
+    .account .trans-title{
+        text-align: center;
+    }
+    .account .mydata{
+        text-align: center;
+    }
+    
+    .nam1{
+        margin-left: 15px;
+    }
+/* end new css     */
+    .account {
+        max-width: 95%;
+    }
+
+    .account .acc-title {
+        font-size: 26px;
+    }
+
+    .account .acc-image-name .col-md-3 img {
+        width: 25%;
+    }
+
+    .account .acc-image-name .col-md-6 .acc-name {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .account .acc-image-name .col-md-6 .dis-gg .btn-dissgg {
+        padding: 6px 10px;
+        font-size: 14px;
+    }
+
+    .account .acc-image-name .col-md-6 .link-fb .btn-linkfb {
+        padding: 6px 10px;
+        font-size: 14px;
+    }
+
+    .account .contact-pass .contact .contact-title {
+        font-size: 18px;
+       
+    }
+
+    .account .contact-pass .contact .contact-email {
+        width: 100%;
+    }
+
+    .account .contact-pass .contact .mobiphone-title {
+        font-size: 18px;
+    }
+
+    .account .contact-pass .contact .btn-veryfile .btn-dissgg,
+    .account .contact-pass .contact .btn-veryfile .btn-update {
+        /*padding: 6px 10px;*/
+        /*font-size: 14px;*/
+    }
+
+    .account .contact-pass .password .check-label .container-check {
+        font-size: 15px;
+    }
+
+    .account .contact-pass .password .pass-title {
+        font-size: 18px;
+    }
+
+    .account .contact-pass .password .btn-pass .btn-update {
+        /*padding: 6px 10px;*/
+        /*font-size: 14px;*/
+    }
+
+    .account .contact-pass .password .mobi-notice-title {
+        font-size: 18px;
+        
+    }
+
+    .account .savechange .btn-save {
+        /*padding: 6px 10px;*/
+        /*font-size: 14px;*/
+    }
+
+    .account .getapp .btn-getapp {
+        padding: 6px 10px;
+        font-size: 14px;
+    }
+
+    .account .entercode .apply .btn-apply {
+        padding: 6px 10px;
+        font-size: 14px;
+    }
+
+    .account .mydata .btn-mydata {
+        padding: 6px 10px;
+        font-size: 14px;
+    }
+
+    .account .trans-txt {
+        font-size: 15px;
+    }
+}

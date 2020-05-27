@@ -1,0 +1,663 @@
+.car-detail {
+    background-color: white;
+}
+.sp-loading {
+    text-align: center;
+    max-width: 270px;
+    padding: 15px;
+    border: 5px solid #eee;
+    border-radius: 3px;
+    font-size: 12px;
+    color: #888;
+}
+
+/* Element wrapper */
+
+.sp-wrap {
+    display: none;
+    line-height: 0;
+    font-size: 0;
+    background: #f3f3f3;
+    border: 5px solid #f3f3f3;
+    border-radius: 3px;
+    position: relative;
+    margin: 0 25px 15px 0;
+    text-align: center;
+}
+
+
+
+/* Thumbnails */
+
+.sp-thumbs {
+    text-align: left;
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 2px;
+}
+.sp-thumbs img {
+    min-height: 80px;
+    min-width: 100px;
+    max-width: 100px;
+    border-radius: 6px;
+}
+.sp-thumbs a:link, .sp-thumbs a:visited {
+    width: 100px;
+    height: 80px;
+    border: 1px solid #d4d4d4;
+    border-radius: 6px;
+    margin-left: 2px;
+    margin-right: 2px;
+    overflow: hidden;
+    opacity: .3;
+    display: inline-block;
+    background-size: cover;
+    background-position: center;
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -ms-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+}
+.sp-thumbs a:hover {
+    opacity: 1;
+}
+
+/* Styles for the currently selected thumbnail */
+
+.sp-thumbs a:active, .sp-current {
+    opacity: 1!important;
+    position: relative;
+}
+
+/* Image currently being viewed */
+
+.sp-large {
+    position: relative;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    text-align: center;
+    max-height: 500px;
+}
+.sp-large a img {
+    max-width: 100%;
+    height: auto;
+}
+.sp-large a {
+    display: block;
+}
+
+/* Panning Zoomed Image */
+
+.sp-zoom {
+    position: absolute;
+    left: -50%;
+    top: -50%;
+    cursor: -webkit-zoom-in;
+    cursor: -moz-zoom-in;
+    cursor: zoom-in;
+    display: none;
+}
+/* Lightbox */
+
+.sp-lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, .9);
+    z-index: 500;
+    display: none;
+    cursor: pointer;
+}
+.sp-lightbox img {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-width: 90%;
+    max-height: 90%;
+    border: 2px solid #fff;
+}
+#sp-prev, #sp-next {
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    z-index: 501;
+    color: #fff;
+    padding: 14px;
+    text-decoration: none;
+    background: #000;
+    border-radius: 25px;
+    border: 2px solid #fff;
+    width: 50px;
+    height: 50px;
+    box-sizing: border-box;
+    transition: .2s;
+}
+#sp-prev {
+    left: 10px;
+}
+#sp-prev:before {
+    content: '';
+    border: 7px solid transparent;
+    border-right: 15px solid #fff;
+    position: absolute;
+    top: 16px;
+    left: 7px;
+}
+#sp-next {
+    right: 10px;
+}
+#sp-next:before {
+    content: '';
+    border: 7px solid transparent;
+    border-left: 15px solid white;
+    position: absolute;
+    top: 16px;
+    left: 18px;
+}
+#sp-prev:hover, #sp-next:hover {
+    background: #444;
+}
+
+.getPriceCar {
+    display: flex;
+    justify-content: center;
+    margin-left: -30px;
+}
+
+@media screen and (max-width: 576px) {
+    .getPriceCar {
+        display: flex;
+        justify-content: center;
+        margin-left: -20px;
+    }
+}
+
+/* Tweak styles for small viewports */
+
+@media screen and (max-width: 400px) {
+    .sp-wrap {
+        margin: 0 0 15px 0;
+    }
+    #sp-prev, #sp-next {
+        top: auto;
+        margin-top: 0;
+        bottom: 25px;
+    }
+}
+@-webkit-keyframes rightEnd {
+    0% {
+        left: 0;
+    }
+
+    50% {
+        left: -15px;
+    }
+
+    100% {
+        left: 0;
+    }
+}
+@keyframes rightEnd {
+    0% {
+        left: 0;
+    }
+
+    50% {
+        left: -15px;
+    }
+
+    100% {
+        left: 0;
+    }
+}
+@-webkit-keyframes topEnd {
+    0% {
+        top: 0;
+    }
+
+    50% {
+        top: -15px;
+    }
+
+    100% {
+        top: 0;
+    }
+}
+@keyframes topEnd {
+    0% {
+        top: 0;
+    }
+
+    50% {
+        top: -15px;
+    }
+
+    100% {
+        top: 0;
+    }
+}
+@-webkit-keyframes leftEnd {
+    0% {
+        left: 0;
+    }
+
+    50% {
+        left: 15px;
+    }
+
+    100% {
+        left: 0;
+    }
+}
+@keyframes leftEnd {
+    0% {
+        left: 0;
+    }
+
+    50% {
+        left: 15px;
+    }
+
+    100% {
+        left: 0;
+    }
+}
+@-webkit-keyframes bottomEnd {
+    0% {
+        bottom: 0;
+    }
+
+    50% {
+        bottom: -15px;
+    }
+
+    100% {
+        bottom: 0;
+    }
+}
+@keyframes bottomEnd {
+    0% {
+        bottom: 0;
+    }
+
+    50% {
+        bottom: -15px;
+    }
+
+    100% {
+        bottom: 0;
+    }
+}
+.lSSlideOuter .rightEnd {
+    -webkit-animation: rightEnd 0.3s;
+    animation: rightEnd 0.3s;
+    position: relative;
+}
+.lSSlideOuter .leftEnd {
+    -webkit-animation: leftEnd 0.3s;
+    animation: leftEnd 0.3s;
+    position: relative;
+}
+.lSSlideOuter.vertical .rightEnd {
+    -webkit-animation: topEnd 0.3s;
+    animation: topEnd 0.3s;
+    position: relative;
+}
+.lSSlideOuter.vertical .leftEnd {
+    -webkit-animation: bottomEnd 0.3s;
+    animation: bottomEnd 0.3s;
+    position: relative;
+}
+.lSSlideOuter.lSrtl .rightEnd {
+    -webkit-animation: leftEnd 0.3s;
+    animation: leftEnd 0.3s;
+    position: relative;
+}
+.lSSlideOuter.lSrtl .leftEnd {
+    -webkit-animation: rightEnd 0.3s;
+    animation: rightEnd 0.3s;
+    position: relative;
+}
+/*/  GRab cursor */
+.lightSlider.lsGrab > * {
+  cursor: -webkit-grab;
+  cursor: -moz-grab;
+  cursor: -o-grab;
+  cursor: -ms-grab;
+  cursor: grab;
+}
+.lightSlider.lsGrabbing > * {
+  cursor: move;
+  cursor: -webkit-grabbing;
+  cursor: -moz-grabbing;
+  cursor: -o-grabbing;
+  cursor: -ms-grabbing;
+  cursor: grabbing;
+}
+
+.car-detail #map {
+    height: 500px;
+    width: 100%;
+}
+
+.car-detail .content-all .car-location .location-title {
+    margin-top: 10px;
+}
+
+.car-detail .content-all .car-location .location-description {
+    font-size: 13px;
+    color: #80808087;
+}
+
+.car-detail .bread-crumb {
+    margin-top: 8px;
+    padding: 15px 0;
+    border-bottom: 1px solid #d7dce3 !important;
+}
+
+.car-detail .bread-crumb {
+    margin-top: 8px;
+    padding: 15px 0;
+    border-bottom: 1px solid #d7dce3 !important;
+}
+
+.car-detail .simplegallery {
+    margin: 20px auto;
+    width: 100% !important;
+    height: 390px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.car-detail .checked {
+    color: #008489;
+}
+
+.car-detail .name-car {
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: #484848;
+    padding-left: 0 !important;
+}
+
+.car-detail .introduce-text {
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: #484848;
+}
+
+.car-detail .feature .col-md-4 {
+    padding-left: 0;
+    margin-bottom: 10px;
+}
+
+
+.car-detail .mx-auto .information-detail {
+    border: 1px solid #d7dce3;
+    border-top: 5px solid #ff5a00;
+    padding: 15px;
+}
+
+.car-detail .mx-auto .information-detail2 {
+    border: 1px solid #d7dce3;
+    padding: 15px;
+}
+
+.car-detail .mx-auto .information-detail2 .button {
+    text-align: center;
+    padding: 8px 15px;
+    background-color: #ff5a00;
+    color: white;
+    width: 100%;
+    height: 10%;
+    border-radius: 6px;
+}
+
+.car-detail .mx-auto .information-distance .col-md-6 {
+    color: #ff5a00;
+}
+
+.car-detail .mx-auto .information-distance {
+    margin-top: 20px;
+    border: 1px solid #d7dce3;
+    padding: 15px;
+}
+
+.car-detail .mx-auto .hosted-by {
+    margin-top: 0;
+    border: 1px solid #d7dce3;
+    padding: 15px;
+}
+
+.car-detail .mx-auto .information-distance .avatar {
+    vertical-align: middle;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    margin-right: 40px;
+}
+
+.car-detail .mx-auto .information-distance .title {
+    font-size: 20px;
+}
+
+.introduce-car .car-top {
+    width: 100%;
+    margin: auto;
+}
+
+.introduce-car .row {
+    width: 100%;
+    margin: auto;
+}
+
+.secton-gallery {
+    margin-top: 2%;
+    text-align: center;
+}
+
+.fotorama__nav-wrap {
+    margin-top: 2%;
+}
+
+.input-datetrip {
+    width: 100%;
+    cursor: pointer;
+    border: 1px solid #8d8d8d8c;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.row {
+    width: 100%;
+    margin: auto;
+}
+
+.content-all {
+    max-width: 1190px;
+    margin-top: 1%;
+}
+
+@media (min-width: 1200px) {
+    .car-detail #map-car-location {
+        height: 400px; /* The height is 400 pixels */
+        width: 100%; /* The width is the width of the web page */
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .car-detail #map-car-location {
+        height: 400px; /* The height is 400 pixels */
+        width: 100%; /* The width is the width of the web page */
+    }
+
+    .car-detail .bread-crumb {
+        padding-left: 2% !important;
+    }
+
+    .car-detail .content-all .col-md-9 {
+        padding-left: 15px !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .car-detail #map-car-location {
+        height: 400px; /* The height is 400 pixels */
+        width: 100%; /* The width is the width of the web page */
+    }
+
+    .car-detail .bread-crumb {
+        padding-left: 2% !important;
+    }
+
+    .car-detail .content-all .col-md-9 {
+        padding-left: 15px !important;
+    }
+
+    .car-detail .introduce-car .row .col-md-3 img {
+        width: 26px;
+    }
+}
+
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .car-detail #map-car-location {
+        height: 400px; /* The height is 400 pixels */
+        width: 97%; /* The width is the width of the web page */
+    }
+
+    .car-detail .bread-crumb {
+        padding-left: 2% !important;
+    }
+
+    .car-detail .content-all .col-md-9 {
+        padding-left: 15px !important;
+    }
+
+    .car-detail .introduce-car .row .col-md-3 img {
+        width: 20px;
+    }
+
+    .car-detail .introduce-car .row .col-md-3 {
+        margin-bottom: 15px;
+    }
+
+    .car-detail .mx-auto .description {
+        /*padding-left: 15px*/
+    }
+
+    .car-detail .mx-auto .introduce-text-like {
+        padding-left: 15px
+    }
+
+    /*.car-detail .mx-auto .car-location {*/
+    /*    padding-left: 15px*/
+    /*}*/
+
+}
+
+
+@media (min-width: 320px) and (max-width: 576px) {
+    .car-detail #map-car-location {
+        height: 400px; /* The height is 400 pixels */
+        width: 95%; /* The width is the width of the web page */
+    }
+
+    .car-detail .bread-crumb {
+        padding-left: 2% !important;
+    }
+
+    .car-detail .content-all .col-md-9 {
+        padding-left: 0 !important;
+    }
+
+    .car-detail .introduce-car .row .col-md-3 img {
+        width: 20px;
+    }
+
+    .car-detail .introduce-car .row .col-md-3 {
+        margin-bottom: 10px;
+    }
+
+    .car-detail .description .row {
+        padding-left: 10px;
+    }
+
+    .car-detail .business-class div {
+        padding-left: 15px;
+    }
+
+    .car-detail .feature div {
+        padding-left: 15px;
+    }
+
+    .car-detail .feature .row .col-md-4 img {
+        width: 18px;
+    }
+
+    .car-detail .feature .row .col-md-4 {
+        padding-bottom: 10px;
+    }
+
+    .car-detail .extras div, .FAQS div {
+        padding-left: 15px;
+    }
+
+    .car-detail {
+        padding-bottom: 10px;
+    }
+
+    .car-detail .mx-auto .description {
+        padding-left: 15px
+    }
+
+    .car-detail .mx-auto .introduce-text-like {
+        padding-left: 15px
+    }
+
+    .car-detail .mx-auto .car-location {
+        padding-left: 15px
+    }
+}
+
+
+/* .fotorama__nav{
+    width: 100%!important;
+}
+.img-samll-fotoma{
+    width: 100px!important;
+}
+.fotorama__stage__frame img{
+    width: 100%!important;
+    left: 0!important;
+}
+
+
+.fotorama__nav__shaft .fotorama__active{
+    width: 10%!important;
+} */
+/* .fotorama__nav__shaft .fotorama__nav__frame--thumb{
+    width: 131px!important;
+    height: 131px!important;
+}
+.fotorama__nav__shaft .fotorama__thumb-border {
+    height: 127px!important;
+    width: 126px!important;
+}
+.fotorama__nav__shaft .fotorama__nav__frame .fotorama__thumb .fotorama__img{
+    width: 131px!important;
+    height: 131px!important;
+    left: 0!important;
+} */
+
+.fotorama__nav__shaft {
+    width: 100%;
+}

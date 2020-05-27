@@ -1,0 +1,422 @@
+@font-face {
+  font-family: SFPro-regular;
+  src: url("../font/SFProText-Regular.html"); }
+@font-face {
+  font-family: SFPro-Medium;
+  src: url("../font/SFProText-Medium.html"); }
+.btn-primary.focus,
+.btn-primary:focus {
+  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0) !important; }
+
+.address-page {
+  border-bottom: 1px solid #d9dee4; }
+  .address-page .address-content {
+    max-width: 1180px;
+    margin: auto;
+    padding: 15px 0 5px 0; }
+    .address-page .address-content p {
+      font-family: SFPro-Medium;
+      color: #484848;
+      font-size: 16px; }
+
+.conf-content {
+  max-width: 1180px;
+  margin: auto;
+  margin-top: 3%; }
+  .conf-content .row .col-md-8 .title {
+    font-family: SFPro-Medium;
+    font-size: 28px;
+    color: #484848;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #d7dce3; }
+  .conf-content .row .col-md-8 .pay-with-title {
+    margin-top: 3%;
+    font-family: SFPro-Medium;
+    font-size: 28px;
+    color: #484848d2; }
+  .conf-content .row .col-md-8 .select-card {
+    padding-bottom: 3%; }
+    .conf-content .row .col-md-8 .select-card .bootstrap-select {
+      width: 50%;
+      height: 55px;
+      margin-top: 15px; }
+      .conf-content .row .col-md-8 .select-card .bootstrap-select .dropdown-toggle {
+        height: 55px;
+        border: 1px solid #ff5a00;
+        background: transparent; }
+  .conf-content .row .col-md-8 .conf-name .col-md-6 .conf-input {
+    height: 55px; }
+  .conf-content .row .col-md-8 .card-infor {
+    margin-top: 4%; }
+    .conf-content .row .col-md-8 .card-infor .card-title {
+      font-family: SFPro-Medium;
+      font-size: 18px;
+      color: #484848; }
+    .conf-content .row .col-md-8 .card-infor input {
+      height: 55px; }
+    .conf-content .row .col-md-8 .card-infor .conf-cardnumber {
+      margin-top: 2%; }
+  .conf-content .row .col-md-8 .conf-Billding {
+    margin-top: 4%; }
+    .conf-content .row .col-md-8 .conf-Billding .card-title {
+      font-family: SFPro-Medium;
+      font-size: 18px;
+      color: #484848; }
+    .conf-content .row .col-md-8 .conf-Billding input {
+      height: 55px; }
+  .conf-content .row .col-md-8 .conf-policy {
+    margin-top: 5%;
+    font-family: SFPro-Medium;
+    font-size: 20px;
+    color: #484848; }
+  .conf-content .row .col-md-8 p {
+    font-family: SFPro-regular;
+    font-size: 18px;
+    color: #484848;
+    padding-bottom: 3%; }
+    .conf-content .row .col-md-8 p a {
+      color: #ff5a00; }
+  .conf-content .row .col-md-8 .confirm-button {
+    background: #ff5a00;
+    height: 55px;
+    border: 0px; }
+  .conf-content .row .col-md-4 {
+    border: 1px solid #d7dce3;
+    border-radius: 5px;
+    max-width: 30%;
+    flex: 30%;
+    float: right;
+    margin-left: 3%;
+    border-top: 10px solid #ff5a00; }
+    .conf-content .row .col-md-4 .img-car {
+      text-align: center;
+      margin-top: 3%; }
+      .conf-content .row .col-md-4 .img-car img {
+        width: 95%; }
+    .conf-content .row .col-md-4 .name-car {
+      color: #484848;
+      font-family: SFPro-Medium;
+      font-size: 20px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #d7dce3; }
+    .conf-content .row .col-md-4 .trip-start {
+      font-family: SFPro-regular;
+      font-size: 18px;
+      padding-bottom: 11px;
+      margin-top: 5%;
+      border-bottom: 1px solid #d7dce3; }
+    .conf-content .row .col-md-4 .nocation-meet {
+      font-family: SFPro-Medium;
+      font-size: 18px;
+      color: #b3b3b3;
+      text-transform: uppercase;
+      margin-top: 5%; }
+    .conf-content .row .col-md-4 .loaction-m {
+      font-family: SFPro-regular;
+      font-size: 18px;
+      margin-top: 5%;
+      color: #484848;
+      padding-bottom: 10%; }
+      .conf-content .row .col-md-4 .loaction-m img {
+        margin-right: 5px; }
+    .conf-content .row .col-md-4 .price .col-md-7 p {
+      font-family: SFPro-regular;
+      font-size: 18px;
+      color: #484848;
+      margin-bottom: 10px; }
+    .conf-content .row .col-md-4 .price .col-md-5 {
+      text-align: right; }
+      .conf-content .row .col-md-4 .price .col-md-5 p {
+        font-family: SFPro-regular;
+        font-size: 18px;
+        color: #484848;
+        margin-bottom: 10px; }
+    .conf-content .row .col-md-4 .price-total {
+      background: #ff5a00;
+      border-radius: 5px;
+      width: 95%;
+      margin: auto;
+      margin-top: 10%;
+      padding: 20px 0; }
+      .conf-content .row .col-md-4 .price-total .col-md-7 p {
+        font-family: SFPro-regular;
+        font-size: 18px;
+        color: #ffffff;
+        margin-bottom: 10px; }
+      .conf-content .row .col-md-4 .price-total .col-md-5 {
+        text-align: right; }
+        .conf-content .row .col-md-4 .price-total .col-md-5 p {
+          font-family: SFPro-regular;
+          font-size: 18px;
+          color: #ffffff;
+          margin-bottom: 10px; }
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .conf-content .row {
+    width: 95%;
+    margin: auto; }
+    .conf-content .row .col-md-8 .title {
+      font-size: 20px; }
+    .conf-content .row .col-md-8 .pay-with-title {
+      font-size: 20px; }
+    .conf-content .row .col-md-8 .select-card .bootstrap-select .dropdown-toggle {
+      height: 46px; }
+    .conf-content .row .col-md-8 .conf-name {
+      margin: 0;
+      width: 100%;
+      margin-left: -15px; }
+      .conf-content .row .col-md-8 .conf-name .col-md-6 .conf-input {
+        height: 44px; }
+    .conf-content .row .col-md-8 .card-infor input {
+      height: 44px;
+      width: 95%; }
+    .conf-content .row .col-md-8 .card-infor .conf-cardnumber {
+      margin-left: -15px;
+      margin-right: 0; }
+    .conf-content .row .col-md-8 .conf-Billding {
+      margin-left: -15px;
+      margin-right: 0; }
+      .conf-content .row .col-md-8 .conf-Billding input {
+        height: 44px; }
+    .conf-content .row .col-md-8 .conf-policy {
+      font-size: 18px; }
+    .conf-content .row .col-md-8 p {
+      font-size: 15px; }
+    .conf-content .row .col-md-4 .name-car {
+      font-size: 18px; }
+    .conf-content .row .col-md-4 .trip-start,
+    .conf-content .row .col-md-4 .nocation-meet,
+    .conf-content .row .col-md-4 .loaction-m {
+      font-size: 15px; }
+    .conf-content .row .col-md-4 .price {
+      margin: 0;
+      width: 100%; }
+      .conf-content .row .col-md-4 .price .col-md-7 {
+        padding: 0; }
+        .conf-content .row .col-md-4 .price .col-md-7 p,
+        .conf-content .row .col-md-4 .price .col-md-7 small {
+          font-size: 13px !important; }
+      .conf-content .row .col-md-4 .price .col-md-5 p,
+      .conf-content .row .col-md-4 .price .col-md-5 small {
+        font-size: 13px !important; }
+    .conf-content .row .col-md-4 .price-total {
+      width: 100%; }
+      .conf-content .row .col-md-4 .price-total .col-md-7 p,
+      .conf-content .row .col-md-4 .price-total .col-md-7 small {
+        font-size: 13px !important; }
+      .conf-content .row .col-md-4 .price-total .col-md-5 p,
+      .conf-content .row .col-md-4 .price-total .col-md-5 small {
+        font-size: 13px !important; }
+
+  .address-page .address-contentt p {
+    width: 92%;
+    font-size: 15px; } }
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .conf-content .row {
+    width: 95%;
+    margin: auto; }
+    .conf-content .row .col-md-8 .title {
+      font-size: 20px; }
+    .conf-content .row .col-md-8 .pay-with-title {
+      font-size: 20px; }
+    .conf-content .row .col-md-8 .select-card .bootstrap-select .dropdown-toggle {
+      height: 46px; }
+    .conf-content .row .col-md-8 .conf-name {
+      margin: 0;
+      width: 100%;
+      margin-left: -15px; }
+      .conf-content .row .col-md-8 .conf-name .col-md-6 .conf-input {
+        height: 44px; }
+    .conf-content .row .col-md-8 .card-infor input {
+      height: 44px;
+      width: 95%; }
+    .conf-content .row .col-md-8 .card-infor .conf-cardnumber {
+      margin-left: -15px;
+      margin-right: 0; }
+    .conf-content .row .col-md-8 .conf-Billding {
+      margin-left: -15px;
+      margin-right: 0; }
+      .conf-content .row .col-md-8 .conf-Billding input {
+        height: 44px; }
+    .conf-content .row .col-md-8 .conf-policy {
+      font-size: 18px; }
+    .conf-content .row .col-md-8 p {
+      font-size: 15px; }
+    .conf-content .row .col-md-4 .name-car {
+      font-size: 18px; }
+    .conf-content .row .col-md-4 .trip-start,
+    .conf-content .row .col-md-4 .nocation-meet,
+    .conf-content .row .col-md-4 .loaction-m {
+      font-size: 15px; }
+    .conf-content .row .col-md-4 .price {
+      margin: 0;
+      width: 100%; }
+      .conf-content .row .col-md-4 .price .col-md-7 {
+        padding: 0; }
+        .conf-content .row .col-md-4 .price .col-md-7 p,
+        .conf-content .row .col-md-4 .price .col-md-7 small {
+          font-size: 13px !important; }
+      .conf-content .row .col-md-4 .price .col-md-5 p,
+      .conf-content .row .col-md-4 .price .col-md-5 small {
+        font-size: 13px !important; }
+    .conf-content .row .col-md-4 .price-total {
+      width: 100%; }
+      .conf-content .row .col-md-4 .price-total .col-md-7 p,
+      .conf-content .row .col-md-4 .price-total .col-md-7 small {
+        font-size: 13px !important; }
+      .conf-content .row .col-md-4 .price-total .col-md-5 p,
+      .conf-content .row .col-md-4 .price-total .col-md-5 small {
+        font-size: 13px !important; }
+
+  .address-page .address-contentt p {
+    width: 92%;
+    font-size: 15px; } }
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .conf-content .row {
+    width: 95%;
+    margin: auto; }
+    .conf-content .row .col-md-8 .title {
+      font-size: 20px; }
+    .conf-content .row .col-md-8 .pay-with-title {
+      font-size: 20px; }
+    .conf-content .row .col-md-8 .select-card .bootstrap-select .dropdown-toggle {
+      height: 46px; }
+    .conf-content .row .col-md-8 .conf-name {
+      margin: 0;
+      width: 100%;
+      margin-left: -15px; }
+      .conf-content .row .col-md-8 .conf-name .col-md-6 .conf-input {
+        height: 44px;
+        margin-bottom: 10px; }
+    .conf-content .row .col-md-8 .card-infor input {
+      height: 44px;
+      width: 95%;
+      margin-bottom: 10px; }
+    .conf-content .row .col-md-8 .card-infor .conf-cardnumber {
+      margin-left: -15px;
+      margin-right: 0; }
+    .conf-content .row .col-md-8 .conf-Billding {
+      margin-left: -15px;
+      margin-right: 0; }
+      .conf-content .row .col-md-8 .conf-Billding input {
+        height: 44px; }
+    .conf-content .row .col-md-8 .conf-policy {
+      font-size: 18px; }
+    .conf-content .row .col-md-8 p {
+      font-size: 15px; }
+    .conf-content .row .col-md-4 {
+      margin-top: 5%;
+      max-width: 95%; }
+      .conf-content .row .col-md-4 .name-car {
+        font-size: 18px; }
+      .conf-content .row .col-md-4 .trip-start,
+      .conf-content .row .col-md-4 .nocation-meet,
+      .conf-content .row .col-md-4 .loaction-m {
+        font-size: 15px; }
+      .conf-content .row .col-md-4 .price {
+        margin: 0;
+        width: 100%; }
+        .conf-content .row .col-md-4 .price .col-md-7 {
+          padding: 0;
+          max-width: 50%; }
+          .conf-content .row .col-md-4 .price .col-md-7 p,
+          .conf-content .row .col-md-4 .price .col-md-7 small {
+            font-size: 13px !important; }
+        .conf-content .row .col-md-4 .price .col-md-5 {
+          max-width: 50%; }
+          .conf-content .row .col-md-4 .price .col-md-5 p,
+          .conf-content .row .col-md-4 .price .col-md-5 small {
+            font-size: 13px !important; }
+      .conf-content .row .col-md-4 .price-total {
+        width: 100%; }
+        .conf-content .row .col-md-4 .price-total .col-md-7 {
+          max-width: 50%; }
+          .conf-content .row .col-md-4 .price-total .col-md-7 p,
+          .conf-content .row .col-md-4 .price-total .col-md-7 small {
+            font-size: 13px !important; }
+        .conf-content .row .col-md-4 .price-total .col-md-5 {
+          max-width: 50%; }
+          .conf-content .row .col-md-4 .price-total .col-md-5 p,
+          .conf-content .row .col-md-4 .price-total .col-md-5 small {
+            font-size: 13px !important; }
+
+  .address-page .address-contentt p {
+    width: 92%;
+    font-size: 15px;
+    margin: auto; } }
+@media (min-width: 320px) and (max-width: 575.98px) {
+  .conf-content .row {
+    width: 95%;
+    margin: auto; }
+    .conf-content .row .col-md-8 .title {
+      font-size: 20px; }
+    .conf-content .row .col-md-8 .pay-with-title {
+      font-size: 20px; }
+    .conf-content .row .col-md-8 .select-card .bootstrap-select .dropdown-toggle {
+      height: 46px; }
+    .conf-content .row .col-md-8 .conf-name {
+      margin: 0;
+      width: 100%;
+      margin-left: -15px; }
+      .conf-content .row .col-md-8 .conf-name .col-md-6 .conf-input {
+        height: 44px;
+        margin-bottom: 10px; }
+    .conf-content .row .col-md-8 .card-infor input {
+      height: 44px;
+      width: 95%;
+      margin-bottom: 10px; }
+    .conf-content .row .col-md-8 .card-infor .conf-cardnumber {
+      margin-left: -15px;
+      margin-right: 0; }
+    .conf-content .row .col-md-8 .conf-Billding {
+      margin-left: -15px;
+      margin-right: 0; }
+      .conf-content .row .col-md-8 .conf-Billding input {
+        height: 44px; }
+    .conf-content .row .col-md-8 .conf-policy {
+      font-size: 18px; }
+    .conf-content .row .col-md-8 p {
+      font-size: 15px; }
+    .conf-content .row .col-md-4 {
+      margin-top: 5%;
+      max-width: 95%; }
+      .conf-content .row .col-md-4 .name-car {
+        font-size: 18px; }
+      .conf-content .row .col-md-4 .trip-start,
+      .conf-content .row .col-md-4 .nocation-meet,
+      .conf-content .row .col-md-4 .loaction-m {
+        font-size: 15px; }
+      .conf-content .row .col-md-4 .price {
+        margin: 0;
+        width: 100%; }
+        .conf-content .row .col-md-4 .price .col-md-7 {
+          padding: 0;
+          max-width: 50%; }
+          .conf-content .row .col-md-4 .price .col-md-7 p,
+          .conf-content .row .col-md-4 .price .col-md-7 small {
+            font-size: 13px !important; }
+        .conf-content .row .col-md-4 .price .col-md-5 {
+          max-width: 50%; }
+          .conf-content .row .col-md-4 .price .col-md-5 p,
+          .conf-content .row .col-md-4 .price .col-md-5 small {
+            font-size: 13px !important; }
+      .conf-content .row .col-md-4 .price-total {
+        width: 100%; }
+        .conf-content .row .col-md-4 .price-total .col-md-7 {
+          max-width: 50%; }
+          .conf-content .row .col-md-4 .price-total .col-md-7 p,
+          .conf-content .row .col-md-4 .price-total .col-md-7 small {
+            font-size: 13px !important; }
+        .conf-content .row .col-md-4 .price-total .col-md-5 {
+          max-width: 50%; }
+          .conf-content .row .col-md-4 .price-total .col-md-5 p,
+          .conf-content .row .col-md-4 .price-total .col-md-5 small {
+            font-size: 13px !important; }
+
+  .address-page .address-contentt p {
+    width: 92%;
+    font-size: 15px;
+    margin: auto; } }
+
+/*# sourceMappingURL=confirm-n-pay.css.map */

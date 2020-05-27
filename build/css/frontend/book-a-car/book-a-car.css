@@ -1,0 +1,287 @@
+.bookacar .how-header {
+  background: url("../../../img/bookacar.png");
+  background-size: 100%;
+  background-repeat: no-repeat; }
+  .bookacar .how-header .how-header-content {
+    max-width: 1180px;
+    margin: auto; }
+    .bookacar .how-header .how-header-content .hwe-title {
+      font-size: 30px;
+      font-family: SFPro-Medium;
+      color: #fff;
+      padding-top: 5%; }
+    .bookacar .how-header .how-header-content .hwe-txt {
+      font-family: SFPro-regular;
+      font-size: 18px;
+      color: #fff; }
+    .bookacar .how-header .how-header-content .hwe-btn {
+      margin-top: 2%;
+      padding-bottom: 45px; }
+      .bookacar .how-header .how-header-content .hwe-btn .btn-book {
+        background: #ff5a00;
+        border: none;
+        height: 48px; }
+.bookacar .why-juz-block {
+  max-width: 1180px;
+  margin: auto;
+  margin-top: 3%; }
+  .bookacar .why-juz-block .why-juzdriver .why-title {
+    font-size: 26px;
+    font-family: SFPro-Medium;
+    color: #484848; }
+  .bookacar .why-juz-block .why-juzdriver .why-section {
+    margin-top: 2%; }
+    .bookacar .why-juz-block .why-juzdriver .why-section .col-md-4 .choice-tit {
+      font-size: 18px;
+      font-family: SFPro-Medium;
+      color: #484848;
+      margin-top: 15px;
+      margin-bottom: 15px; }
+    .bookacar .why-juz-block .why-juzdriver .why-section .col-md-4 .choice-txt {
+      font-size: 16px;
+      font-family: SFPro-regular;
+      color: #484848b4; }
+  .bookacar .why-juz-block .why-juzdriver .cities {
+    margin: auto;
+    text-align: center;
+    margin-top: 3%;
+    margin-bottom: 5%; }
+    .bookacar .why-juz-block .why-juzdriver .cities .col-md-3 {
+      border: 1px solid #d9dee4;
+      border-radius: 5px; }
+      .bookacar .why-juz-block .why-juzdriver .cities .col-md-3:hover {
+        background: rgba(217, 222, 228, 0.555);
+        transition: 0.5s; }
+      .bookacar .why-juz-block .why-juzdriver .cities .col-md-3 .number-citi {
+        color: #ff5a00;
+        font-size: 28px;
+        font-family: SFPro-Medium;
+        padding-top: 12%;
+        padding-bottom: 2%; }
+      .bookacar .why-juz-block .why-juzdriver .cities .col-md-3 .number-txt {
+        font-size: 16px;
+        font-family: SFPro-Medium;
+        color: #868686;
+        padding-bottom: 12%; }
+  .bookacar .why-juz-block .branch {
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%; }
+  .bookacar .why-juz-block .covered {
+    margin-top: 5%; }
+    .bookacar .why-juz-block .covered .hiw-title {
+      font-size: 24px;
+      color: #484848;
+      text-align: center;
+      font-weight: 900; }
+    .bookacar .why-juz-block .covered .hiw-content {
+      margin-top: 5%; }
+      .bookacar .why-juz-block .covered .hiw-content .car-img {
+        text-align: center; }
+        .bookacar .why-juz-block .covered .hiw-content .car-img img {
+          width: 100%; }
+      .bookacar .why-juz-block .covered .hiw-content .hiw-content-left .hiw-slide .owl-carousel .item .hiw-title2 {
+        font-size: 18px;
+        color: #484848; }
+      .bookacar .why-juz-block .covered .hiw-content .hiw-content-left .hiw-slide .owl-carousel .item img {
+        width: auto;
+        margin-top: 10px; }
+      .bookacar .why-juz-block .covered .hiw-content .hiw-content-left .hiw-slide .owl-carousel .item .hiw-txt {
+        color: #696969;
+        margin-top: 15px;
+        font-size: 18px;
+        padding-right: 15%; }
+      .bookacar .why-juz-block .covered .hiw-content .hiw-content-left .hiw-slide .owl-carousel-style .owl-nav {
+        margin-top: 4%; }
+        .bookacar .why-juz-block .covered .hiw-content .hiw-content-left .hiw-slide .owl-carousel-style .owl-nav button {
+          width: 35px;
+          background-color: #ffeade;
+          color: #ff5a00; }
+          .bookacar .why-juz-block .covered .hiw-content .hiw-content-left .hiw-slide .owl-carousel-style .owl-nav button:focus {
+            box-shadow: #48484800;
+            outline: none; }
+        .bookacar .why-juz-block .covered .hiw-content .hiw-content-left .hiw-slide .owl-carousel-style .owl-nav .owl-prev {
+          margin-right: 15px; }
+.bookacar .howitwork {
+  padding-bottom: 5%; }
+  .bookacar .howitwork .how-title {
+    margin-top: 3%;
+    font-size: 28px;
+    font-family: SFPro-Medium;
+    color: #484848;
+    text-align: center; }
+  .bookacar .howitwork .how-content {
+    position: relative;
+    margin-top: 5%;
+    width: 100%; }
+    .bookacar .howitwork .how-content .img-road img {
+      width: 100%; }
+.bookacar .how-slide {
+  max-width: 1180px;
+  margin: auto; }
+  .bookacar .how-slide .owl-carousel .owl-nav {
+    text-align: center; }
+    .bookacar .how-slide .owl-carousel .owl-nav button {
+      font-size: 30px; }
+      .bookacar .how-slide .owl-carousel .owl-nav button span {
+        padding: 0 12px;
+        background-color: #ff590036;
+        color: #ff5a00; }
+    .bookacar .how-slide .owl-carousel .owl-nav .owl-next {
+      margin-left: 6px; }
+    .bookacar .how-slide .owl-carousel .owl-nav .owl-prew {
+      margin-right: 6px; }
+  .bookacar .how-slide .owl-carousel .item-text {
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #fff;
+    font-family: SFPro-Medium;
+    text-align: center;
+    position: absolute;
+    top: 69%;
+    left: 38%; }
+    .bookacar .how-slide .owl-carousel .item-text .img-line {
+      width: auto;
+      text-align: center;
+      margin: auto;
+      margin-top: 10px; }
+  .bookacar .how-slide .owl-carousel .item {
+    position: relative; }
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .enline img {
+    width: 100%; }
+
+  .bookacar .how-header {
+    background-size: 100% 100%; }
+
+  .branch .row .col-md-3 img {
+    width: 100%; } }
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .enline img {
+    width: 100%; }
+
+  .bookacar .how-header {
+    background-size: 100% 100%; }
+    .bookacar .how-header .how-header-content {
+      max-width: 95%; }
+      .bookacar .how-header .how-header-content .hwe-title {
+        font-size: 24px; }
+      .bookacar .how-header .how-header-content .hwe-txt {
+        font-size: 16px; }
+  .bookacar .why-juz-block {
+    max-width: 95%; }
+    .bookacar .why-juz-block .why-juzdriver .why-title {
+      font-size: 20px; }
+    .bookacar .why-juz-block .why-juzdriver .why-section .col-md-4 .choice-tit {
+      font-size: 16px; }
+    .bookacar .why-juz-block .why-juzdriver .why-section .col-md-4 .choice-txt {
+      font-size: 14px; }
+    .bookacar .why-juz-block .why-juzdriver .cities .col-md-3 .number-citi {
+      font-size: 24px; }
+    .bookacar .why-juz-block .why-juzdriver .cities .col-md-3 .number-txt {
+      font-size: 14px; }
+    .bookacar .why-juz-block .covered .hiw-title {
+      font-size: 20px; }
+    .bookacar .why-juz-block .covered .hiw-content .hiw-content-left .hiw-slide .owl-carousel .item .hiw-txt {
+      margin-top: 0px;
+      font-size: 14px; }
+  .bookacar .howitwork .how-title {
+    font-size: 20px; }
+  .bookacar .how-slide .owl-carousel .item-text {
+    left: 30%; }
+
+  .branch .row .col-md-3 img {
+    width: 100%; } }
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .enline img {
+    width: 100%; }
+
+  .bookacar .how-header {
+    background-size: 100% 100%; }
+    .bookacar .how-header .how-header-content {
+      max-width: 95%; }
+      .bookacar .how-header .how-header-content .hwe-title {
+        font-size: 24px; }
+      .bookacar .how-header .how-header-content .hwe-txt {
+        font-size: 16px; }
+  .bookacar .why-juz-block {
+    max-width: 95%; }
+    .bookacar .why-juz-block .why-juzdriver .why-title {
+      font-size: 20px; }
+    .bookacar .why-juz-block .why-juzdriver .why-section .col-md-4 {
+      margin-bottom: 5%; }
+      .bookacar .why-juz-block .why-juzdriver .why-section .col-md-4 img {
+        width: 50px; }
+      .bookacar .why-juz-block .why-juzdriver .why-section .col-md-4 .choice-tit {
+        font-size: 16px; }
+      .bookacar .why-juz-block .why-juzdriver .why-section .col-md-4 .choice-txt {
+        font-size: 14px; }
+    .bookacar .why-juz-block .why-juzdriver .cities .col-md-3 {
+      margin-bottom: 5%; }
+      .bookacar .why-juz-block .why-juzdriver .cities .col-md-3 .number-citi {
+        font-size: 24px; }
+      .bookacar .why-juz-block .why-juzdriver .cities .col-md-3 .number-txt {
+        font-size: 14px; }
+    .bookacar .why-juz-block .covered .hiw-title {
+      font-size: 20px; }
+    .bookacar .why-juz-block .covered .hiw-content .hiw-content-left .hiw-slide .owl-carousel .item .hiw-txt {
+      margin-top: 0px;
+      font-size: 14px; }
+  .bookacar .howitwork .how-title {
+    font-size: 20px; }
+  .bookacar .how-slide .owl-carousel .item-text {
+    left: 30%; }
+
+  .branch .row .col-md-3 img {
+    width: 50%; } }
+@media (min-width: 320px) and (max-width: 575.98px) {
+  .enline img {
+    width: 100%; }
+
+  .bookacar .how-header {
+    background-size: 100% 100%; }
+    .bookacar .how-header .how-header-content {
+      max-width: 95%; }
+      .bookacar .how-header .how-header-content .hwe-title {
+        font-size: 18px; }
+      .bookacar .how-header .how-header-content .hwe-txt {
+        font-size: 14px; }
+      .bookacar .how-header .how-header-content .hwe-btn .btn-book {
+        font-size: 14px;
+        height: 38px; }
+  .bookacar .why-juz-block {
+    max-width: 95%; }
+    .bookacar .why-juz-block .why-juzdriver .why-title {
+      font-size: 18px; }
+    .bookacar .why-juz-block .why-juzdriver .why-section .col-md-4 {
+      margin-bottom: 5%; }
+      .bookacar .why-juz-block .why-juzdriver .why-section .col-md-4 img {
+        width: 50px; }
+      .bookacar .why-juz-block .why-juzdriver .why-section .col-md-4 .choice-tit {
+        font-size: 16px; }
+      .bookacar .why-juz-block .why-juzdriver .why-section .col-md-4 .choice-txt {
+        font-size: 14px; }
+    .bookacar .why-juz-block .why-juzdriver .cities .col-md-3 {
+      margin-bottom: 5%; }
+      .bookacar .why-juz-block .why-juzdriver .cities .col-md-3 .number-citi {
+        font-size: 18px; }
+      .bookacar .why-juz-block .why-juzdriver .cities .col-md-3 .number-txt {
+        font-size: 14px; }
+    .bookacar .why-juz-block .covered .hiw-title {
+      font-size: 20px; }
+    .bookacar .why-juz-block .covered .hiw-content .hiw-content-left .hiw-slide .owl-carousel .item .hiw-txt {
+      margin-top: 0px;
+      font-size: 14px; }
+  .bookacar .howitwork .how-title {
+    font-size: 20px; }
+  .bookacar .how-slide .owl-carousel .item-text {
+    left: 25%;
+    font-size: 12px; }
+    .bookacar .how-slide .owl-carousel .item-text .img-line {
+      width: 20px; }
+
+  .branch .row .col-md-3 img {
+    width: 50%; } }
+
+/*# sourceMappingURL=book-a-car.css.map */

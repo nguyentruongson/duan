@@ -1,0 +1,60 @@
+.title-support {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.text {
+    text-align: start
+}
+
+.contact-support{
+    text-align: start;
+    margin-left: 70px;
+    margin-top: 40px;
+}
+
+.image-location {
+    margin-top: 80px;
+}
+
+.image-support {
+    width: 250px;
+    height: 250px;
+}
+
+.title-image {
+    margin-top: 10px;
+    text-align: start;
+    margin-left: 40px;
+}
+
+@media only screen and (max-width: 600px) {
+    .image-phone {
+        text-align: center;
+        margin-top: 20px;
+    }    
+    .title-image {
+        margin-left: 120px !important;
+    }
+    .image-support{
+        margin-left: 20px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023.98px) {
+    .image-support {
+        width: 150px;
+        height: 150px;
+    }
+
+    .title-image {
+        margin-top: 10px;
+        text-align: start;
+        margin-left: 20px !important;
+        font-size: 12px;
+    }
+}
+
+.email-support {
+    margin-top: 40px;
+}

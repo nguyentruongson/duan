@@ -1,0 +1,410 @@
+.juz-business .busi-header {
+  background: url("../../../img/business.png");
+  background-size: 100%;
+  background-repeat: no-repeat; }
+  .juz-business .busi-header .how-header-content {
+    max-width: 1180px;
+    margin: auto;
+    padding-bottom: 10%; }
+    .juz-business .busi-header .how-header-content .hwe-title {
+      font-size: 30px;
+      font-family: SFPro-Medium;
+      color: #fff;
+      padding-top: 10%;
+      text-transform: uppercase; }
+    .juz-business .busi-header .how-header-content .hwe-txt {
+      font-family: SFPro-regular;
+      font-size: 18px;
+      color: #fff; }
+.juz-business .search-bar {
+  max-width: 1180px;
+  margin: auto;
+  margin-top: 2%; }
+  .juz-business .search-bar .bar-console {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #dddddd;
+    background: #fff;
+    width: 100%; }
+    .juz-business .search-bar .bar-console .row {
+      width: 100%;
+      margin: 0; }
+      .juz-business .search-bar .bar-console .row .col-md-5 .row {
+        width: 100%;
+        margin: auto; }
+        .juz-business .search-bar .bar-console .row .col-md-5 .row .bar-col {
+          padding: 15px 5px; }
+          .juz-business .search-bar .bar-console .row .col-md-5 .row .bar-col .pin-img {
+            width: 15%;
+            float: left; }
+          .juz-business .search-bar .bar-console .row .col-md-5 .row .bar-col .component {
+            width: 85%;
+            float: left; }
+            .juz-business .search-bar .bar-console .row .col-md-5 .row .bar-col .component input {
+              width: 100%;
+              border: 0; }
+            .juz-business .search-bar .bar-console .row .col-md-5 .row .bar-col .component p {
+              margin-bottom: 0; }
+      .juz-business .search-bar .bar-console .row .bar-col {
+        padding: 15px 5px; }
+        .juz-business .search-bar .bar-console .row .bar-col .pin-img {
+          width: 15%;
+          float: left; }
+        .juz-business .search-bar .bar-console .row .bar-col .row {
+          width: 85%;
+          float: left; }
+          .juz-business .search-bar .bar-console .row .bar-col .row .component input {
+            width: 100%;
+            border: 0; }
+          .juz-business .search-bar .bar-console .row .bar-col .row .component p {
+            margin-bottom: 0; }
+      .juz-business .search-bar .bar-console .row .bar-search-btn {
+        background: #ff5a00;
+        text-align: center;
+        padding: 32px 0;
+        color: #fff;
+        font-size: 16px;
+        font-family: SFPro-Medium; }
+        .juz-business .search-bar .bar-console .row .bar-search-btn a {
+          color: #fff; }
+.juz-business .bus-better {
+  max-width: 1180px;
+  margin: auto; }
+  .juz-business .bus-better .better-title {
+    font-size: 26px;
+    font-family: SFPro-Medium;
+    color: #484848;
+    text-transform: uppercase;
+    margin-top: 5%; }
+  .juz-business .bus-better .better-txt {
+    font-family: SFPro-regular;
+    font-size: 16px;
+    color: #868686;
+    padding-bottom: 3%;
+    margin-top: 1%;
+    width: 75%; }
+  .juz-business .bus-better .why-section {
+    margin-top: 2%;
+    padding-bottom: 5%; }
+    .juz-business .bus-better .why-section .col-md-4 .choice-tit {
+      font-size: 18px;
+      font-family: SFPro-Medium;
+      color: #484848;
+      margin-top: 15px;
+      margin-bottom: 15px; }
+    .juz-business .bus-better .why-section .col-md-4 .choice-txt {
+      font-size: 16px;
+      font-family: SFPro-regular;
+      color: #484848b4; }
+  .juz-business .bus-better .btn-business {
+    background: #ff5a00 !important;
+    color: #fff !important;
+    height: 54px;
+    margin-top: 5px !important;
+    border: none !important; }
+.juz-business .bus-covered {
+  background: url("../../../img/bus-covered.png");
+  background-size: 100%;
+  background-repeat: no-repeat; }
+  .juz-business .bus-covered .covered-content {
+    max-width: 1180px;
+    margin: auto;
+    padding-top: 10%; }
+    .juz-business .bus-covered .covered-content .covered-tit {
+      font-size: 24px;
+      font-family: SFPro-Medium;
+      color: #484848;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      text-transform: uppercase; }
+    .juz-business .bus-covered .covered-content .covered-txt {
+      font-size: 16px;
+      font-family: SFPro-regular;
+      color: #484848b4;
+      width: 80%; }
+    .juz-business .bus-covered .covered-content .covered-tit2 {
+      font-size: 18px;
+      font-family: SFPro-Medium;
+      color: #484848; }
+    .juz-business .bus-covered .covered-content .coveredbutton {
+      padding-bottom: 41%; }
+      .juz-business .bus-covered .covered-content .coveredbutton .btn-covered {
+        background: #ff5a00 !important;
+        color: #fff !important;
+        height: 54px;
+        margin-top: 25px !important;
+        border: none !important; }
+.juz-business .bus-comment {
+  max-width: 1180px;
+  margin: auto;
+  margin-top: 3%; }
+  .juz-business .bus-comment .commet-img {
+    text-align: center; }
+  .juz-business .bus-comment .block-carousel-comment {
+    margin-top: 2%; }
+    .juz-business .bus-comment .block-carousel-comment .owl-carousel .item {
+      width: 80%;
+      margin: auto;
+      text-align: center; }
+      .juz-business .bus-comment .block-carousel-comment .owl-carousel .item span {
+        color: #868686;
+        font-size: 16px; }
+      .juz-business .bus-comment .block-carousel-comment .owl-carousel .item .auth-comment {
+        font-size: 18px;
+        font-family: SFPro-Medium;
+        color: #ff5a00;
+        margin-top: 2%; }
+.juz-business .bus-ft {
+  max-width: 1180px;
+  margin: auto;
+  margin-top: 3%;
+  margin-bottom: 5%; }
+  .juz-business .bus-ft .bus-ft-left {
+    background: url("../../../img/bus-ft-left.png");
+    height: 414px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    max-width: 48%;
+    flex: auto;
+    color: #fff; }
+  .juz-business .bus-ft .bus-ft-right {
+    background: url("../../../img/bus-ft-right.png");
+    height: 414px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    max-width: 48%;
+    flex: auto;
+    margin-left: 4%;
+    color: #fff; }
+  .juz-business .bus-ft .col-md-6 {
+    padding: 0 6%;
+    text-align: center; }
+    .juz-business .bus-ft .col-md-6 .bus-ft-title {
+      font-size: 18px;
+      font-family: SFPro-Medium;
+      width: 70%;
+      margin: auto;
+      padding-top: 25%;
+      padding-bottom: 5%; }
+    .juz-business .bus-ft .col-md-6 .bus-ft-txt {
+      font-size: 18px;
+      font-family: SFPro-Regular;
+      padding-bottom: 5%; }
+    .juz-business .bus-ft .col-md-6 .bus-ft-button .btn-covered {
+      background: #ff5a00;
+      padding: 10px 18px;
+      height: auto;
+      color: #fff;
+      border: 0; }
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .juz-business .busi-header .how-header-content {
+    max-width: 95%;
+    padding-bottom: 8%; }
+    .juz-business .busi-header .how-header-content .hwe-title {
+      padding-top: 6%; }
+  .juz-business .search-bar {
+    max-width: 95%; }
+  .juz-business .bus-better {
+    max-width: 95%; }
+  .juz-business .bus-covered .covered-content {
+    max-width: 95%; }
+    .juz-business .bus-covered .covered-content .coveredbutton {
+      padding-bottom: 17%; }
+  .juz-business .bus-ft {
+    max-width: 95%; } }
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .juz-business .busi-header .how-header-content {
+    max-width: 95%;
+    padding-bottom: 8%; }
+    .juz-business .busi-header .how-header-content .hwe-title {
+      padding-top: 4%;
+      font-size: 20px; }
+    .juz-business .busi-header .how-header-content .hwe-txt {
+      font-size: 16px; }
+  .juz-business .search-bar {
+    max-width: 95%; }
+    .juz-business .search-bar .bar-console .row .col-md-5 .row .bar-col .component {
+      font-size: 15px;
+      padding-left: 8%; }
+    .juz-business .search-bar .bar-console .row .bar-col .pin-img .row {
+      font-size: 14px; }
+    .juz-business .search-bar .bar-console .row .bar-search-btn {
+      font-size: 14px; }
+  .juz-business .bus-better {
+    max-width: 95%; }
+    .juz-business .bus-better .better-title {
+      font-size: 18px; }
+    .juz-business .bus-better .better-txt {
+      font-size: 14px; }
+    .juz-business .bus-better .why-section .col-md-4 .choice-tit {
+      font-size: 16px; }
+    .juz-business .bus-better .why-section .col-md-4 .choice-txt {
+      font-size: 14px; }
+    .juz-business .bus-better .btn-business {
+      font-size: 14px;
+      height: 44px; }
+  .juz-business .bus-covered .covered-content {
+    max-width: 95%; }
+    .juz-business .bus-covered .covered-content .coveredbutton {
+      padding-bottom: 17%; }
+    .juz-business .bus-covered .covered-content .covered-tit {
+      font-size: 18px; }
+    .juz-business .bus-covered .covered-content .covered-txt {
+      font-size: 14px; }
+    .juz-business .bus-covered .covered-content .coveredbutton .btn-covered {
+      font-size: 14px;
+      height: 44px; }
+  .juz-business .bus-ft {
+    max-width: 95%; }
+    .juz-business .bus-ft .col-md-6 {
+      height: 315px; }
+      .juz-business .bus-ft .col-md-6 .bus-ft-title {
+        font-size: 14px; }
+      .juz-business .bus-ft .col-md-6 .bus-ft-txt {
+        font-size: 14px; }
+      .juz-business .bus-ft .col-md-6 .bus-ft-button .btn-covered {
+        padding: 8px 12px;
+        font-size: 14px; }
+  .juz-business .bus-comment .block-carousel-comment .owl-carousel .item .auth-comment {
+    font-size: 14px; }
+  .juz-business .bus-comment .block-carousel-comment .owl-carousel .item span {
+    font-size: 14px; } }
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .juz-business .busi-header .how-header-content {
+    max-width: 95%;
+    padding-bottom: 8%; }
+    .juz-business .busi-header .how-header-content .hwe-title {
+      padding-top: 4%;
+      font-size: 20px; }
+    .juz-business .busi-header .how-header-content .hwe-txt {
+      font-size: 16px; }
+  .juz-business .search-bar {
+    max-width: 95%; }
+    .juz-business .search-bar .bar-console .row .col-md-5 .row .bar-col {
+      border-right: 0px solid #dee2e6 !important;
+      border-bottom: 1px solid #dee2e6 !important; }
+      .juz-business .search-bar .bar-console .row .col-md-5 .row .bar-col .component {
+        font-size: 15px;
+        padding-left: 0; }
+        .juz-business .search-bar .bar-console .row .col-md-5 .row .bar-col .component input {
+          padding-left: 0; }
+    .juz-business .search-bar .bar-console .row .bar-col .pin-img .row {
+      font-size: 14px; }
+    .juz-business .search-bar .bar-console .row .bar-search-btn {
+      font-size: 14px; }
+  .juz-business .bus-better {
+    max-width: 95%; }
+    .juz-business .bus-better .better-title {
+      font-size: 18px; }
+    .juz-business .bus-better .better-txt {
+      font-size: 14px; }
+    .juz-business .bus-better .why-section .col-md-4 .choice-tit {
+      font-size: 16px; }
+    .juz-business .bus-better .why-section .col-md-4 .choice-txt {
+      font-size: 14px; }
+    .juz-business .bus-better .btn-business {
+      font-size: 14px;
+      height: 44px; }
+  .juz-business .bus-covered {
+    background-size: auto; }
+    .juz-business .bus-covered .covered-content {
+      max-width: 95%; }
+      .juz-business .bus-covered .covered-content .coveredbutton {
+        padding-bottom: 17%; }
+      .juz-business .bus-covered .covered-content .covered-tit {
+        font-size: 18px; }
+      .juz-business .bus-covered .covered-content .covered-txt {
+        font-size: 14px; }
+      .juz-business .bus-covered .covered-content .coveredbutton .btn-covered {
+        font-size: 14px;
+        height: 44px; }
+  .juz-business .bus-ft {
+    max-width: 95%; }
+    .juz-business .bus-ft .col-md-6 {
+      height: 315px; }
+      .juz-business .bus-ft .col-md-6 .bus-ft-title {
+        font-size: 14px; }
+      .juz-business .bus-ft .col-md-6 .bus-ft-txt {
+        font-size: 14px; }
+      .juz-business .bus-ft .col-md-6 .bus-ft-button .btn-covered {
+        padding: 8px 12px;
+        font-size: 14px; }
+  .juz-business .bus-comment .block-carousel-comment .owl-carousel .item .auth-comment {
+    font-size: 14px; }
+  .juz-business .bus-comment .block-carousel-comment .owl-carousel .item span {
+    font-size: 14px; } }
+@media (min-width: 320px) and (max-width: 575.98px) {
+  .juz-business .busi-header {
+    background-size: auto; }
+    .juz-business .busi-header .how-header-content {
+      max-width: 95%;
+      padding-bottom: 8%; }
+      .juz-business .busi-header .how-header-content .hwe-title {
+        padding-top: 4%;
+        font-size: 16px; }
+      .juz-business .busi-header .how-header-content .hwe-txt {
+        font-size: 14px; }
+  .juz-business .search-bar {
+    max-width: 95%; }
+    .juz-business .search-bar .bar-console .row .col-md-5 .row .bar-col {
+      border-right: 0px solid #dee2e6 !important;
+      border-bottom: 1px solid #dee2e6 !important; }
+      .juz-business .search-bar .bar-console .row .col-md-5 .row .bar-col .component {
+        font-size: 15px;
+        padding-left: 0; }
+        .juz-business .search-bar .bar-console .row .col-md-5 .row .bar-col .component input {
+          padding-left: 0; }
+    .juz-business .search-bar .bar-console .row .bar-col .pin-img .row {
+      font-size: 14px; }
+    .juz-business .search-bar .bar-console .row .bar-search-btn {
+      font-size: 14px; }
+  .juz-business .bus-better {
+    max-width: 95%; }
+    .juz-business .bus-better .better-title {
+      font-size: 18px; }
+    .juz-business .bus-better .better-txt {
+      font-size: 14px;
+      width: 100%; }
+    .juz-business .bus-better .why-section .col-md-4 .choice-tit {
+      font-size: 16px; }
+    .juz-business .bus-better .why-section .col-md-4 .choice-txt {
+      font-size: 14px; }
+    .juz-business .bus-better .btn-business {
+      font-size: 14px;
+      height: 44px; }
+  .juz-business .bus-covered {
+    background-size: auto; }
+    .juz-business .bus-covered .covered-content {
+      max-width: 95%; }
+      .juz-business .bus-covered .covered-content .coveredbutton {
+        padding-bottom: 17%; }
+      .juz-business .bus-covered .covered-content .covered-tit {
+        font-size: 18px; }
+      .juz-business .bus-covered .covered-content .covered-txt {
+        font-size: 14px;
+        width: 100%; }
+      .juz-business .bus-covered .covered-content .coveredbutton .btn-covered {
+        font-size: 14px;
+        height: 44px; }
+  .juz-business .bus-ft {
+    max-width: 95%; }
+    .juz-business .bus-ft .col-md-6 {
+      max-width: 100%;
+      height: 315px; }
+      .juz-business .bus-ft .col-md-6 .bus-ft-title {
+        font-size: 14px; }
+      .juz-business .bus-ft .col-md-6 .bus-ft-txt {
+        font-size: 14px; }
+      .juz-business .bus-ft .col-md-6 .bus-ft-button .btn-covered {
+        padding: 8px 12px;
+        font-size: 14px; }
+    .juz-business .bus-ft .bus-ft-right {
+      margin-left: 0;
+      margin-top: 5%; }
+  .juz-business .bus-comment .block-carousel-comment .owl-carousel .item .auth-comment {
+    font-size: 14px; }
+  .juz-business .bus-comment .block-carousel-comment .owl-carousel .item span {
+    font-size: 14px; } }
+
+/*# sourceMappingURL=juzforbussiness.css.map */
