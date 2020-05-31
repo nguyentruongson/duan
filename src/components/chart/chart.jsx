@@ -25,32 +25,32 @@ class ChartCom extends React.Component {
             anh_1: {
                 Source: '',
                 amount: '',
-                percentage : ''
+                percentage : 0
 			},
 			anh_2: {
                 Source: '',
                 amount: '',
-                percentage : ''
+                percentage : 0
 			},
 			anh_3: {
                 Source: '',
                 amount: '',
-                percentage : ''
+                percentage : 0
 			},
 			anh_4: {
                 Source: '',
                 amount: '',
-                percentage : ''
+                percentage : 0
 			},
 			anh_5: {
                 Source: '',
                 amount: '',
-                percentage : ''
+                percentage : 0
 			},
 			anh_6: {
                 Source: '',
                 amount: '',
-                percentage : ''
+                percentage : 0
 			},
 			age_1 :{
 				id_age: '',
@@ -217,14 +217,15 @@ class ChartCom extends React.Component {
 		try {
             const response = await api.get(`/api/source`);
 			arr_son.push(Object.values(response))
-			this.setState({ anh_1 :  arr_son[0][0],
-				anh_2 :  arr_son[0][1],
-				anh_3 :  arr_son[0][2],
-				anh_4 :  arr_son[0][3],
-				anh_5 :  arr_son[0][4],
-				anh_6 :  arr_son[0][5]
-                , loading: false });
-                	
+			console.log(arr_son)
+			this.setState({ anh_1 :  arr_son[0][0][0],
+				anh_2 :  arr_son[0][0][1],
+				anh_3 :  arr_son[0][0][2],
+				anh_4 :  arr_son[0][0][3],
+				anh_5 :  arr_son[0][0][4],
+				anh_6 :  arr_son[0][0][5]
+				, loading: false });
+			console.log(this.state.anh_1[0])
 			Highcharts.chart({
 			chart: {
 				type: 'pie',
@@ -253,27 +254,27 @@ class ChartCom extends React.Component {
 					data : [
 						{
 							name: this.state.anh_1.Source + '(' + this.state.anh_1.amount + ')',
-							y: 60
+							y: this.state.anh_1.percentage
 						},
 						{
 							name: this.state.anh_2.Source + '(' + this.state.anh_2.amount + ')',
-							y: 60
+							y: this.state.anh_2.percentage
 						},
 						{
 							name: this.state.anh_3.Source + '(' + this.state.anh_3.amount + ')',
-							y: 60
+							y: this.state.anh_3.percentage
 						},
 						{
 							name: this.state.anh_4.Source + '(' + this.state.anh_4.amount + ')',
-							y: 60
+							y: this.state.anh_4.percentage
 						},
 						{
 							name: this.state.anh_5.Source + '(' + this.state.anh_5.amount + ')',
-							y: 60
+							y: this.state.anh_5.percentage
 						},
 						{
 							name: this.state.anh_6.Source + '(' + this.state.anh_6.amount + ')',
-							y: 60
+							y: this.state.anh_6.percentage
 						},
 					]
 				}]
@@ -379,12 +380,18 @@ class ChartCom extends React.Component {
     
     render()  {
         return (
-            <div>
-					<HeaderCom />
-                    <div id="Nguon du lieu"></div>
-                    <div id="Dien bien thao luan"></div>
-                    <div id="Chu de thao luan"></div>
-                    <div id="Sac thai thao luan"></div>
+            <div className="container">
+					<HeaderCom/>
+					<div className="row" style={{marginTop: '30px'}} >
+						<div className="col-md-6" style={{marginTop: '10px'}}>
+							<div id="Nguon du lieu"></div>
+							<div id="Dien bien thao luan"></div>
+						</div>
+						<div className="col-md-6" style={{marginTop: '10px'}}>
+							<div id="Chu de thao luan"></div>
+							<div id="Sac thai thao luan"></div>
+						</div>
+					</div>
             </div>
         );
     }
