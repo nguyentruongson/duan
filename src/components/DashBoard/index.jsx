@@ -17,6 +17,7 @@ import Highcharts from 'highcharts';
 import ChartCom from '../chart/chart';
 import 'bootstrap/dist/css/bootstrap.css';
 import HeaderCom from '../header/header';
+import News from '../news/news';
 
 const api = new Network()
 var arr_data = []

@@ -16,6 +16,9 @@ class HeaderCom extends React.Component {
             <li class="nav-item">
                 <a class="nav-link" href="http://localhost:8080/chart">Biểu đồ</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="http://localhost:8080/news">Bài báo</a>
+            </li>
             
             </ul>
             </nav>

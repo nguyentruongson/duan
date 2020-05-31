@@ -1,50 +1,64 @@
 import React, { Component } from 'react';
-import { Map, Marker , Circle, GoogleApiWrapper } from 'google-maps-react';
+import { InfoWindow, Map, Marker , Circle, GoogleApiWrapper } from 'google-maps-react';
+import { Link } from 'react-router-dom';
+import Skeleton, { SkeletonTheme } from 'react-loading-skeleton';
+import Network from '../../Service/Network';
+import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const mapStyles = {
   width: '100%',
   height: '700px',
   position: 'relative'
 };
+const api = new Network()
+const arr_location = []
 
-export class MapContainer extends Component {
-    
+export class MapContainer extends Component {  
     constructor(props) {
         super(props);
-    
+        this.componentGetLocation = this.componentGetLocation.bind(this);      
         this.state = {
           stores : [
-              {latitude: 21.057788, longitude: 104.868363},
-              {latitude: 18.055986, longitude: 106.032913},
-              {latitude: 21.283174, longitude: 104.384964}
+              {
+            Location: '',
+            confirm_cases: 0,
+            treated_cases: 0,
+            recovered_cases: 0,
+            death_case: 0,
+            lat: 0,
+            lng: 0
+              },
           ]
         }
       }
 
-      displayMarkers = () => {
+      async componentGetLocation () {
+        try {
+                const response = await api.get(`/api/case/location`);
+                arr_location.push(Object.values(response.data))
+                this.setState({ stores : arr_location[0],  loading: false });    
+            } catch (e) {
+                console.log("Error ====> ", e);
+        }
+      }    
+      
+      display = () => {
         return this.state.stores.map((anh) => {
           return <Marker position={{
-           lat: anh.latitude,
-           lng: anh.longitude
-         }}
-        /> &&
-         <Circle
-              radius={100000}
-              center={{
-              lat: anh.latitude,
-              lng: anh.longitude
-              }}
-              strokeColor='transparent'
-              strokeOpacity={0}
-              strokeWeight={5}
-              fillColor='#FF0000'
-          />
+           lat: anh.lat,
+           lng: anh.lng
+         }} title={anh.Location}
+         />
         })
       }
+
+      componentDidMount() {
+        this.componentGetLocation();
+      }     
       
       render() {
         const coords = { lat: 16.123870, lng: 106.186722};
-       
         return (
           <Map
             initialCenter={coords}
@@ -52,12 +66,11 @@ export class MapContainer extends Component {
             zoom={6}
             style={mapStyles}
           >
-          {this.displayMarkers()}
+          {this.display()}
           </Map>
         );
       }
 }
-
 
 export default GoogleApiWrapper({
   apiKey: 'AIzaSyABmI6zQPZEW5vUWtMuAen2CsXqPoEKlBc'
