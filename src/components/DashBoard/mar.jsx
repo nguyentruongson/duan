@@ -19,6 +19,9 @@ export class MapContainer extends Component {
         super(props);
         this.componentGetLocation = this.componentGetLocation.bind(this);      
         this.state = {
+          showingInfoWindow: false,
+          activeMarker: {},
+          selectedPlace: {},
           stores : [
               {
             Location: '',
@@ -33,40 +36,81 @@ export class MapContainer extends Component {
         }
       }
 
+        onMarkerClick = (props, marker, e) =>
+        this.setState({
+          selectedPlace: props,
+          activeMarker: marker,
+          showingInfoWindow: true
+
+        });
+    
+        onMapClicked = (props) => {
+          if (this.state.showingInfoWindow) {
+           this.setState({
+            showingInfoWindow: false,
+            activeMarker: null
+          })
+        }
+      };
+      windowHasClosed = (props) => {
+        if(this.state.showingInfoWindow){
+          this.setState({
+            showingInfoWindow:false,
+
+          })
+        }
+      };
+
       async componentGetLocation () {
         try {
                 const response = await api.get(`/api/case/location`);
                 arr_location.push(Object.values(response.data))
                 this.setState({ stores : arr_location[0],  loading: false });    
+                console.log(this.state.stores[1].confirm_cases)
             } catch (e) {
                 console.log("Error ====> ", e);
         }
-      }    
-      
-      display = () => {
-        return this.state.stores.map((anh) => {
-          return <Marker position={{
-           lat: anh.lat,
-           lng: anh.lng
-         }} title={anh.Location}
-         />
-        })
-      }
+      }     
 
       componentDidMount() {
         this.componentGetLocation();
       }     
       
       render() {
+        const { info, lat, lng } = this.state;
         const coords = { lat: 16.123870, lng: 106.186722};
+        const stores = this.state.stores;
         return (
           <Map
+           onClick={this.onMapClicked}
             initialCenter={coords}
             google={this.props.google}
             zoom={6}
             style={mapStyles}
           >
-          {this.display()}
+          { stores.map((anh) => {
+          return <Marker 
+          onClick={this.onMarkerClick}
+          name={anh.Location + ": " + anh.confirm_cases + " " + "ca"}
+          position={{
+            lat: anh.lat,
+            lng: anh.lng
+            }} 
+         title={anh.Location + ": " + anh.confirm_cases + " " + "ca"}
+         animation= {this.props.google.maps.Animation.BOUNCE}
+         
+         />
+         
+        })}
+        <InfoWindow
+          onClose={this.windowHasClosed}
+          marker={this.state.activeMarker}
+          visible={this.state.showingInfoWindow}>
+            <div>
+            <h4>{this.state.selectedPlace.name}</h4>
+            </div>
+        </InfoWindow>
+        
           </Map>
         );
       }

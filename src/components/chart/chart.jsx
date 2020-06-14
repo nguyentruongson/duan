@@ -20,6 +20,8 @@ class ChartCom extends React.Component {
 		this.componentGetSource = this.componentGetSource.bind(this);
 		this.componentGetSourceNuance = this.componentGetSourceNuance.bind(this);
 		this.componentGetAgeByConditions = this.componentGetAgeByConditions.bind(this);
+		this.componentGetPbo = this.componentGetPbo.bind(this);
+		this.componentGetRatio = this.componentGetRatio.bind(this);
 
 		this.state = {
             anh_1: {
@@ -179,37 +181,7 @@ class ChartCom extends React.Component {
 		series: this.state.mai
 		});
 
-		Highcharts.chart({
-		chart: {
-			type: 'bar',
-			renderTo: 'Chu de thao luan'
-		},
-		title: {
-			verticalAlign: 'middle',
-			floating: true,
-			text: 'Chu de thao luan',
-			style: {
-				fontSize: '10px',
-			}
-		},
-		xAxis: {
-			categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
-		},
-		plotOptions: {
-			series: {
-				dataLabels: {
-					enabled: true,
-					align: 'right',
-					color: '#FFFFFF',
-					x: -10
-				},
-				pointPadding: 0.1,
-				groupPadding: 0
-			}
-		},
-
-		series: this.state.mai
-		});
+	
 
 	}	
 
@@ -217,7 +189,7 @@ class ChartCom extends React.Component {
 		try {
             const response = await api.get(`/api/source`);
 			arr_son.push(Object.values(response))
-			console.log(arr_son)
+
 			this.setState({ anh_1 :  arr_son[0][0][0],
 				anh_2 :  arr_son[0][0][1],
 				anh_3 :  arr_son[0][0][2],
@@ -225,7 +197,7 @@ class ChartCom extends React.Component {
 				anh_5 :  arr_son[0][0][4],
 				anh_6 :  arr_son[0][0][5]
 				, loading: false });
-			console.log(this.state.anh_1[0])
+			
 			Highcharts.chart({
 			chart: {
 				type: 'pie',
@@ -233,12 +205,11 @@ class ChartCom extends React.Component {
 					
 			},
 			title: {
-				verticalAlign: 'middle',
-				floating: true,
+				 
 				text: 'NGUỒN DỮ LIỆU',
 				style: {
                     fontFamily: 'Arial',
-					fontSize: '10px',
+					fontSize: '18px',
 				}
 			},
 			plotOptions: {
@@ -296,6 +267,9 @@ class ChartCom extends React.Component {
                 });
             this.setState({ positive: arr_datanuance[0], negative: arr_datanuance[1], neutral : arr_datanuance[2],  loading: false });
 
+			Highcharts.setOptions({
+				colors: ['#058DC7', '#50B432', '#ED561B', '#DDDF00', '#24CBE5', '#64E572', '#FF9655', '#FFF263', '#6AF9C4']
+			});
             Highcharts.chart({
                 chart: {
                     type: 'line',
@@ -304,17 +278,17 @@ class ChartCom extends React.Component {
                 title: {
                     verticalAlign: 'middle',
                     floating: true,
-                    text: 'Sac thai thao luan',
+                    text: 'Sắc thái thảo luận',
                     style: {
                         fontSize: '10px',
                     }
                 },
                 xAxis: {
-                    categories: ['positive', 'negative', 'neutral']
+                    categories: ['Tích cực', 'Tiêu cực', 'Trung tính']
                 },
                 yAxis: {
                     title: {
-                        text: 'Sac thai thao luan'
+                        text: 'Thông số'
                     },
                     labels: {
                         formatter: function () {
@@ -331,15 +305,15 @@ class ChartCom extends React.Component {
                 },
                 series: [
                 {
-                    name : 'positive',
+                    name : 'Tích cực',
                     data : this.state.positive
                 },
                 {
-                    name: 'negative',
+                    name: 'Tiêu cực',
                     data : this.state.negative
                 },
                 {
-                    name : 'neutral',
+                    name : 'Trung tính',
                     data : this.state.neutral
                 }
                 ]
@@ -362,36 +336,378 @@ class ChartCom extends React.Component {
 				age_5 :  arr_age[0][4],
 				age_6 :  arr_age[0][5]
 				, loading: false });
-
 			// Create the chart
+			Highcharts.setOptions({
+				colors: ['#058DC7', '#50B432', '#ED561B', '#DDDF00', '#24CBE5', '#64E572', '#FF9655', '#FFF263', '#6AF9C4']
+			});
+
+			Highcharts.chart('getAgeRatio', {
+
+				chart: {
+					type: 'column',
+					 
+				},
+			
+				title: {
+					text: 'Độ tuổi phổ biến'
+				},
+
+			
+				subtitle: {
+					text: 'Được thu thập bởi nts'
+				},
+			
+				xAxis: {
+					categories: [
+						'Tỉ lệ'
+					]
+				},
+
+				yAxis: {
+					title: {
+						text: 'Giá trị'
+					},
+					labels: {
+						formatter: function () {
+							return this.value  ;
+						}
+					}
+				},
+				plotOptions: {
+					column : {
+						dataLabels: {
+							enabled: true,
+							inside: true
+						}
+					}
+				},
+				 
+			
+				series: [
+				{
+					dataLabels: [{ 
+						format:  '{point.rati} %'
+					}
+				],
+					data: [
+						{
+							rati: this.state.age_1.ratio,
+							y: this.state.age_1.female_amount + this.state.age_1.male_amount
+						},
+						
+					],
+					 name: this.state.age_1.id_age
+				},
+				
+				{
+					dataLabels: [{ 
+						format:  '{point.rati} %'
+					}
+				],
+					data: [
+						
+						{
+							rati: this.state.age_2.ratio,
+							y: this.state.age_2.female_amount + this.state.age_2.male_amount
+						}
+					],
+					 name: this.state.age_2.id_age
+				},
+				{
+					dataLabels: [{ 
+						format:  '{point.rati} %'
+					}
+				],
+					data: [
+						
+						{
+							rati: this.state.age_3.ratio,
+							y: this.state.age_3.female_amount + this.state.age_3.male_amount
+						}
+					],
+					 name: this.state.age_3.id_age
+				},
+				{
+					dataLabels: [{ 
+						format:  '{point.rati} %'
+					}
+				],
+					data: [
+						
+						{
+							rati: this.state.age_4.ratio,
+							y: this.state.age_4.female_amount + this.state.age_4.male_amount
+						}
+					],
+					 name: this.state.age_4.id_age
+				},
+				{
+					dataLabels: [{ 
+						format:  '{point.rati} %'
+					}
+				],
+					data: [
+						
+						{
+							rati: this.state.age_5.ratio,
+							y: this.state.age_5.female_amount + this.state.age_5.male_amount
+						}
+					],
+					 name: this.state.age_5.id_age
+				},
+				{
+					dataLabels: [{ 
+						format:  '{point.rati} %'
+					}
+				],
+					data: [
+						
+						{
+							rati: this.state.age_6.ratio,
+							y: this.state.age_6.female_amount + this.state.age_6.male_amount
+						}
+					],
+					 name: this.state.age_6.id_age
+				}
+			]
+			
+			});
 							
 				
         } catch (e) {
            		console.log("Error ====> ", e);
 			};
+	}
+	
+	async componentGetPbo() {
+			try {
+				const response = await api.get(`/api/age`);
+				arr_age.push(Object.values(response))
+				this.setState({ 
+					age_1 :  arr_age[0][0],
+					age_2 :  arr_age[0][1],
+					age_3 :  arr_age[0][2],
+					age_4 :  arr_age[0][3],
+					age_5 :  arr_age[0][4],
+					age_6 :  arr_age[0][5]
+					, loading: false });
+			 
+			var categories = [
+						this.state.age_1.id_age, 
+						this.state.age_2.id_age, 
+						this.state.age_3.id_age, 
+						this.state.age_4.id_age, 
+						this.state.age_5.id_age, 
+						this.state.age_6.id_age
+			];
+			Highcharts.setOptions({
+				colors: ['#058DC7', '#50B432', '#ED561B', '#DDDF00', '#24CBE5', '#64E572', '#FF9655', '#FFF263', '#6AF9C4']
+			});
+
+			Highcharts.chart('getGenderRatio', {
+				chart: {
+					type: 'bar',
+					marginLeft: 50,
+					marginBottom: 90
+				},
+
+				title: {
+					text: 'Phân bổ giới tính theo độ tuổi'
+				},
+				xAxis: {
+					
+					categories: categories
+				},
+				yAxis:{
+					title: {
+						text:'Giá trị'
+					},
+				},
+				plotOptions: {
+					bar: {
+						dataLabels: {
+							enabled: true,
+							inside: true
+						}
+					},
+					series: {
+						stacking: 'percent'
+					}
+				},
+				legend: {
+					layout: 'vertical',
+					align: 'right',
+					verticalAlign: 'top',
+					x: -20,
+					y: 1,
+					floating: true,
+					borderWidth: 1,
+					backgroundColor:
+					Highcharts.defaultOptions.legend.backgroundColor || '#FFFFFF',
+					shadow: true
+				},
+			
+				series: [
+				{
+					dataLabels: [{
+						align: 'right',
+						format:  '{point.rati} %' + '({y})'
+					}
+				],
+					data: [{
+						y: this.state.age_1.male_amount,
+						rati: this.state.age_1.male_ratio
+					},
+					{
+						y: this.state.age_2.male_amount,
+						rati: this.state.age_2.male_ratio
+					},
+					{
+						y: this.state.age_3.male_amount,
+						rati: this.state.age_3.male_ratio
+					},
+					{
+						y: this.state.age_4.male_amount,
+						rati: this.state.age_4.male_ratio
+					},
+					{
+						y: this.state.age_5.male_amount,
+						rati: this.state.age_5.male_ratio
+					},
+					{
+						y: this.state.age_6.male_amount,
+						rati: this.state.age_6.male_ratio
+					},
+						],
+					name: 'Nam giới',	
+				}, 
+				{
+					dataLabels: [{
+						align: 'left',
+						format:  '{point.rati} %' + '({y})'
+					}
+				],
+					data: [{
+						y: this.state.age_1.female_amount,
+						rati: this.state.age_1.female_ratio
+					},
+					{
+						y: this.state.age_2.female_amount,
+						rati: this.state.age_2.female_ratio
+					},
+					{
+						y: this.state.age_3.female_amount,
+						rati: this.state.age_3.female_ratio
+					},
+					{
+						y: this.state.age_4.female_amount,
+						rati: this.state.age_4.female_ratio
+					},
+					{
+						y: this.state.age_5.female_amount,
+						rati: this.state.age_5.female_ratio
+					},
+					{
+						y: this.state.age_6.female_amount,
+						rati: this.state.age_6.female_ratio
+					},
+					],
+						name: 'Nữ giới'
+				}]
+			});
+			
+					
+			} catch (e) {
+					   console.log("Error ====> ", e);
+				};
+	}
+	
+	async componentGetRatio(){
+		try {
+            const response = await api.get(`/api/age`);
+			arr_age.push(Object.values(response))
+			this.setState({ 
+					age_1 :  arr_age[0][0],
+					age_2 :  arr_age[0][1],
+					age_3 :  arr_age[0][2],
+					age_4 :  arr_age[0][3],
+					age_5 :  arr_age[0][4],
+					age_6 :  arr_age[0][5]
+					, loading: false });
+			
+			Highcharts.chart({
+			chart: {
+				type: 'pie',
+				renderTo : 'getMaFe'
+					
+			},
+			title: {	 
+				text: 'Tỉ lệ Nam/Nữ',
+				style: {
+                    fontFamily: 'Arial',
+					fontSize: '18px',
+				}
+			},
+			plotOptions: {
+				pie: {
+					dataLabels: {
+						format: '{point.name}: {point.y} %'
+					},
+				innerSize: '70%'
+				},	
+			},
+			series: [{
+				name: 'Tỉ lệ',
+					data : [
+						{
+							name: 'Nam giới',
+							y: (this.state.age_1.male_ratio+this.state.age_2.male_ratio+this.state.age_3.male_ratio+this.state.age_4.male_ratio+this.state.age_5.male_ratio+this.state.age_6.male_ratio)/6
+						},
+						{
+							name: 'Nữ giới',
+							y:  100 - (this.state.age_1.male_ratio+this.state.age_2.male_ratio+this.state.age_3.male_ratio+this.state.age_4.male_ratio+this.state.age_5.male_ratio+this.state.age_6.male_ratio)/6
+						},
+						
+					]
+				}]
+		})		
+        } catch (e) {
+            console.log("Error ====> ", e);
 		}
+	}
 
 	componentDidMount() {
 		this.componentGetSource();
 		this.componentGetSourceNuance();
 		this.componentGetAgeByConditions();
+		this.componentGetPbo();
 		this.highChartsRender();
+		this.componentGetRatio();
     }
     
     render()  {
         return (
             <div className="container">
 					<HeaderCom/>
-					<div className="row" style={{marginTop: '30px'}} >
-						<div className="col-md-6" style={{marginTop: '10px'}}>
-							<div id="Nguon du lieu"></div>
-							<div id="Dien bien thao luan"></div>
+					 <div className="row">
+						 
+							<div className="col-md-6" id="getGenderRatio" style={{marginTop: '30px'}}></div>
+							<div className="col-md-6" id="getAgeRatio" style={{marginTop: '30px'}}></div>
+						 </div>
+				 
+						 <div className="row">
+						 
+								<div className="col-md-6" id="Nguon du lieu" style={{marginTop: '30px'}}></div>
+								<div className="col-md-6" id="Dien bien thao luan" style={{marginTop: '30px'}}></div>
+							 
+							</div>
+					 
+							<div className="row">
+						 
+							<div className="col-md-6" id="Sac thai thao luan" style={{marginTop: '30px'}}></div>
+							<div className="col-md-6" id="getMaFe" style={{marginTop: '30px'}}></div>		
+						 
 						</div>
-						<div className="col-md-6" style={{marginTop: '10px'}}>
-							<div id="Chu de thao luan"></div>
-							<div id="Sac thai thao luan"></div>
-						</div>
-					</div>
             </div>
         );
     }
