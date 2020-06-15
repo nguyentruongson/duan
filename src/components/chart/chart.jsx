@@ -212,10 +212,12 @@ class ChartCom extends React.Component {
 					fontSize: '18px',
 				}
 			},
+			
+
 			plotOptions: {
 				pie: {
 					dataLabels: {
-						format: '{point.name}: {point.percentage} %'
+						format: '{point.name}: {point.y} %'
 					},
 				innerSize: '70%'
 				},	
@@ -349,23 +351,25 @@ class ChartCom extends React.Component {
 				},
 			
 				title: {
-					text: 'Độ tuổi phổ biến'
+					text: 'Độ tuổi phổ biến',
+					style: {
+						fontFamily: 'Arial',
+						fontSize: '18px',
+					}
 				},
 
 			
 				subtitle: {
-					text: 'Được thu thập bởi nts'
+					text: null
 				},
-			
 				xAxis: {
-					categories: [
-						'Tỉ lệ'
-					]
+					categories: ['Tỉ lệ']
 				},
+				 
 
 				yAxis: {
 					title: {
-						text: 'Giá trị'
+						text: null
 					},
 					labels: {
 						formatter: function () {
@@ -512,7 +516,11 @@ class ChartCom extends React.Component {
 				},
 
 				title: {
-					text: 'Phân bổ giới tính theo độ tuổi'
+					text: 'Phân bổ giới tính theo độ tuổi',
+					style: {
+						fontFamily: 'Arial',
+						fontSize: '18px',
+					}
 				},
 				xAxis: {
 					
@@ -520,7 +528,7 @@ class ChartCom extends React.Component {
 				},
 				yAxis:{
 					title: {
-						text:'Giá trị'
+						text:null
 					},
 				},
 				plotOptions: {
@@ -634,43 +642,62 @@ class ChartCom extends React.Component {
 					age_5 :  arr_age[0][4],
 					age_6 :  arr_age[0][5]
 					, loading: false });
-			
-			Highcharts.chart({
+		
+		Highcharts.chart('getMaFe', {
 			chart: {
-				type: 'pie',
-				renderTo : 'getMaFe'
-					
+				type: 'bar'
 			},
 			title: {	 
-				text: 'Tỉ lệ Nam/Nữ',
+				text: null,
 				style: {
                     fontFamily: 'Arial',
 					fontSize: '18px',
 				}
 			},
-			plotOptions: {
-				pie: {
-					dataLabels: {
-						format: '{point.name}: {point.y} %'
-					},
-				innerSize: '70%'
-				},	
+			 
+			xAxis: {
+				categories: ['Số lượng']
+				 
 			},
+			yAxis: {
+				min: 0,
+				title: {
+					text: null,
+					align: 'middle'
+				},
+				labels: {
+					overflow: 'justify'
+				}
+			},
+			tooltip: {
+				valueSuffix: ' người'
+			},
+			plotOptions: {
+				bar: {
+					dataLabels: {
+						enabled: true
+					}
+				}
+			},
+			
 			series: [{
-				name: 'Tỉ lệ',
-					data : [
-						{
-							name: 'Nam giới',
-							y: (this.state.age_1.male_ratio+this.state.age_2.male_ratio+this.state.age_3.male_ratio+this.state.age_4.male_ratio+this.state.age_5.male_ratio+this.state.age_6.male_ratio)/6
-						},
-						{
-							name: 'Nữ giới',
-							y:  100 - (this.state.age_1.male_ratio+this.state.age_2.male_ratio+this.state.age_3.male_ratio+this.state.age_4.male_ratio+this.state.age_5.male_ratio+this.state.age_6.male_ratio)/6
-						},
-						
-					]
-				}]
-		})		
+				name:'Nam', 
+				data: [
+					this.state.age_1.male_amount+this.state.age_2.male_amount+this.state.age_3.male_amount+this.state.age_4.male_amount+this.state.age_5.male_amount+this.state.age_6.male_amount,
+					 
+				]
+			},
+			{
+				name:'Nữ', 
+				data: [
+					 
+					this.state.age_1.female_amount+this.state.age_2.female_amount+this.state.age_3.female_amount+this.state.age_4.female_amount+this.state.age_5.female_amount+this.state.age_6.female_amount
+				]
+			},
+
+		]
+		});
+
         } catch (e) {
             console.log("Error ====> ", e);
 		}

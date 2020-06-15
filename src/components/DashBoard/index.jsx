@@ -18,11 +18,16 @@ import ChartCom from '../chart/chart';
 import 'bootstrap/dist/css/bootstrap.css';
 import HeaderCom from '../header/header';
 import News from '../news/news';
+import FetchDataFromRSSFeed from './rss';
 
 const api = new Network()
 var arr_data = []
+
+
  
 class DashBoard extends React.Component { 
+
+	
 
 	constructor(props) {
 		super(props);
@@ -70,37 +75,37 @@ class DashBoard extends React.Component {
 						<PageLoading show={false} />
 						<div className="row maps-cotx">
 							<div className={'col-md-4 offset-md-1 col-sm-12 map-view-search maphide'} style={{ marginTop: '10px' }}>
-								<div className={"maps-container"} style={{ height: '700px', width: '100%' }}>
-									
-									  <MapContainer />
-				                      
+								<div className={"maps-container"} style={{ height: '700px', width: '100%' }}>									
+									  <MapContainer />				                      
 			                    </div>
 							</div>
 
 							<div className="col-md-7" style={{display:'block'}}>
-
 								<div style={{ marginTop: '50px' }}> 
 									<div className="col-md-12" >
 										<div className="box-tke">
-											  <div className="row fivecolumns">
-		<div className="col-md-2 col-sm-2 col-xs-12 mb-20"><span className="box-vn">Việt Nam</span></div>
-												  <div className="col-md-2 col-sm-2 col-xs-6 text-center text-uppercase text-danger-new mb-20">Số ca nhiễm  <span className="font24">{data_2.cases}</span></div>
-												  <div className="col-md-2 col-sm-2 col-xs-6 text-center text-uppercase text-warning1 mb-20">Đang điều trị  <span className="font24">{data_2.cases - data_2.recovered - data_2.deaths}</span></div>
-												  <div className="col-md-2 col-sm-2 col-xs-6 text-center text-uppercase text-primary mb-20">Đã chữa khỏi  <span className="font24">{data_2.recovered}</span></div>
-												  <div className="col-md-2 col-sm-2 col-xs-6 text-center text-uppercase text-danger-new1 mb-20">Tử vong  <span className="font24">{data_2.deaths}</span></div>
-											  </div>
+											<div className="row fivecolumns">
+												<div className="col-md-4 col-sm-4 col-xs-18 mb-20"><span className="box-vn">Việt Nam</span></div>
+												<div className="col-md-2 col-sm-2 col-xs-6 text-center text-uppercase text-danger-new mb-20">Số ca nhiễm  <span className="font24">{data_2.cases}</span></div>
+												<div className="col-md-2 col-sm-2 col-xs-6 text-center text-uppercase text-warning1 mb-20">Đang điều trị  <span className="font24">{data_2.cases - data_2.recovered - data_2.deaths}</span></div>
+												<div className="col-md-2 col-sm-2 col-xs-6 text-center text-uppercase text-primary mb-20">Đã chữa khỏi  <span className="font24">{data_2.recovered}</span></div>
+												<div className="col-md-2 col-sm-2 col-xs-6 text-center text-uppercase text-danger-new1 mb-20">Tử vong  <span className="font24">{data_2.deaths}</span></div>
+											</div>
 											  		
-											  <div className="row fivecolumns">
-												  <div className="col-md-2 col-sm-2 col-xs-12 mb-20"><span className="box-tg">Thế giới</span></div>												  
-												  <div className="col-md-2 col-sm-2 col-xs-6 text-center text-uppercase text-danger-new mb-20">Tổng ca nhiễm  <span className="font24">{data_1.cases}</span></div>
-												  <div className="col-md-2 col-sm-2 col-xs-6 text-center text-uppercase text-warning1 mb-20">Đang nhiễm  <span className="font24">{data_1.cases - data_1.recovered - data_1.deaths}</span></div>
-												  <div className="col-md-2 col-sm-2 col-xs-6 text-center text-uppercase text-primary mb-20">Đã chữa khỏi  <span className="font24">{data_1.recovered}</span></div>
-												  <div className="col-md-2 col-sm-2 col-xs-6 text-center text-uppercase text-danger-new1 mb-20">Tử vong  <span className="font24">{data_1.deaths}</span></div>						  	
-											  </div>
+											<div className="row fivecolumns">
+												<div className="col-md-4 col-sm-4 col-xs-18 mb-20"><span className="box-tg">Thế giới</span></div>												  
+												<div className="col-md-2 col-sm-2 col-xs-6 text-center text-uppercase text-danger-new mb-20">Tổng ca nhiễm  <span className="font24">{data_1.cases}</span></div>
+												<div className="col-md-2 col-sm-2 col-xs-6 text-center text-uppercase text-warning1 mb-20">Đang nhiễm  <span className="font24">{data_1.cases - data_1.recovered - data_1.deaths}</span></div>
+												<div className="col-md-2 col-sm-2 col-xs-6 text-center text-uppercase text-primary mb-20">Đã chữa khỏi  <span className="font24">{data_1.recovered}</span></div>
+												<div className="col-md-2 col-sm-2 col-xs-6 text-center text-uppercase text-danger-new1 mb-20">Tử vong  <span className="font24">{data_1.deaths}</span></div>						  	
+											</div>
 										</div>
 									</div>								
-							   </div>								
-							</div>
+							   </div>
+							   <div className="container" style={{height: '372px', overflow: 'auto'}}>
+							  		<FetchDataFromRSSFeed/>
+								</div>								
+							</div>							
 						</div>
 				</div>
 			);

@@ -68,6 +68,7 @@
 		"react-toastify": "^5.5.0",
 		"react-wow": "^1.0.0",
 		"reactstrap": "^8.2.0",
+		"rss-parser": "^3.8.0",
 		"start": "^5.1.0"
 	},
 	"scripts": {

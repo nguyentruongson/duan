@@ -5,7 +5,8 @@ import Skeleton, { SkeletonTheme } from 'react-loading-skeleton';
 import Network from '../../Service/Network';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import Icon from './icon.png';
+import Icondefault from './icondefault.png';
 const mapStyles = {
   width: '100%',
   height: '700px',
@@ -19,6 +20,7 @@ export class MapContainer extends Component {
         super(props);
         this.componentGetLocation = this.componentGetLocation.bind(this);      
         this.state = {
+          iconcovid: '',
           showingInfoWindow: false,
           activeMarker: {},
           selectedPlace: {},
@@ -36,13 +38,20 @@ export class MapContainer extends Component {
         }
       }
 
-        onMarkerClick = (props, marker, e) =>
+        onMarkerClick = (props, marker, e) =>{
         this.setState({
           selectedPlace: props,
           activeMarker: marker,
           showingInfoWindow: true
 
         });
+      };
+        onMouseoverMarker = (props, marker, e) => {
+          marker.setIcon(Icon)
+        };
+        onMouseOutMarker = (props, marker, e) => {
+          marker.setIcon(Icondefault)
+        };
     
         onMapClicked = (props) => {
           if (this.state.showingInfoWindow) {
@@ -60,6 +69,7 @@ export class MapContainer extends Component {
           })
         }
       };
+
 
       async componentGetLocation () {
         try {
@@ -89,8 +99,11 @@ export class MapContainer extends Component {
             style={mapStyles}
           >
           { stores.map((anh) => {
-          return <Marker 
+          return <Marker
+          icon={Icondefault} 
           onClick={this.onMarkerClick}
+          onMouseover={this.onMouseoverMarker}
+          onMouseout={this.onMouseOutMarker}
           name={anh.Location + ": " + anh.confirm_cases + " " + "ca"}
           position={{
             lat: anh.lat,
