@@ -47,10 +47,10 @@ export class MapContainer extends Component {
         });
       };
         onMouseoverMarker = (props, marker, e) => {
-          marker.setIcon(Icon)
+          
         };
         onMouseOutMarker = (props, marker, e) => {
-          marker.setIcon(Icondefault)
+           
         };
     
         onMapClicked = (props) => {
@@ -99,7 +99,24 @@ export class MapContainer extends Component {
             style={mapStyles}
           >
           { stores.map((anh) => {
+          if(anh.confirm_cases>10){
           return <Marker
+          icon={Icon} 
+          onClick={this.onMarkerClick}
+          onMouseover={this.onMouseoverMarker}
+          onMouseout={this.onMouseOutMarker}
+          name={anh.Location + ": " + anh.confirm_cases + " " + "ca"}
+          position={{
+            lat: anh.lat,
+            lng: anh.lng
+            }} 
+         title={anh.Location + ": " + anh.confirm_cases + " " + "ca"}
+         animation= {this.props.google.maps.Animation.BOUNCE}
+         
+         />
+          }
+          else {
+            return <Marker
           icon={Icondefault} 
           onClick={this.onMarkerClick}
           onMouseover={this.onMouseoverMarker}
@@ -113,7 +130,7 @@ export class MapContainer extends Component {
          animation= {this.props.google.maps.Animation.BOUNCE}
          
          />
-         
+          }
         })}
         <InfoWindow
           onClose={this.windowHasClosed}
