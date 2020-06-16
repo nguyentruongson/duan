@@ -1,10 +1,17 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Skeleton, { SkeletonTheme } from 'react-loading-skeleton';
-import Network from '../../Service/Network'
-
+import Network from '../../Service/Network';
+import Modal from 'react-bootstrap/Modal';
+import ModalDialog from 'react-bootstrap/ModalDialog';
+import ModalHeader from 'react-bootstrap/ModalHeader';
+import ModalTitle from 'react-bootstrap/ModalTitle';
+import ModalBody from 'react-bootstrap/ModalBody';
+import ModalFooter from 'react-bootstrap/ModalFooter';
+import Button from 'react-bootstrap/Button';
 import * as Highcharts from 'highcharts';
 import HeaderCom from '../header/header';
+import FooterCom from '../Footer/Footer';
  
  
 
@@ -12,6 +19,7 @@ const api = new Network()
 var arr_son = []
 var arr_datanuance = []
 var arr_age = []
+
 
 class ChartCom extends React.Component { 
 
@@ -24,6 +32,8 @@ class ChartCom extends React.Component {
 		this.componentGetRatio = this.componentGetRatio.bind(this);
 
 		this.state = {
+			showModal: false,
+			
             anh_1: {
                 Source: '',
                 amount: '',
@@ -140,9 +150,10 @@ class ChartCom extends React.Component {
 		title: {
 			verticalAlign: 'middle',
 			floating: true,
-			text: 'Dien bien thao luan',
+			text: 'Biển đồ về <br/>diễn biến thảo luận',
 			style: {
-				fontSize: '10px',
+				fontSize: '18px',
+				fontFamily: 'Arial'
 			}
 		},
 		xAxis: {
@@ -155,7 +166,7 @@ class ChartCom extends React.Component {
 		},
 		yAxis: {
 			title: {
-				text: 'Dien bien thao luan'
+				text: null
 			},
 			labels: {
 				formatter: function () {
@@ -206,7 +217,7 @@ class ChartCom extends React.Component {
 			},
 			title: {
 				 
-				text: 'NGUỒN DỮ LIỆU',
+				text: 'Biểu đồ về <br/>nguồn dữ liệu',
 				style: {
                     fontFamily: 'Arial',
 					fontSize: '18px',
@@ -217,7 +228,11 @@ class ChartCom extends React.Component {
 			plotOptions: {
 				pie: {
 					dataLabels: {
-						format: '{point.name}: {point.y} %'
+						format: '{point.name}: {point.y} %',
+						style: {
+							fontFamily: 'Arial',
+							fontSize: '12px',
+						}
 					},
 				innerSize: '70%'
 				},	
@@ -280,35 +295,56 @@ class ChartCom extends React.Component {
                 title: {
                     verticalAlign: 'middle',
                     floating: true,
-                    text: 'Sắc thái thảo luận',
+                    text: 'Biểu đồ về <br/>sắc thái thảo luận',
                     style: {
-                        fontSize: '10px',
+						fontSize: '18px',
+						fontFamily: 'Arial'
                     }
                 },
                 xAxis: {
-                    categories: ['Tích cực', 'Tiêu cực', 'Trung tính']
+					categories: ['Tích cực', 'Tiêu cực', 'Trung tính'],
+					style : {
+						fontFamily: 'Arial',
+				 
+					}
                 },
                 yAxis: {
                     title: {
-                        text: 'Thông số'
+                        text: null
                     },
                     labels: {
                         formatter: function () {
                             return this.value  ;
-                        }
-                    }
+						},
+						style : {
+							fontFamily: 'Arial',
+					 
+						}
+					},
+					style : {
+						fontFamily: 'Arial',
+				 
+					}
                 },
                 plotOptions: {
                     series: {
                         label: {
-                            connectorAllowed: false
+							connectorAllowed: false,
+							style : {
+								fontFamily: 'Arial',
+						 
+							}
                         }
                     }
                 },
                 series: [
                 {
                     name : 'Tích cực',
-                    data : this.state.positive
+					data : this.state.positive,
+					style : {
+						fontFamily: 'Arial',
+				 
+					}
                 },
                 {
                     name: 'Tiêu cực',
@@ -351,7 +387,7 @@ class ChartCom extends React.Component {
 				},
 			
 				title: {
-					text: 'Độ tuổi phổ biến',
+					text: 'Biểu đồ về độ tuổi<br/>nhiễm bệnh phổ biến',
 					style: {
 						fontFamily: 'Arial',
 						fontSize: '18px',
@@ -363,7 +399,10 @@ class ChartCom extends React.Component {
 					text: null
 				},
 				xAxis: {
-					categories: ['Tỉ lệ']
+					categories: ['Tỉ lệ'],
+					style : {
+						fontFamily: 'Arial',				 
+					}
 				},
 				 
 
@@ -374,7 +413,15 @@ class ChartCom extends React.Component {
 					labels: {
 						formatter: function () {
 							return this.value  ;
+						},
+						style : {
+							fontFamily: 'Arial',
+					 
 						}
+					},
+					style : {
+						fontFamily: 'Arial',
+				 
 					}
 				},
 				plotOptions: {
@@ -382,6 +429,10 @@ class ChartCom extends React.Component {
 						dataLabels: {
 							enabled: true,
 							inside: true
+						},
+						style : {
+							fontFamily: 'Arial',
+					 
 						}
 					}
 				},
@@ -390,7 +441,12 @@ class ChartCom extends React.Component {
 				series: [
 				{
 					dataLabels: [{ 
-						format:  '{point.rati} %'
+						format:  '{point.rati} %',
+
+						style : {
+							fontFamily: 'Arial',
+					 
+						}
 					}
 				],
 					data: [
@@ -400,7 +456,11 @@ class ChartCom extends React.Component {
 						},
 						
 					],
-					 name: this.state.age_1.id_age
+					 name: this.state.age_1.id_age,
+					 style : {
+						fontFamily: 'Arial',
+				 
+					}
 				},
 				
 				{
@@ -516,7 +576,7 @@ class ChartCom extends React.Component {
 				},
 
 				title: {
-					text: 'Phân bổ giới tính theo độ tuổi',
+					text: 'Biểu đồ phân bổ giới tính <br/>theo độ tuổi',
 					style: {
 						fontFamily: 'Arial',
 						fontSize: '18px',
@@ -524,7 +584,11 @@ class ChartCom extends React.Component {
 				},
 				xAxis: {
 					
-					categories: categories
+					categories: categories,
+					style : {
+						fontFamily: 'Arial',
+				 
+					}
 				},
 				yAxis:{
 					title: {
@@ -546,8 +610,8 @@ class ChartCom extends React.Component {
 					layout: 'vertical',
 					align: 'right',
 					verticalAlign: 'top',
-					x: -20,
-					y: 1,
+					x: 7,
+					y: -7,
 					floating: true,
 					borderWidth: 1,
 					backgroundColor:
@@ -559,7 +623,11 @@ class ChartCom extends React.Component {
 				{
 					dataLabels: [{
 						align: 'right',
-						format:  '{point.rati} %' + '({y})'
+						format:  '{point.rati} %' + '({y})',
+						style : {
+							fontFamily: 'Arial',
+					 
+						}
 					}
 				],
 					data: [{
@@ -592,7 +660,11 @@ class ChartCom extends React.Component {
 				{
 					dataLabels: [{
 						align: 'left',
-						format:  '{point.rati} %' + '({y})'
+						format:  '{point.rati} %' + '({y})',
+						style : {
+							fontFamily: 'Arial',
+					 
+						}
 					}
 				],
 					data: [{
@@ -648,7 +720,7 @@ class ChartCom extends React.Component {
 				type: 'bar'
 			},
 			title: {	 
-				text: null,
+				text: 'Biểu đồ thống kê số lượng <br/>Nam/Nữ giới nhiễm bệnh',
 				style: {
                     fontFamily: 'Arial',
 					fontSize: '18px',
@@ -711,30 +783,36 @@ class ChartCom extends React.Component {
 		this.highChartsRender();
 		this.componentGetRatio();
     }
-    
+	
+ 
+	
     render()  {
+		 
         return (
-            <div className="container">
+            <div>
 					<HeaderCom/>
-					 <div className="row">
+				<div style={{margin: 'auto',width: '85%'}}>
+						<div className="row">
 						 
-							<div className="col-md-6" id="getGenderRatio" style={{marginTop: '30px'}}></div>
-							<div className="col-md-6" id="getAgeRatio" style={{marginTop: '30px'}}></div>
-						 </div>
+							<div className="col-md-6" id="getGenderRatio" ></div>
+							<div className="col-md-6" id="getAgeRatio" ></div>
+						</div>
 				 
-						 <div className="row">
+						<div className="row">
 						 
 								<div className="col-md-6" id="Nguon du lieu" style={{marginTop: '30px'}}></div>
 								<div className="col-md-6" id="Dien bien thao luan" style={{marginTop: '30px'}}></div>
 							 
-							</div>
+						</div>
 					 
-							<div className="row">
+						<div className="row">
 						 
 							<div className="col-md-6" id="Sac thai thao luan" style={{marginTop: '30px'}}></div>
 							<div className="col-md-6" id="getMaFe" style={{marginTop: '30px'}}></div>		
 						 
 						</div>
+					</div>
+					<FooterCom/>
             </div>
         );
     }

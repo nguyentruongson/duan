@@ -35,7 +35,7 @@
 		"react": "^16.12.0",
 		"react-advanced-datetimerange-picker": "^1.0.10",
 		"react-app-polyfill": "^1.0.6",
-		"react-bootstrap": "^1.0.0-beta.16",
+		"react-bootstrap": "^1.0.1",
 		"react-bootstrap-dropdown-menu": "^1.1.15",
 		"react-burger-menu": "^2.6.13",
 		"react-collapsed": "^2.2.3",

@@ -151,8 +151,8 @@ class FetchDataFromRSSFeed extends React.Component {
   
     render() {
       return (
-        <div>
-           <div className="row">
+        <div style={{background:'white'}}>
+           <div className="row" style={{marginLeft:'auto' , paddingTop:'2%'}}>
                 <div className="col-md-6">
                     <div>
                         <a href={this.state.recentBlogPost1.url}>
@@ -180,7 +180,8 @@ class FetchDataFromRSSFeed extends React.Component {
                     </div>
                 </div>
             </div>
-            <div className="row">
+            <hr style={{border: '1px solid black'}}/>
+            <div className="row" style={{marginLeft:'auto'}}>
                 <div className="col-md-6">
                     <div>
                         <a href={this.state.recentBlogPost2.url}>
@@ -205,6 +206,64 @@ class FetchDataFromRSSFeed extends React.Component {
                     </div>
                     <div>
                         <a target="_blank" >{this.state.recentBlogPost4.description}</a>
+                    </div>
+                </div>
+            </div>
+            <hr style={{border: '1px solid black'}}/>
+            <div className="row" style={{marginLeft:'auto'}}>
+                <div className="col-md-6">
+                    <div>
+                        <a href={this.state.recentBlogPost5.url}>
+                    <img style={{width:'200px', height:'200px' }} src={this.state.recentBlogPost5.thumbnail} />
+                    </a>
+                    </div>
+                    <div>
+                        <a target="_blank" href={this.state.recentBlogPost5.url}>{this.state.recentBlogPost5.name}</a>
+                    </div>
+                    <div>
+                        <a target="_blank" >{this.state.recentBlogPost5.description}</a>
+                    </div>
+                </div>
+                <div className="col-md-6">
+                    <div>
+                        <a href={this.state.recentBlogPost6.url}>
+                        <img style={{width:'200px', height:'200px' }} src={this.state.recentBlogPost6.thumbnail} />
+                        </a>
+                    </div>
+                    <div>
+                        <a target="_blank" href={this.state.recentBlogPost6.url}>{this.state.recentBlogPost6.name}</a>
+                    </div>
+                    <div>
+                        <a target="_blank" >{this.state.recentBlogPost6.description}</a>
+                    </div>
+                </div>
+            </div>
+            <hr style={{border: '1px solid black'}}/>
+            <div className="row" style={{marginLeft:'auto', paddingBottom:'2%'}}>
+                <div className="col-md-6">
+                    <div>
+                        <a href={this.state.recentBlogPost7.url}>
+                    <img style={{width:'200px', height:'200px' }} src={this.state.recentBlogPost7.thumbnail} />
+                    </a>
+                    </div>
+                    <div>
+                        <a target="_blank" href={this.state.recentBlogPost7.url}>{this.state.recentBlogPost7.name}</a>
+                    </div>
+                    <div>
+                        <a target="_blank" >{this.state.recentBlogPost7.description}</a>
+                    </div>
+                </div>
+                <div className="col-md-6">
+                    <div>
+                        <a href={this.state.recentBlogPost8.url}>
+                        <img style={{width:'200px', height:'200px' }} src={this.state.recentBlogPost8.thumbnail} />
+                        </a>
+                    </div>
+                    <div>
+                        <a target="_blank" href={this.state.recentBlogPost8.url}>{this.state.recentBlogPost8.name}</a>
+                    </div>
+                    <div>
+                        <a target="_blank" >{this.state.recentBlogPost8.description}</a>
                     </div>
                 </div>
             </div>

@@ -5,7 +5,8 @@ import Network from '../../Service/Network'
 
 import * as Highcharts from 'highcharts';
 import HeaderCom from '../header/header';
-import FetchDataFromRssFeed from '../DashBoard/rss'
+import FetchDataFromRssFeed from '../DashBoard/rss';
+import FooterCom from '../Footer/Footer';
  
 
 const api = new Network()
@@ -23,8 +24,10 @@ class News extends React.Component {
         return (
             <div>
                 <HeaderCom />
-                <FetchDataFromRssFeed/>
-
+                <div style={{width:'70%',margin: 'auto'}}>
+                    <FetchDataFromRssFeed/>
+                </div>
+                <FooterCom/>
             </div>
         );
     }
