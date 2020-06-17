@@ -13,10 +13,8 @@ export default class Networking {
     this.getHeader = this.getHeader.bind(this)
     this.getHeaderUpload = this.getHeaderUpload.bind(this)
     this.handleError = this.handleError.bind(this)
-	//this.domain = 'https://juzdrive.com'
-	this.domain = 'http://localhost:8000'
-	//this.domain =  'https://api-test.tensorlab.dev'
-	// this.domain = 'http://ec2-13-251-13-125.ap-southeast-1.compute.amazonaws.com:1996';
+	//this.domain = 'http://localhost:8000'
+	this.domain =  'http://ec2-54-254-153-100.ap-southeast-1.compute.amazonaws.com:8000'
     self = this
   }
 
