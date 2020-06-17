@@ -1,24 +1,14 @@
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import Skeleton, { SkeletonTheme } from 'react-loading-skeleton';
+import React from 'react';
 import Network from '../../Service/Network';
-import Modal from 'react-bootstrap/Modal';
-import ModalDialog from 'react-bootstrap/ModalDialog';
-import ModalHeader from 'react-bootstrap/ModalHeader';
-import ModalTitle from 'react-bootstrap/ModalTitle';
-import ModalBody from 'react-bootstrap/ModalBody';
-import ModalFooter from 'react-bootstrap/ModalFooter';
-import Button from 'react-bootstrap/Button';
 import * as Highcharts from 'highcharts';
 import HeaderCom from '../header/header';
-import FooterCom from '../Footer/Footer';
- 
- 
+import './chart.css';
 
 const api = new Network()
 var arr_son = []
 var arr_datanuance = []
 var arr_age = []
+var arr_dis = []
 
 
 class ChartCom extends React.Component { 
@@ -30,10 +20,14 @@ class ChartCom extends React.Component {
 		this.componentGetAgeByConditions = this.componentGetAgeByConditions.bind(this);
 		this.componentGetPbo = this.componentGetPbo.bind(this);
 		this.componentGetRatio = this.componentGetRatio.bind(this);
-
+		this.componentGetDiss = this.componentGetDiss.bind(this);
+		
 		this.state = {
-			showModal: false,
 			
+			getdis1:{
+				day: '',
+				mention_count: 0
+			},
             anh_1: {
                 Source: '',
                 amount: '',
@@ -119,82 +113,11 @@ class ChartCom extends React.Component {
 			negative : '',
 			neutral : '',
 
-            mai: [{
-                name: 'son',
-                data: [
-                    1,2,3,4,5,6,7,8,9,10,11,12
-                ]
-                }],
-            mai1: [{
-                name: 'son',
-                data: [
-                    1,2,3,4,5,6,7,8,9,10,11,12
-                ]
-                },
-            {
-                name:'son1',
-                data : [11,21,31,41,51,61,71,81,91,101,111,121],
-                
-			}],
-			
+
         };
 	}
 		
-	highChartsRender() {
-
-		Highcharts.chart({
-		chart: {
-			type: 'area',
-			renderTo: 'Dien bien thao luan'
-		},
-		title: {
-			verticalAlign: 'middle',
-			floating: true,
-			text: 'Biển đồ về <br/>diễn biến thảo luận',
-			style: {
-				fontSize: '18px',
-				fontFamily: 'Arial'
-			}
-		},
-		xAxis: {
-			categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'], 
-			labels: {
-				formatter: function () {
-					return this.value;
-				}
-			}
-		},
-		yAxis: {
-			title: {
-				text: null
-			},
-			labels: {
-				formatter: function () {
-					return this.value  ;
-				}
-			}
-		},
-		plotOptions: {
-			area: {
-				marker: {
-					enabled: false,
-					symbol: 'circle',
-					radius: 1,
-					states: {
-						hover: {
-							enabled: true
-						}
-					}
-				}
-			}
-		},
-
-		series: this.state.mai
-		});
-
-	
-
-	}	
+	 	
 
 	async componentGetSource() {
 		try {
@@ -283,78 +206,60 @@ class ChartCom extends React.Component {
                     behavior: 'smooth',
                 });
             this.setState({ positive: arr_datanuance[0], negative: arr_datanuance[1], neutral : arr_datanuance[2],  loading: false });
-
+			
 			Highcharts.setOptions({
 				colors: ['#058DC7', '#50B432', '#ED561B', '#DDDF00', '#24CBE5', '#64E572', '#FF9655', '#FFF263', '#6AF9C4']
 			});
             Highcharts.chart({
                 chart: {
-                    type: 'line',
+                    type: 'pie',
                     renderTo: 'Sac thai thao luan'
                 },
                 title: {
-                    verticalAlign: 'middle',
-                    floating: true,
+                    
                     text: 'Biểu đồ về <br/>sắc thái thảo luận',
                     style: {
 						fontSize: '18px',
 						fontFamily: 'Arial'
                     }
                 },
-                xAxis: {
-					categories: ['Tích cực', 'Tiêu cực', 'Trung tính'],
-					style : {
-						fontFamily: 'Arial',
 				 
+				tooltip: {
+					pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+				},
+				 
+				accessibility: {
+					point: {
+						valueSuffix: '%'
 					}
-                },
-                yAxis: {
-                    title: {
-                        text: null
-                    },
-                    labels: {
-                        formatter: function () {
-                            return this.value  ;
-						},
-						style : {
-							fontFamily: 'Arial',
-					 
+				},
+				plotOptions: {
+					pie: {
+						allowPointSelect: true,
+						cursor: 'pointer',
+						dataLabels: {
+							enabled: true,
+							format: '<b>{point.name}</b>: {point.y} %'
 						}
-					},
-					style : {
-						fontFamily: 'Arial',
-				 
 					}
-                },
-                plotOptions: {
-                    series: {
-                        label: {
-							connectorAllowed: false,
-							style : {
-								fontFamily: 'Arial',
-						 
-							}
-                        }
-                    }
-                },
-                series: [
-                {
-                    name : 'Tích cực',
-					data : this.state.positive,
-					style : {
-						fontFamily: 'Arial',
-				 
-					}
-                },
-                {
-                    name: 'Tiêu cực',
-                    data : this.state.negative
-                },
-                {
-                    name : 'Trung tính',
-                    data : this.state.neutral
-                }
-                ]
+				},
+                series: [{
+					name: 'Tỉ lệ',
+					colorByPoint: true,
+					data: [{
+						name: 'Tích cực',
+						y: this.state.positive[0],
+						sliced: true,
+						selected: true
+					}, {
+						name: 'Tiêu cực',
+						y: this.state.positive[1]
+					}, {
+						name: 'Trung tính',
+						y: this.state.positive[2]
+					}]
+				}]
+  
                 });               
             }
         } catch (e) {
@@ -775,13 +680,126 @@ class ChartCom extends React.Component {
 		}
 	}
 
+	async componentGetDiss() {
+		try {
+            const response = await api.get(`/api/discussion`);
+			arr_dis.push(Object.values(response))
+			 
+			this.setState({ getdis1 :  arr_dis[0], loading: false });
+
+
+		 
+		Highcharts.chart('Dien bien thao luan', {
+			chart: {
+				type: 'line'
+			},
+			title: {
+				text: 'Biểu đồ diễn biến thảo luận trong tháng',
+				style: {
+                    fontFamily: 'Arial',
+					fontSize: '18px',
+				}
+			},
+			subtitle: {
+				text: null
+			},
+			xAxis: {
+				categories: [
+					this.state.getdis1[0].day,
+					this.state.getdis1[1].day,
+					this.state.getdis1[2].day,
+					this.state.getdis1[3].day,
+					this.state.getdis1[4].day,
+					this.state.getdis1[5].day,
+					this.state.getdis1[6].day,
+					this.state.getdis1[7].day,
+					this.state.getdis1[8].day,
+					this.state.getdis1[9].day,
+					this.state.getdis1[10].day,
+					this.state.getdis1[11].day,
+					this.state.getdis1[12].day,
+					this.state.getdis1[13].day,
+					this.state.getdis1[14].day,
+					this.state.getdis1[15].day,
+					this.state.getdis1[16].day,
+					this.state.getdis1[17].day,
+					this.state.getdis1[18].day,
+					this.state.getdis1[19].day,
+					this.state.getdis1[20].day,
+					this.state.getdis1[21].day,
+					this.state.getdis1[22].day,
+					this.state.getdis1[23].day,
+					this.state.getdis1[24].day,
+					this.state.getdis1[25].day,
+					this.state.getdis1[26].day,
+					this.state.getdis1[27].day,
+					this.state.getdis1[28].day,
+					
+				]
+			},
+			yAxis: {
+				title: {
+					text: 'Số lượng'
+				}
+			},
+			plotOptions: {
+				line: {
+					dataLabels: {
+						enabled: true
+					},
+					enableMouseTracking: false
+				}
+			},
+			series: [{
+				name: 'Tỉ lệ',
+				data: [
+					this.state.getdis1[0].mention_count,
+					this.state.getdis1[1].mention_count,
+					this.state.getdis1[2].mention_count,
+					this.state.getdis1[3].mention_count,
+					this.state.getdis1[4].mention_count,
+					this.state.getdis1[5].mention_count,
+					this.state.getdis1[6].mention_count,
+					this.state.getdis1[7].mention_count,
+					this.state.getdis1[8].mention_count,
+					this.state.getdis1[9].mention_count,
+					this.state.getdis1[10].mention_count,
+					this.state.getdis1[11].mention_count,
+					this.state.getdis1[12].mention_count,
+					this.state.getdis1[13].mention_count,
+					this.state.getdis1[14].mention_count,
+					this.state.getdis1[15].mention_count,
+					this.state.getdis1[16].mention_count,
+					this.state.getdis1[17].mention_count,
+					this.state.getdis1[18].mention_count,
+					this.state.getdis1[19].mention_count,
+					this.state.getdis1[20].mention_count,
+					this.state.getdis1[21].mention_count,
+					this.state.getdis1[22].mention_count,
+					this.state.getdis1[23].mention_count,
+					this.state.getdis1[24].mention_count,
+					this.state.getdis1[25].mention_count,
+					this.state.getdis1[26].mention_count,
+					this.state.getdis1[27].mention_count,
+					this.state.getdis1[28].mention_count,
+					
+			]
+			}]
+		});	
+        } catch (e) {
+            console.log("Error ====> ", e);
+		}		
+	}
+
+	
+
 	componentDidMount() {
 		this.componentGetSource();
 		this.componentGetSourceNuance();
 		this.componentGetAgeByConditions();
 		this.componentGetPbo();
-		this.highChartsRender();
 		this.componentGetRatio();
+		this.componentGetDiss();
     }
 	
  
@@ -811,8 +829,9 @@ class ChartCom extends React.Component {
 							<div className="col-md-6" id="getMaFe" style={{marginTop: '30px'}}></div>		
 						 
 						</div>
+						
 					</div>
-					<FooterCom/>
+		 
             </div>
         );
     }

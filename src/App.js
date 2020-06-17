@@ -3,14 +3,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 // import Header from './components/Header/Header'
 // import Footer from './components/Footer/Footer'
-import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import routes from './routes';
 
 class App extends Component {
-    constructor(props) {
-      super(props);
-      
-    }
+     
   render() {
   return (
     <Router>

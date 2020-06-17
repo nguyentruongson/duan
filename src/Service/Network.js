@@ -1,9 +1,9 @@
 import axios from 'axios';
-import { toast } from 'react-toastify';
+ 
 import AuthService from './AuthService';
 const auth = new AuthService();
 var self = null;
-var domain = null;
+ 
 export default class Networking {
   constructor() {
     this.post = this.post.bind(this)

@@ -1,17 +1,18 @@
 import React, { Component } from 'react';
-import { InfoWindow, Map, Marker , Circle, GoogleApiWrapper } from 'google-maps-react';
-import { Link } from 'react-router-dom';
-import Skeleton, { SkeletonTheme } from 'react-loading-skeleton';
+import { InfoWindow, Map, Marker , GoogleApiWrapper } from 'google-maps-react';
+
+
 import Network from '../../Service/Network';
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
+import './style.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Icon from './icon.png';
 import Icondefault from './icondefault.png';
 const mapStyles = {
   width: '100%',
-  height: '700px',
+  height: '100%',
   position: 'relative'
 };
+
 const api = new Network()
 const arr_location = []
 
@@ -83,7 +84,7 @@ export class MapContainer extends Component {
                 const response = await api.get(`/api/case/location`);
                 arr_location.push(Object.values(response.data))
                 this.setState({ stores : arr_location[0],  loading: false });    
-                console.log(this.state.stores[1].confirm_cases)
+                
             } catch (e) {
                 console.log("Error ====> ", e);
         }
@@ -94,7 +95,7 @@ export class MapContainer extends Component {
       }     
       
       render() {
-        const { info, lat, lng } = this.state;
+         
         const coords = { lat: 16.123870, lng: 106.186722};
         const stores = this.state.stores;
         return (
@@ -102,7 +103,7 @@ export class MapContainer extends Component {
            onClick={this.onMapClicked}
             initialCenter={coords}
             google={this.props.google}
-            zoom={6}
+            zoom={5.5}
             style={mapStyles}
           >
           { stores.map((anh) => {

@@ -1,7 +1,5 @@
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import Skeleton, { SkeletonTheme } from 'react-loading-skeleton';
-import Network from '../../Service/Network';
+import React from 'react';
+ 
 
 class FooterCom extends React.Component {   
   
@@ -28,7 +26,9 @@ class FooterCom extends React.Component {
     
     render()  {
         return (
-        <div className="container-map" >
+        <div style={{width: '100%',
+           
+          bottom: '0'}}>
             <nav className="navbar navbar-expand-sm bg-light" style={{marginBottom:0,marginTop:'1%'}} >
                 <div>
                     Thời gian hiện tại: {this.state.time}
