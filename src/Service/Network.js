@@ -14,7 +14,7 @@ export default class Networking {
     this.getHeaderUpload = this.getHeaderUpload.bind(this)
     this.handleError = this.handleError.bind(this)
 	//this.domain = 'http://localhost:8000'
-	this.domain =  'http://ec2-54-254-153-100.ap-southeast-1.compute.amazonaws.com:3000'
+	this.domain =  'http://ec2-54-254-153-100.ap-southeast-1.compute.amazonaws.com:8000'
     self = this
   }
 
