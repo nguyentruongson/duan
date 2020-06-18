@@ -140,7 +140,7 @@ class ChartCom extends React.Component {
 			},
 			title: {
 				 
-				text: 'Biểu đồ về <br/>nguồn dữ liệu',
+				text: 'Nguồn dữ liệu',
 				style: {
                     fontFamily: 'Arial',
 					fontSize: '18px',
@@ -217,7 +217,7 @@ class ChartCom extends React.Component {
                 },
                 title: {
                     
-                    text: 'Biểu đồ về <br/>sắc thái thảo luận',
+                    text: 'Sắc thái thảo luận',
                     style: {
 						fontSize: '18px',
 						fontFamily: 'Arial'
@@ -292,7 +292,7 @@ class ChartCom extends React.Component {
 				},
 			
 				title: {
-					text: 'Biểu đồ về độ tuổi<br/>nhiễm bệnh phổ biến',
+					text: 'Độ tuổi nhiễm bệnh phổ biến',
 					style: {
 						fontFamily: 'Arial',
 						fontSize: '18px',
@@ -481,7 +481,7 @@ class ChartCom extends React.Component {
 				},
 
 				title: {
-					text: 'Biểu đồ phân bổ giới tính <br/>theo độ tuổi',
+					text: 'Phân bổ giới tính theo độ tuổi',
 					style: {
 						fontFamily: 'Arial',
 						fontSize: '18px',
@@ -619,61 +619,67 @@ class ChartCom extends React.Component {
 					age_5 :  arr_age[0][4],
 					age_6 :  arr_age[0][5]
 					, loading: false });
-		
-		Highcharts.chart('getMaFe', {
-			chart: {
-				type: 'bar'
-			},
-			title: {	 
-				text: 'Biểu đồ thống kê số lượng <br/>Nam/Nữ giới nhiễm bệnh',
-				style: {
-                    fontFamily: 'Arial',
-					fontSize: '18px',
-				}
-			},
-			 
-			xAxis: {
-				categories: ['Số lượng']
-				 
-			},
-			yAxis: {
-				min: 0,
-				title: {
-					text: null,
-					align: 'middle'
+			Highcharts.setOptions({
+				colors: ['#058DC7', '#50B432', '#ED561B', '#DDDF00', '#24CBE5', '#64E572', '#FF9655', '#FFF263', '#6AF9C4']
+			});
+			Highcharts.chart('getMaFe', {
+				chart: {
+					type: 'bar'
 				},
-				labels: {
-					overflow: 'justify'
-				}
-			},
-			tooltip: {
-				valueSuffix: ' người'
-			},
-			plotOptions: {
-				bar: {
-					dataLabels: {
-						enabled: true
+				title: {
+					text: 'Thống kê số lượng Nam/Nữ',
+					style: {
+						fontSize: '18px',
+						fontFamily: 'Arial'
 					}
-				}
-			},
-			
-			series: [{
-				name:'Nam', 
-				data: [
-					this.state.age_1.male_amount+this.state.age_2.male_amount+this.state.age_3.male_amount+this.state.age_4.male_amount+this.state.age_5.male_amount+this.state.age_6.male_amount,
-					 
-				]
-			},
-			{
-				name:'Nữ', 
-				data: [
-					 
-					this.state.age_1.female_amount+this.state.age_2.female_amount+this.state.age_3.female_amount+this.state.age_4.female_amount+this.state.age_5.female_amount+this.state.age_6.female_amount
-				]
-			},
-
-		]
-		});
+				},
+				 
+				xAxis: {
+					type: 'category',
+					labels: {
+						formatter: function () {
+							return this.value  ;
+						},
+						style: {
+							fontSize: '13px',
+							fontFamily: 'Arial'
+						}
+					}
+				},
+				yAxis: {
+					min: 0,
+					title: {
+						text: 'Population (millions)'
+					}
+				},
+				legend: {
+					enabled: false
+				},
+				tooltip: {
+					pointFormat: 'Tổng số: <b>{point.y} người</b>'
+				},
+				series: [{
+					name: 'Số lượng',
+					data: [
+						['Nam giới', this.state.age_1.male_amount+this.state.age_2.male_amount+this.state.age_3.male_amount+this.state.age_4.male_amount+this.state.age_5.male_amount+this.state.age_6.male_amount
+					],
+						['Nữ giới', this.state.age_1.female_amount+this.state.age_2.female_amount+this.state.age_3.female_amount+this.state.age_4.female_amount+this.state.age_5.female_amount+this.state.age_6.female_amount
+					],
+						
+					],
+					dataLabels: {
+						enabled: true,						
+						color: '#FFFFFF',
+						align: 'right',
+						format: '({point.y})', // one decimal
+						 
+						style: {
+							fontSize: '14px',
+							fontFamily: 'Arial'
+						}
+					}
+				}]
+			});
 
         } catch (e) {
             console.log("Error ====> ", e);
@@ -694,7 +700,7 @@ class ChartCom extends React.Component {
 				type: 'line'
 			},
 			title: {
-				text: 'Biểu đồ diễn biến thảo luận trong tháng',
+				text: 'Diễn biến thảo luận trong tháng',
 				style: {
                     fontFamily: 'Arial',
 					fontSize: '18px',
@@ -747,11 +753,11 @@ class ChartCom extends React.Component {
 					dataLabels: {
 						enabled: true
 					},
-					enableMouseTracking: false
+					enableMouseTracking: true
 				}
 			},
 			series: [{
-				name: 'Tỉ lệ',
+				name: 'Số lượng theo ngày',
 				data: [
 					this.state.getdis1[0].mention_count,
 					this.state.getdis1[1].mention_count,

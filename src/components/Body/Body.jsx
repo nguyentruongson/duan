@@ -195,7 +195,7 @@ class BodyCom extends React.Component {
 							    
 							   <div style={{paddingLeft:'15px'}}>
 							<div className="box-tke">
-							<div id="trieu chung" style={{marginTop: '15px'}}></div>
+							<div id="trieu chung" ></div>
 							</div>   
 							</div>				
 							</div>

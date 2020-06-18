@@ -2,7 +2,7 @@ import React from 'react';
 
 
 import icon from './loading.png';
-
+import './header.css';
 class HeaderCom extends React.Component {   
     hientime = () => {
 		var tempDate = new Date();
