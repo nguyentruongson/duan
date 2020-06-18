@@ -1,13 +1,7 @@
 import React from 'react';
-
- 
-
- 
 import HeaderCom from '../header/header';
 import FetchDataFromRssFeed from '../DashBoard/rss';
-import FooterCom from '../Footer/Footer';
- 
- 
+
 
 class News extends React.Component { 
 
@@ -20,7 +14,7 @@ class News extends React.Component {
                 <div style={{width:'70%',margin: 'auto'}}>
                     <FetchDataFromRssFeed/>
                 </div>
-                <FooterCom/>
+ 
             </div>
         );
     }

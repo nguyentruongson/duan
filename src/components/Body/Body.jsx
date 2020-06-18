@@ -1,6 +1,6 @@
 import React from 'react';
 import Network from '../../Service/Network';
-import '../DashBoard/style.css';
+
 import MapContainer from '../DashBoard/mar';
 import 'bootstrap/dist/css/bootstrap.css';
 import FetchDataFromRSSFeed from '../DashBoard/rss';
@@ -141,7 +141,7 @@ class BodyCom extends React.Component {
 
 		return ( 
 				<div>
-					<div className="col-md-4" style={{marginLeft:'1%'}}>
+					<div className="col-md-4">
 						<div className="maps-container" style={{ height: '700px', width: '100%' }}>		    <MapContainer />				                      
 			                    </div>
 							</div>
@@ -151,8 +151,8 @@ class BodyCom extends React.Component {
 									 
 										<div className="box-tke">
 											<div style={{height:'90px'}}>
-												<div className="col-md-2 col-sm-2 col-xs-2 mb-20" style={{marginLeft: 'auto'}}>
-													<div><span className="box-vn" style={{width: 'fit-content'}}>Việt Nam</span></div>
+												<div className="col-md-2 col-sm-2 col-xs-2 mb-20">
+													<div><span className="box-vn">Việt Nam</span></div>
 												</div>
 												<div className="row col-md-10 col-sm-10 col-xs-10" style={{marginLeft:'15px'}}>
 													<div className="row" style={{fontSize:'12px' ,height:'45px'}}>
@@ -171,8 +171,8 @@ class BodyCom extends React.Component {
 											</div>
 											<hr />  		
 											<div style={{height:'90px'}}>
-												<div className="col-md-2 col-sm-2 col-xs-2 mb-20" style={{marginLeft: 'auto'}}>
-													<div ><span className="box-tg" style={{width: 'fit-content'}}>Thế giới</span></div>
+												<div className="col-md-2 col-sm-2 col-xs-2 mb-20">
+													<div ><span className="box-tg" >Thế giới</span></div>
 												</div>
 												<div className="row col-md-10 col-sm-10 col-xs-10" style={{marginLeft:'15px'}}>								  
 												<div className="row" style={{fontSize:'12px' ,height:'45px'}}>

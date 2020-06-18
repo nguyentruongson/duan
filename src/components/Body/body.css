@@ -7,18 +7,21 @@
 
 .box-tke{
 	border-radius: 6px;
-	padding: 10px 10px 0px 10px;
+	padding: 10px 10px 10px 10px;
 	background: #f8f9fa;
 	margin-bottom: 20px;
 }
 
 .box-vn, .box-tg{
+	margin-top: 50%;
 	border-radius: 6px;
-	padding: 16px;
+	padding: 5px;
 	display: block;
 	color: #fff;
 	text-transform: uppercase;
 	text-align: center;
+	width: max-content;
+	font-size: 15px;
 }
 
 .box-vn{background: #c9302c;}

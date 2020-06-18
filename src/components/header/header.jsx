@@ -25,14 +25,14 @@ class HeaderCom extends React.Component {
                
                 <ul className="navbar-nav">
                     <li className="nav-item" style={{paddingLeft: '10px'}}>
-                        <a className="nav-link" href="http://localhost:8080/">Trang chủ</a>
+                        <a className="nav-link" href="/">Trang chủ</a>
                     </li>
                     <li className="nav-item" style={{paddingLeft: '10px'}}>
-                        <a className="nav-link" href="http://localhost:8080/chart">Biểu đồ</a>
+                        <a className="nav-link" href="/chart">Biểu đồ</a>
                     </li>
                      
                 </ul>
-                <div style={{paddingLeft:'30%'}}>
+                <div style={{position:'absolute', right: '1%'}}>
                     <a href="/"><img alt='2' style={{paddingBottom:'3px',height:'20px'}}src={icon}/></a>
                     {this.hientime()}
                 </div>

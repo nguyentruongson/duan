@@ -11,7 +11,8 @@ import DashBoard from "./components/DashBoard";
 // import Account from "./components/Profile/Account";
 import ErrorPage from "./components/Error/404";
 import ChartCom from "./components/chart/chart";
-import News from "./components/news/news";
+
+
 // import MyCar from "./components/My-car/MyCar";
 // import MyDrive from "./components/My-car/MyDrive";
 // import HowJuzWork from "./components/How-juz-work/HowJuzWork";
@@ -44,12 +45,7 @@ const routes = [
     export: true,
     main: ChartCom
   },
-  {
-    path: "/news",
-    export: true,
-    main: News
-  }
-
+  
 ];
 
 export default routes;
