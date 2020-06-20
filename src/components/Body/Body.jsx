@@ -194,14 +194,18 @@ class BodyCom extends React.Component {
 							   </div>
 							    
 							   <div style={{paddingLeft:'15px'}}>
-							<div className="box-tke">
-							<div id="trieu chung" ></div>
+							<div className="box-tke" style={{marginBottom: 0,height: '459px'}}>
+							<div id="trieu chung" style={{paddingTop: '4%'}}></div>
 							</div>   
 							</div>				
 							</div>
-							<div className="col-md-2">
-							  		<FetchDataFromRSSFeed/>
-								</div>							
+							<div className="col-md-2" style={{paddingLeft:0}}>
+							<div style={{borderRadius: '6px',overflow:'hidden',height: '700px',width: 'fit-content'}}>
+								<iframe style={{border: '0px none', height: '812px', marginTop: '-44px',background:'white',height:'744px'}} src="https://timkiem.vnexpress.net/?search_f=title%2Ctag_list&q=Covid-19&media_type=all&fromdate=0&todate=0&latest=&cate_code=&date_format=all&fbclid=IwAR0YsTs_Ah4Mk3aorccJBoTghd2Wx4s7sKdShiTrfaSdC_ox_VPOHWiaY5w"  >
+							</iframe>
+							</div>
+								</div>
+														
 						</div>
 	
 			);
