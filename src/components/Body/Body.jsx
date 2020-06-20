@@ -10,6 +10,7 @@ import './body.css';
 const api = new Network()
 var arr_data = []
 var arr_sys = []
+var nf = new Intl.NumberFormat();
 
  
 class BodyCom extends React.Component { 
@@ -162,10 +163,10 @@ class BodyCom extends React.Component {
 														<div className="col-md-3 col-sm-3 col-xs-3 text-center text-uppercase text-danger-new1 mb-20">Tử vong</div>
 													</div>
 													<div className="row">
-														<div className="col-md-3 col-sm-3 col-xs-3 text-center text-uppercase text-danger-new mb-20"><span className="font24">{data_2.cases}</span></div>
-														<div className="col-md-3 col-sm-3 col-xs-3 text-center text-uppercase text-warning1 mb-20"><span className="font24">{data_2.cases - data_2.recovered - data_2.deaths}</span></div>
-														<div className="col-md-3 col-sm-3 col-xs-3 text-center text-uppercase text-primary mb-20"><span className="font24">{data_2.recovered}</span></div>
-														<div className="col-md-3 col-sm-3 col-xs-3 text-center text-uppercase text-danger-new1 mb-20"><span className="font24">{data_2.deaths}</span></div>
+														<div className="col-md-3 col-sm-3 col-xs-3 text-center text-uppercase text-danger-new mb-20"><span className="font24">{nf.format(data_2.cases)}</span></div>
+														<div className="col-md-3 col-sm-3 col-xs-3 text-center text-uppercase text-warning1 mb-20"><span className="font24">{nf.format(data_2.cases - data_2.recovered - data_2.deaths)}</span></div>
+														<div className="col-md-3 col-sm-3 col-xs-3 text-center text-uppercase text-primary mb-20"><span className="font24">{nf.format(data_2.recovered)}</span></div>
+														<div className="col-md-3 col-sm-3 col-xs-3 text-center text-uppercase text-danger-new1 mb-20"><span className="font24">{nf.format(data_2.deaths)}</span></div>
 													</div>
 												</div>
 											</div>
@@ -182,10 +183,10 @@ class BodyCom extends React.Component {
 														<div className="col-md-3 col-sm-3 col-xs-3 text-center text-uppercase text-danger-new1 mb-20">Tử vong</div>
 													</div>
 													<div className="row">
-														<div className="col-md-3 col-sm-3 col-xs-3 text-center text-uppercase text-danger-new mb-20"><span className="font24">{data_1.cases}</span></div>
-														<div className="col-md-3 col-sm-3 col-xs-3 text-center text-uppercase text-warning1 mb-20"><span className="font24">{data_1.cases - data_1.recovered - data_1.deaths}</span></div>
-														<div className="col-md-3 col-sm-3 col-xs-3 text-center text-uppercase text-primary mb-20"><span className="font24">{data_1.recovered}</span></div>
-														<div className="col-md-3 col-sm-3 col-xs-3 text-center text-uppercase text-danger-new1 mb-20"><span className="font24">{data_1.deaths}</span></div>
+														<div className="col-md-3 col-sm-3 col-xs-3 text-center text-uppercase text-danger-new mb-20"><span className="font24">{nf.format(data_1.cases)}</span></div>
+														<div className="col-md-3 col-sm-3 col-xs-3 text-center text-uppercase text-warning1 mb-20"><span className="font24">{nf.format(data_1.cases - data_1.recovered - data_1.deaths)}</span></div>
+														<div className="col-md-3 col-sm-3 col-xs-3 text-center text-uppercase text-primary mb-20"><span className="font24">{nf.format(data_1.recovered)}</span></div>
+														<div className="col-md-3 col-sm-3 col-xs-3 text-center text-uppercase text-danger-new1 mb-20"><span className="font24">{nf.format(data_1.deaths)}</span></div>
 													</div>
 												</div>
 											</div>
