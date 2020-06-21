@@ -11,3 +11,6 @@
 .highcharts-title {
     text-transform: uppercase;
 }
+.gm-style-pbc {
+    display: none;
+}
