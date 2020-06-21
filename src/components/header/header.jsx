@@ -28,7 +28,7 @@ class HeaderCom extends React.Component {
                         <a className="nav-link" href="/">Trang chủ</a>
                     </li>
                     <li className="nav-item" style={{paddingLeft: '10px'}}>
-                        <a className="nav-link" href="/chart">Biểu đồ</a>
+                        <a className="nav-link" href="/chart">Diễn biến thảo luận</a>
                     </li>
                      
                 </ul>
