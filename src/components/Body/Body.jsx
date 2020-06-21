@@ -114,7 +114,7 @@ class BodyCom extends React.Component {
 						color: '#FFFFFF',
 						align: 'right',
 						format: '{point.y}%', // one decimal
-						y: 10, // 10 pixels down from the top
+						 
 						style: {
 							fontSize: '12px',
 							fontFamily: 'Arial'

@@ -4,11 +4,13 @@ import * as Highcharts from 'highcharts';
 import HeaderCom from '../header/header';
 import './chart.css';
 
-const api = new Network()
-var arr_son = []
-var arr_datanuance = []
+const api = new Network();
+var arr_son = [];
+var arr_datanuance = [];
+var arr_topic = [];
 var arr_age = []
-var arr_dis = []
+var arr_dis = [];
+
 
 
 class ChartCom extends React.Component { 
@@ -23,7 +25,11 @@ class ChartCom extends React.Component {
 		this.componentGetDiss = this.componentGetDiss.bind(this);
 		
 		this.state = {
-			
+			topic1 : {
+				topics: '',
+				amount: 0
+			},
+
 			getdis1:{
 				day: '',
 				mention_count: 0
@@ -292,7 +298,7 @@ class ChartCom extends React.Component {
 				},
 			
 				title: {
-					text: 'Độ tuổi nhiễm bệnh phổ biến',
+					text: 'Nguồn dữ liệu phân bố theo độ tuổi',
 					style: {
 						fontFamily: 'Arial',
 						fontSize: '18px',
@@ -304,7 +310,7 @@ class ChartCom extends React.Component {
 					text: null
 				},
 				xAxis: {
-					categories: ['Tỉ lệ'],
+					categories: ['Số lượng'],
 					style : {
 						fontFamily: 'Arial',				 
 					}
@@ -340,6 +346,18 @@ class ChartCom extends React.Component {
 					 
 						}
 					}
+				},
+				legend: {
+					layout: 'vertical',
+					align: 'right',
+					verticalAlign: 'top',
+					x: -40,
+					y: 80,
+					floating: true,
+					borderWidth: 1,
+					backgroundColor:
+						Highcharts.defaultOptions.legend.backgroundColor || '#FFFFFF',
+					shadow: true
 				},
 				 
 			
@@ -481,7 +499,7 @@ class ChartCom extends React.Component {
 				},
 
 				title: {
-					text: 'Phân bổ giới tính theo độ tuổi',
+					text: 'Nguồn dữ liệu phân bố theo<br/> giới tính, độ tuổi',
 					style: {
 						fontFamily: 'Arial',
 						fontSize: '18px',
@@ -609,37 +627,32 @@ class ChartCom extends React.Component {
 	
 	async componentGetRatio(){
 		try {
-            const response = await api.get(`/api/age`);
-			arr_age.push(Object.values(response))
-			this.setState({ 
-					age_1 :  arr_age[0][0],
-					age_2 :  arr_age[0][1],
-					age_3 :  arr_age[0][2],
-					age_4 :  arr_age[0][3],
-					age_5 :  arr_age[0][4],
-					age_6 :  arr_age[0][5]
-					, loading: false });
+            const response = await api.get(`/api/topic`);
+			arr_topic.push(Object.values(response))
+			this.setState({ topic1 :  arr_topic[0], loading: false });
+
+
 			Highcharts.setOptions({
 				colors: ['#058DC7', '#50B432', '#ED561B', '#DDDF00', '#24CBE5', '#64E572', '#FF9655', '#FFF263', '#6AF9C4']
 			});
+			
 			Highcharts.chart('getMaFe', {
 				chart: {
 					type: 'bar'
 				},
 				title: {
-					text: 'Thống kê số lượng Nam/Nữ',
+					text: 'các chủ để thảo luận',
 					style: {
-						fontSize: '18px',
-						fontFamily: 'Arial'
+						fontFamily: 'Arial',
+						fontSize: '18px'
 					}
 				},
-				 
+				subtitle: {
+					text: null
+				},
 				xAxis: {
 					type: 'category',
-					labels: {
-						formatter: function () {
-							return this.value  ;
-						},
+					labels: {	
 						style: {
 							fontSize: '13px',
 							fontFamily: 'Arial'
@@ -649,32 +662,40 @@ class ChartCom extends React.Component {
 				yAxis: {
 					min: 0,
 					title: {
-						text: 'Population (millions)'
-					}
+						text: 'Tỉ lệ'
+					},
+					
 				},
 				legend: {
 					enabled: false
 				},
 				tooltip: {
-					pointFormat: 'Tổng số: <b>{point.y} người</b>'
+					pointFormat:'Số lượng: {point.y} bài viết'
 				},
 				series: [{
-					name: 'Số lượng',
+					name: 'Tỉ lệ phần trăm',
+					colorByPoint: true,
 					data: [
-						['Nam giới', this.state.age_1.male_amount+this.state.age_2.male_amount+this.state.age_3.male_amount+this.state.age_4.male_amount+this.state.age_5.male_amount+this.state.age_6.male_amount
-					],
-						['Nữ giới', this.state.age_1.female_amount+this.state.age_2.female_amount+this.state.age_3.female_amount+this.state.age_4.female_amount+this.state.age_5.female_amount+this.state.age_6.female_amount
-					],
-						
+						[this.state.topic1[1].topics, this.state.topic1[1].amount],
+						[this.state.topic1[8].topics, this.state.topic1[8].amount],
+						[this.state.topic1[0].topics, this.state.topic1[0].amount],
+						[this.state.topic1[9].topics, this.state.topic1[9].amount],
+						[this.state.topic1[2].topics, this.state.topic1[2].amount],
+						[this.state.topic1[7].topics, this.state.topic1[7].amount],
+						[this.state.topic1[3].topics, this.state.topic1[3].amount],
+						[this.state.topic1[4].topics, this.state.topic1[4].amount],
+						[this.state.topic1[6].topics, this.state.topic1[6].amount],
+						[this.state.topic1[5].topics, this.state.topic1[5].amount]
+					
 					],
 					dataLabels: {
-						enabled: true,						
+						enabled: true,
 						color: '#FFFFFF',
-						align: 'right',
-						format: '({point.y})', // one decimal
+						align: 'top',
+						format: '{point.y}', // one decimal
 						 
 						style: {
-							fontSize: '14px',
+							fontSize: '12px',
 							fontFamily: 'Arial'
 						}
 					}
