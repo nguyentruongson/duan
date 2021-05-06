@@ -23,7 +23,7 @@
 		"google-map-react": "^1.1.5",
 		"google-maps-react": "^2.0.6",
 		"halogen": "^0.2.0",
-		"highcharts": "^8.1.1",
+		"highcharts": "^9.0.0",
 		"html-to-draftjs": "^1.5.0",
 		"i": "^0.3.6",
 		"install": "^0.13.0",
